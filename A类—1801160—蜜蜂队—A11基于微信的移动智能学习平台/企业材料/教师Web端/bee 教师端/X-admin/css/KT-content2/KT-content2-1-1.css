@@ -1,0 +1,74 @@
+/*活动样式******************************************************************************/
+.caller-contar {
+    padding-bottom: 20px;
+}
+.caller-contar .caller-item {
+    padding: 25px 25px;
+    overflow: hidden;
+    border-bottom: 1px solid #e0e0e0;
+}
+.caller-contar .caller-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+.caller-fl {
+    float: left;
+}
+.caller-contar .caller-item .caller-main {
+    margin-left: 40px;
+}
+.caller-contar .caller-item .caller-main p:first-child {
+    padding-top: 0;
+}
+.caller-contar .caller-item .caller-main p {
+    line-height: 100%;
+    padding: 8px 0;
+}
+.caller-contar .caller-item .caller-main p {
+    line-height: 100%;
+}
+.caller-contar .caller-item .caller-main em {
+    margin-left: 5px;
+}
+.caller-contar .caller-item .caller-main .caller-adds {
+    padding-bottom: 12px;
+}
+.caller-contar .caller-item .caller-main .caller-adds i {
+    padding-right: 5px;
+    margin: 0;
+}
+.caller-contar .caller-iconset i:first-child {
+    margin-left: 0;
+}
+.caller-contar .caller-iconset i {
+    margin: 0 5px;
+}
+.layui-icon-login-wechat {
+    color: #4DAF29;
+}
+.caller-iconset {
+	color: #4DAF29;
+}
+.caller-contar button {
+    margin-top: 22px;
+}
+.caller-fr {
+    float: right;
+}
+.layui-btn-sm {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    font-size: 12px;
+}
+.caller-a{
+	float:left;
+	color: #09a246;
+	margin-top: 15px;
+}
+.caller-main p strong{
+	font-size: 19px;
+}
+
+/*查看详情*************************************************************************************/

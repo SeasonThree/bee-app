@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bee 1.0教学管理平台</title>
+	<meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/font.css">
+	<link rel="stylesheet" href="css/xadmin.css">
+	<link rel="stylesheet" type="text/css" href="css/myStyle.css"/>
+    <script type="text/javascript" src="js/jquery.min1.9.1.js"></script>
+    <script src="lib/layui/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/xadmin.js"></script>
+	
+</head>
+<body>
+    <!-- 顶部开始 -->
+    <div class="container">
+        <div class="logo"><a href="./index.html">Bee 1.0教学管理平台</a></div>
+        <!--<div class="left_open">
+            <i title="展开左侧栏" class="iconfont">&#xe699;</i>
+        </div>-->
+        <ul class="layui-nav right" lay-filter="">
+    		<li class="layui-nav-item">
+				<a lay-href="app/message/" layadmin-event="message">
+		          	<a href="">消息通知 <i class="layui-icon layui-icon-notice"></i></a>
+		          
+			        <!-- 如果有新消息，则显示小圆点 -->
+			        <script type="text/html" template="" lay-url="./json/message/new.js">
+			        {{# if(d.data.newmsg){ }} 
+			            <span class="layui-badge-dot"></span>
+			        {{# } }}
+			        </script>  <span class="layui-badge-dot"></span>  
+		          
+		        </a>
+	    	</li>
+		    <li class="layui-nav-item">
+		        <a href="javascript:;"><img src="images-tou/1.jpg" class="layui-nav-img">执着</a>
+		        <dl class="layui-nav-child"> <!-- 二级菜单 -->
+		          	<dd><a href="">个人信息</a></dd>
+		          	<dd><a href="pages/login.html">切换帐号</a></dd>
+		          	<dd><a href="pages/login.html">退出</a></dd>
+		        </dl>
+		    </li>
+          <li class="layui-nav-item to-index"><a href="pages/login.html">退出</a></li>
+        </ul>
+        
+    </div>
+    <!-- 顶部结束 -->
+    <!-- 中部开始 -->
+     <!-- 左侧菜单开始 -->
+    <div class="left-nav" style="margin-left: 75px;border-right: none;">
+      <div id="side-nav">
+        <ul id="nav">
+        	<!-- 左侧导航老师图片 -->
+	    	<li class="cc">
+	    		<div class="layui-card text-center" id="logo2">
+		          <div class="layui-card-body">
+		            <div class="layadmin-homepage-pad-ver">
+		              <script type="text/html" template="">
+		                <img class="layadmin-homepage-pad-img" src="{{ layui.setter.base }}style/res/template/portrait.png" width="96" height="96">
+		              </script> 
+		              <img class="layadmin-homepage-pad-img" src="images-tou/1.jpg" width="80" height="80"> 
+		            </div>
+		            <h4 class="layadmin-homepage-font">执着</h4>
+		            <p class="layadmin-homepage-min-font">东方大学王老师</p>
+		            <button class="layui-btn layui-btn-fluid">账号管理</button>
+		          </div>
+		        </div>
+	    	</li>
+            <li style="margin-top: 20px;">
+				<a>
+					<i class="layui-icon layui-icon-home"></i>
+					<cite>我的首页</cite>
+				</a>
+			</li>
+			<li>
+				<a _href="pages/KT-create.html">
+					<i class="iconfont">&#xe705;</i>
+					<cite>我的课堂</cite>
+				</a>
+			</li>
+			<li>
+				<a _href="javascript:;">
+					<i class="iconfont">&#xe806;</i>
+					<cite>信息查询</cite>
+				</a>
+			</li>
+			<li>
+				<a _href="javascript:;">
+					<i class="layui-icon">&#xe770;</i>
+					<cite>我的小组</cite>
+				</a>
+			</li>
+			<li id="kcb">
+				<a _href="welcome.html">
+					<i class="iconfont">&#xe6a2;</i>
+					<cite>课程表</cite>
+				</a>
+			</li>
+			<li>
+				<a _href="javascript:;">
+					<i class="iconfont">&#xe6ba;</i>
+					<cite>我的社区</cite>
+				</a>
+			</li>
+        </ul>
+      </div>
+    </div>
+    <!-- <div class="x-slide_left"></div> -->
+    <!-- 左侧菜单结束 -->
+    <!-- 右侧主体开始 -->
+    <div class="page-content">
+        <div class="layui-tab tab" lay-filter="xbs_tab" lay-allowclose="false">
+          	<ul class="layui-tab-title">
+            	<li class="home"></li>
+          	</ul>
+          	<div class="layui-tab-content" style="top: 1px;">
+	            <div class="layui-tab-item layui-show">
+	                <iframe src="./pages/KT-create.html" frameborder="0" scrolling="yes" class="x-iframe"></iframe>
+	            </div>
+          	</div>
+        </div>
+    </div>
+    <div class="page-content-bg"></div>
+    <!-- 右侧主体结束 -->
+    <!-- 中部结束 -->
+    <!-- 底部开始 -->
+    <div class="footer">
+        <div class="copyright">Copyright ©2019 Bee 教学管理平台v1.0 All Rights Reserved</div>  
+    </div>
+    <!-- 底部结束 -->
+    <script>
+	    //百度统计可去掉
+	    var _hmt = _hmt || [];
+	    (function() {
+		    var hm = document.createElement("script");
+		    hm.src = "https://hm.baidu.com/hm.js?b393d153aeb26b46e9431fabaf0f6190";
+		    var s = document.getElementsByTagName("script")[0]; 
+		    s.parentNode.insertBefore(hm, s);
+	    })();
+    </script>
+    <script>
+		$(".left-nav #nav li").click(function(){
+			var picTabNum = $(this).index();
+			console.log("当前图片标题下标是："+picTabNum);
+			sessionStorage.setItem("picTabNum",picTabNum);
+		});
+		$(function(){
+			var getPicTabNum = sessionStorage.getItem("picTabNum");
+			$(".layui-tab-title li").eq(getPicTabNum+1).addClass("layui-this").siblings().removeClass("layui-this");
+			$(".layui-tab-content>div").eq(getPicTabNum+1).addClass("layui-show").siblings().removeClass("layui-show");
+		})
+		
+		$("#kcb").on("click",function () {
+			window.open("pages/index5.html");  
+		});
+		
+		$("#nav").children().not(".cc").on("click",function () {
+			$("#nav").children().not(".cc").css("border-left","0px #089cff solid");
+			for(var i=1;i<=6;i++){
+				$("#nav").children().eq(i).children().eq(0).css("color","black");
+			}
+			$(this).css("border-left","2px #089cff solid");
+			$(this).children().eq(0).css("color","#089cff");
+		});
+	</script>
+</body>
+</html>

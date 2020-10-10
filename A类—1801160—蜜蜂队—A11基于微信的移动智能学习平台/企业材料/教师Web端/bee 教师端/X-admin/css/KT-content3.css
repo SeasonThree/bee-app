@@ -1,0 +1,88 @@
+.wrap800 {
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+    top: -24px;
+    float: left;
+}
+.clearfix {
+    overflow: hidden;
+}
+.sign, .integral {
+    width: 377px;
+    height: 89px;
+    background: #fbb161;
+    font-size: 18px;
+    box-shadow: 0px 1px 2px #bbb;
+}
+.sign a, .integral a {
+    display: block;
+    line-height: 89px;
+    color: #fff;
+    width: 377px;
+    height: 89px;
+}
+.ctMask {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    font-size: 16px;
+    text-align: center;
+    line-height: 65px;
+    color: #fff;
+    display: none;
+}
+.sign a i {
+    float: left;
+    margin-left: 20px;
+    margin-top: 0px;
+    width: 44px;
+    height: 41px;
+    margin-right: 20px;
+    background: url(../images/icon07.png) no-repeat;
+    background-position: top left;
+    font-size: 50px;
+}
+.sign a b, .integral a b {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 89px;
+    float: left;
+}
+.sign .ctMask b {
+    display: inline-block;
+    padding: 0 15px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    line-height: 30px;
+    font-size: 16px;
+    float: inherit;
+    margin-top: 28px;
+}
+.integral {
+    background: #6b9bf9;
+    margin-left: 3px;
+}
+.integral a i {
+    float: left;
+    margin-left: 20px;
+    margin-top: 0px;
+    width: 42px;
+    height: 46px;
+    margin-right: 20px;
+    background: url(../images/icon07.png) no-repeat;
+    background-position: bottom left;
+    font-size: 50px;
+}
+.datepicker table tr td span.active.active{
+	background-color: #3699FF;
+}
+.datepicker {
+    /*border: 1px black solid;*/
+    box-shadow: 0px 1px 2px #787878;
+}

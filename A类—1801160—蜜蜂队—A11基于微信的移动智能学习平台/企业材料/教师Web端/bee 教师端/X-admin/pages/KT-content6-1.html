@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的课堂</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="../css/font.css">
+		<link rel="stylesheet" type="text/css" href="../lib/layui/css/layui.css" />
+		<link rel="stylesheet" type="text/css" href="../lib/layer/mobile/need/layer.css" />
+		<link rel="stylesheet" href="../css/xadmin.css">
+		<link rel="stylesheet" type="text/css" href="../css/KT-content-common.css" />
+		<link rel="stylesheet" href="../css/KT-content5.css" />
+
+	</head>
+	<body style="text-align: left;background: #f9f9f9;">
+		<div class="popup flex-center">
+			<div class="popup-box">
+				<div class="popup-header padding-lg flex-line">
+					设置  <img src="../images/cancel,%20close,%20delet.png" style="width: 30px;" id="cancel2"/>
+				</div>
+				<div class="popup-content padding-lg">
+					<form class="layui-form">
+
+						<div class="flex-row">
+							<b>评分机制：</b> <input type="radio" name="score" value="0" title="百分制（平均分配每道题的分值）" checked="checked" />
+						</div>
+						<div style="margin-left: 70px;">
+							<input type="radio" name="score" value="1" title="自定义（自行设置每道题的分值）" checked="checked" />
+						</div>
+					</form>
+					<div class="flex-reserve">
+						<div class="edit-button margin-sm">
+							发布
+						</div>
+						<div class="edit-button margin-sm" id="cancel" style="background: rgb(230, 230, 230);color: black;">
+							取消
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="header flex-line padding-lg">
+				<div class="input-bar flex-line">
+					<span class="title">标题:</span><input placeholder="新建作业" class="padding-sm" />
+					<span class="confirm1">设置</span> 
+				</div>
+				<div class="buttons">
+					<button class="layui-btn layui-btn-md layui-btn-normal">预览</button>
+					<button class="layui-btn layui-btn-md layui-btn-danger">保存并返回</button>
+				</div>
+			</div>
+			<div class="content flex-line">
+				<div class="left-part">
+					<div class="left-header padding-md flex-row">
+						<div class="margin-sm">
+							<span>题量： </span><span class="red"> 0</span>
+						</div>
+						<div class="margin-sm">
+							<span>总分： </span><span class="red"> 100</span>
+						</div>
+					</div>
+					<div class="left-content">
+
+					</div>
+				</div>
+				<div class="right-part">
+					<div class="right-header flex-line padding-lg">
+						<div class="button-left">
+							<button class="layui-btn layui-btn-sm layui-btn-normal">
+								单选题
+							</button>
+							<button class="layui-btn layui-btn-sm layui-btn-warm">
+								多选题
+							</button>
+							<button class="layui-btn layui-btn-sm layui-btn-danger">
+								填空题
+							</button>
+							<button class="layui-btn layui-btn-sm">
+								判断题
+							</button>
+							<button class="layui-btn layui-btn-sm layui-btn-green">
+								简答题
+							</button>
+							<button class="layui-btn layui-btn-sm layui-btn-orange">
+								更多
+							</button>
+						</div>
+						<div class="button-right">
+							<button class="layui-btn layui-btn-sm layui-btn-purple">
+								题库选题
+							</button>
+						</div>
+					</div>
+					<div class="right-content">
+
+						用户，您好！
+						请在上方点击题型按钮添加题目，然后在此编辑区添加内容。
+						<img class="up" src="../images/up.png" />
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<script src="../js/jquery.min1.9.1.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../js/jquery.easing.js"></script>
+		<script src="../lib/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../lib/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/KT-content-common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/KT-content2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/KT-content5.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			layui.use(['form', 'element', 'jquery', 'layer', 'laydate'], function() {
+				var $ = layui.$,
+					form = layui.form,
+					layer = parent.layer == undefined ? layui.layer : parent.layer,
+					layedit = layui.layedit,
+					laydate = layui.laydate,
+					element = layui.element;
+
+
+				//layui文件必须要的文件******************************************************************************
+				var _hmt = _hmt || [];
+				(function() {
+					var hm = document.createElement("script");
+					hm.src = "https://hm.baidu.com/hm.js?b393d153aeb26b46e9431fabaf0f6190";
+					var s = document.getElementsByTagName("script")[0];
+					s.parentNode.insertBefore(hm, s);
+				})();
+				layui.use('form', function() {
+					var form = layui.form;
+
+					//各种基于事件的操作，下面会有进一步介绍
+				});
+
+
+			});
+		</script>
+
+		<div class="layui-layer-shade" id="layui-layer-shade9" times="9" style="display:none;z-index:19891022; background-color:#000; opacity:0.5; filter:alpha(opacity=50);"></div>
+		<div class="layui-layer layui-anim-01 layui-layer-page " id="layui-layer9" type="page" times="9" showtime="0" contype="string"
+		 style="display:none;z-index: 19891023; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgba(255, 255, 255, 0);">
+			<div class="layui-layer-content" style="height: 237px;">
+				<div class="course_qcode" style="width:100%;">
+					<div class="left-innerbox">
+						<h2 class="classcode">加课码：WeChat</h2>
+						<img src="../images-tou/showqrcode.jpg">
+						<input class="codetips" value="微信扫码二维码">
+					</div>
+					<div class="right-innerbox">
+						<div class="title-tips">已加课人数</div>
+						<div class="student-num">20</div>
+					</div>
+				</div>
+			</div>
+			<span class="layui-layer-setwin">
+				<a class="layui-layer-ico layui-layer-close layui-layer-close2" href="javascript:;"></a>
+			</span>
+		</div>
+
+	</body>
+</html>

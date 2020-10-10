@@ -1,0 +1,81 @@
+.z{float: left;}
+.y{float: right;}
+/*左右浮动*/
+.cl{clear: both;}
+/*清除浮动*/	
+
+/*顶部**********************************************************************************/
+.top{
+	width:850px;
+	height:40px;
+	background: -red;
+	margin:auto;
+	margin-top: 10px;
+	border-bottom: 3px solid #cccccc;
+}
+.top1{
+	width:100px;
+	height:40px;
+	background: -green;
+	text-align: center;
+	line-height: 40px;
+	font-size: 20px;
+	border-bottom: 3px solid #0099ff;
+}
+.top2{
+	width:100px;
+	height:40px;
+	background: -green;
+	text-align: center;
+	line-height: 44px;
+	font-size: 15px;
+	color: #0099ff;
+}
+/*内容**********************************************************************************/
+.content{
+	width:850px;
+	margin:auto;
+	margin-top: 30px;
+}
+/*卡片图片放大效果**********************************************************************************/
+figure {width: 100%; overflow: hidden; margin:0px 0px;}
+img{
+	border-radius:5-px;
+	width: 100%; margin: 0px 0px; -moz-transition: all 0.5s; -webkit-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; 
+}
+figure:hover img { -moz-transform: scale(1.1); -webkit-transform: scale(1.1); -o-transform: scale(1.1); -ms-transform: scale(1.1); }
+	/*卡片**********************************************************************************/
+.content1{
+	border: 1px solid #dbdbdb;
+	border-radius: 5-px;
+	width:270px;
+	height: 250px;	
+	margin:auto;
+	background: #f3f3f3;
+	margin-top: 10px;
+	box-shadow: 0px 1px 2px #bbb;
+}
+
+/*最后一张加载课程卡片*/
+div.alt{
+	width: 92px;
+	height:92px;
+	overflow: hidden; 
+	margin:0px 0px;
+	position: absolute;
+	top: 31%;
+	left: 34%;
+}
+
+div.alt img{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 92px;
+}
+#son{
+	margin-top:200px;
+}
+
+
+

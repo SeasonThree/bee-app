@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>我的课堂</title>
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="../css/font.css">
+        <link rel="stylesheet" type="text/css" href="../lib/layui/css/layui.css"/>
+        <link rel="stylesheet" type="text/css" href="../lib/layer/mobile/need/layer.css" />
+        <link rel="stylesheet" href="../css/xadmin.css">
+        <link rel="stylesheet" type="text/css" href="../css/KT-content-common.css"/>
+        <link rel="stylesheet" href="../css/KT-content5.css" />
+        <link rel="stylesheet" href="../css/statisticChart.css" />
+        <link rel="stylesheet" href="../css/KT-content3.css" />
+        <link rel="stylesheet" href="../css/bootstrap-datepicker.min.css" />
+        
+    </head>
+    <body style="text-align: left;background: #f9f9f9;">
+	    <div class="x-body" style="padding: 0px;">
+	    		<!--顶部--> 
+				<div class="top">
+					<ul class="layui-nav">
+						<li style="font-size: 24px;color: #333;float: left;line-height: 60px;">高等数学（一）</li>
+						<li style="float: left;">
+							<div class="box-box">
+				                <div class="sele" id="course-code-select" data-abc="WeChat">
+			                    	<div class="qrcode fl"></div>
+			                    	<div class="codetext">WeChat</div>
+				                </div>
+				                <div class="selecon cl" style="display: none;">
+				                    <ul>
+				                        <li><a id="stop-course-code" href="javascript:;">停用</a></li>
+				                        <li><a id="start-course-code" href="javascript:;">启用</a></li>
+				                    </ul>
+				                </div>
+				            </div>
+						</li>
+					  	<li class="layui-nav-item"><a href="KT-content10.html">直播</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content9.html">讨论</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content8.html">分组</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content7.html">考试</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content6.html">作业</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content5.html">通知</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content4.html">资源</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a id="act" class="choose" href="KT-content3.html">统计</a><div id="act2" class="t choose2"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content2.html">互动</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content.html">首页</a><div class="t"></div></li>
+					</ul>
+				</div>
+				<div class="content" style="width: 1000px;margin:0 auto;padding:0 40px 40px;background:#fff;">
+					<div class="noticeTitle flex-line">
+						<div class="title">班级统计</div>
+						<a href="javascript:;" class="xj-1 layui-btn">导出</a>
+					</div>
+					<!-- 这里是通知层的内容 -->
+					
+					<div class="Wrapcon" id="WrapconID">
+						<div class="Warpleft">
+						    <div class="Wrapct1">
+						        <a href="/moocAnalysis/courseAnalysisByJob?classId=5393824&amp;courseId=202379370&amp;ut=t">
+						            <i></i><span title="已发布">已发布<br>任务点</span><b>38</b></a>
+						        <strong class="ctMask ctMask3"><b>查看详细</b></strong>
+						    </div>
+						    <div class="Wrapct1 Wrapct2">
+						        <a href="/moocAnalysis/studentStatistic?classId=5393824&amp;courseId=202379370&amp;pageNum=1&amp;pageSize=31&amp;ut=t"><i></i><span title="学生管理">学生管理</span><b></b></a>        <strong class="ctMask ctMask3"><b>查看详细</b></strong>
+						    </div>
+						    <div class="Wrapct1 Wrapct3">
+						        <a href="/moocAnalysis/bbsAnalysis?classId=5393824&amp;courseId=202379370&amp;ut=t"><i></i><span title="讨论">讨论</span><b></b></a>
+						        <strong class="ctMask ctMask3"><b>查看详细</b></strong>
+						    </div>
+						</div>
+						<div class="Wrapcenter">
+						    <div class="Wrapct4">
+						    <a href="javascript:void(0);" onclick="doClick()"><i></i>
+						                    <span title="学习访问量">学习访问量</span><b>                     1415
+						                    </b></a>
+						                <a href="javascript:void(0);" onclick="doClick()" style="width:auto;height:29px;" class="curMonthPv">
+						                            <div></div>         </a>
+						        <strong class="ctMask ctMask2" onclick="doClick()"><b>查看详细</b></strong>
+						    </div>
+						    <div id="cj" class="Wrapct4 Wrapct5">
+						        <a href="KT-content3-6.html">
+						        	<i></i><span title="成绩管理">成绩管理</span>
+						        </a>
+						        <strong class="ctMask ctMask2 ctMask3"><b>查看详细</b></strong>
+						    </div>
+						</div>
+						<div class="Wrapright">
+						    <div class="Wrapct6_new">
+			                    <a href="/work/getAllWork?classId=5393824&amp;courseId=202379370&amp;isdisplaytable=2&amp;mooc=0&amp;ut=t&amp;firstHeader=7&amp;enc=4cb54c848899fd80f03a74f7f1a4fa49"><i></i><span title="章节测验">章节测验</span></a>
+				            	<strong class="ctMask ctMask2 ctMask3"><b>查看详细</b></strong>
+				            </div>
+			    			<div class="Wrapct6_new Wrapct7_new">
+			                    <a target="_blank" href="/moocAnalysis/urgeStudy?classId=5393824&amp;courseId=202379370&amp;ut=t">
+				                	<i></i>
+				                	<span title="督学">  督学 </span>
+				            	</a>
+				            	<strong class="ctMask ctMask2 ctMask3"><b>查看详细</b></strong>
+				            </div>
+						</div>
+						<div class="wrap800">
+						    <div class="clearfix">
+						        <div class="sign fl">
+						            <a href="http://study-api.chaoxing.com/classActiveController/statisticClassActiveDetail?fid=35024&amp;courseId=202379370&amp;jclassId=5393824&amp;uid=64026723&amp;activeType=2&amp;enc=4cb54c848899fd80f03a74f7f1a4fa49">
+						                <i class="iconfont">&#xe6b3;</i>
+						                <span title="签到" style="margin-right: 100px;text-align: center;display: block;float:none;">课堂活动</span>
+						                <b></b>
+						            </a>
+						            <strong class="ctMask ctMask3"><b>查看详细</b></strong>
+						        </div>
+						        <div class="integral fl">
+						            <a href="http://mobilelearn.chaoxing.com/integralStatistics?fid=35024&amp;courseId=202379370&amp;jclassId=5393824&amp;enc=4cb54c848899fd80f03a74f7f1a4fa49&amp;ut=t">
+						                <i class="layui-icon">&#xe600;</i>
+						                <span title="课程积分" style="margin-right: 100px;text-align: center;display: block;float:none;">课程积分</span>
+						                <b></b>
+						            </a>
+						            <strong class="ctMask ctMask3"><b>查看详细</b></strong>
+						        </div>
+						    </div>
+						</div>
+					    <div class="WrapCount">
+					        <div class="clearfix">
+					            <div id="KT-content3-10" class="work fl">
+					                <a href="KT-content3-10.html">
+					                	<i class="iconfont">&#xe74e;</i>
+					                    <span title="作业统计" style="margin-right: 100px;text-align: center;display: block;float:none;">作业统计</span>
+					                    <b></b>
+					                </a>
+					                <strong class="ctMask ctMask3"><b>查看详细</b></strong>
+					            </div>
+					            <div class="exam fl">
+					                <a href="/exam/test/count/examcount?courseId=202379370&amp;classId=5393824&amp;ut=t">
+					                    <i class="iconfont">&#xe6a2;</i>
+					                    <span title="考试统计" style="margin-right: 100px;text-align: center;display: block;float:none;">考试统计</span>
+					                    <b></b>
+					                </a>
+					                <strong class="ctMask ctMask3"><b>查看详细</b></strong>
+					            </div>
+					        </div>
+					    </div>
+					</div>
+					
+					<div class="noticeTitle flex-line">
+						<div class="title" style="width: 153px;">学生访问统计</div>
+					</div>
+					
+					<div class="ZLmain1">
+				        <div style="width:1020px;height:330px;margin-top: 30px;">
+				            <!-- 学生客户端分布************************************************************* -->
+				            <div class="tjColor fl" style="width:500px;" id="deviceTypeDistributionContent">
+				                <div style="width:500px;height:300px;" id="deviceTypeDistribution">
+				                	
+				                </div>
+				            </div>
+				            <div class="tjColor fr" style="width:500px;">
+				                <div style="width:500px;">
+				                    <div class="sttitle" style="float:left;width:500px;margin-left:140px;"></div>
+				                    <div class="ZLM2con" style="width:500px;height:300px;">
+				                        <div>
+				                            <div class="span5 col-md-5" id="sandbox-container">
+				                            	<div id="datepicker" style="margin-left: 100px;">
+				                            		<div class="datepicker datepicker-inline" style="margin-top: 60px;">
+				                            			<div class="datepicker-days" style="display: none;"><table class=" table-condensed"><thead><tr><th class="prev" style="visibility: visible;">«</th><th colspan="5" class="datepicker-switch">十二月 2018</th><th class="next" style="visibility: visible;">»</th></tr><tr><th class="dow">一</th><th class="dow">二</th><th class="dow">三</th><th class="dow">四</th><th class="dow">五</th><th class="dow">六</th><th class="dow">日</th></tr></thead><tbody><tr><td class="day old">26</td><td class="day old">27</td><td class="day old">28</td><td class="day old">29</td><td class="day old">30</td><td class="day active">1</td><td class="day">2</td></tr><tr><td class="day">3</td><td class="day">4</td><td class="day">5</td><td class="day">6</td><td class="day">7</td><td class="day">8</td><td class="day">9</td></tr><tr><td class="day">10</td><td class="day">11</td><td class="day">12</td><td class="day">13</td><td class="day">14</td><td class="day">15</td><td class="day">16</td></tr><tr><td class="day">17</td><td class="day">18</td><td class="day">19</td><td class="day">20</td><td class="day">21</td><td class="day">22</td><td class="day">23</td></tr><tr><td class="day">24</td><td class="day">25</td><td class="day">26</td><td class="day">27</td><td class="day">28</td><td class="day">29</td><td class="day">30</td></tr><tr><td class="day">31</td><td class="day new">1</td><td class="day new">2</td><td class="day new">3</td><td class="day new">4</td><td class="day new">5</td><td class="day new">6</td></tr></tbody><tfoot><tr><th colspan="7" class="today" style="display: none;">今日</th></tr><tr><th colspan="7" class="clear" style="display: none;">清除</th></tr></tfoot></table></div><div class="datepicker-months" style="display: block;"><table class="table-condensed"><thead><tr><th class="prev" style="visibility: visible;">«</th><th colspan="5" class="datepicker-switch">2018</th><th class="next" style="visibility: visible;">»</th></tr></thead><tbody><tr><td colspan="7"><span class="month">1月</span><span class="month">2月</span><span class="month">3月</span><span class="month">4月</span><span class="month">5月</span><span class="month">6月</span><span class="month">7月</span><span class="month">8月</span><span class="month">9月</span><span class="month">10月</span><span class="month">11月</span><span class="month active">12月</span></td></tr></tbody><tfoot><tr><th colspan="7" class="today" style="display: none;">今日</th></tr><tr><th colspan="7" class="clear" style="display: none;">清除</th></tr></tfoot></table></div><div class="datepicker-years" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev" style="visibility: visible;">«</th><th colspan="5" class="datepicker-switch">2010-2019</th><th class="next" style="visibility: visible;">»</th></tr></thead><tbody><tr><td colspan="7"><span class="year old disabled">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year">2012</span><span class="year">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year">2017</span><span class="year active">2018</span><span class="year">2019</span><span class="year new disabled">2020</span></td></tr></tbody><tfoot><tr><th colspan="7" class="today" style="display: none;">今日</th></tr><tr><th colspan="7" class="clear" style="display: none;">清除</th></tr></tfoot></table></div></div></div></div>
+				                        </div>
+				                    </div>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="clearfix" style="width:1020px;height:450px;">
+				            <div class="fl" style="width:1000px;">
+				                <div style="color: #000;margin-left: 40px;margin-bottom: 5px;">仅统计学生进度页面和学生学习页面的访问次数</div>
+				                <div id="studentVisitedStatistic" style="width:900px;height:400px;margin-left:40px;" data-highcharts-chart="125"><div class="highcharts-container" id="highcharts-385" style="position: relative; overflow: hidden; width: 900px; height: 400px; text-align: left; line-height: normal; z-index: 0; left: 0.5px; top: 0px;"><svg version="1.1" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="900" height="400"><desc>Created with Highcharts 4.1.7</desc><defs><clipPath id="highcharts-386"><rect x="0" y="0" width="825" height="329"></rect></clipPath></defs><rect x="0" y="0" width="900" height="400" strokeWidth="0" fill="#FFFFFF" class=" highcharts-background"></rect><g class="highcharts-grid" zIndex="1"><path fill="none" d="M 91.5 10 L 91.5 339" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 117.5 10 L 117.5 339" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 144.5 10 L 144.5 339" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 170.5 10 L 170.5 339" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 197.5 10 L 197.5 339" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 224.5 10 L 224.5 339" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 250.5 10 L 250.5 339" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 277.5 10 L 277.5 339" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 304.5 10 L 304.5 339" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 330.5 10 L 330.5 339" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 357.5 10 L 357.5 339" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 383.5 10 L 383.5 339" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 410.5 10 L 410.5 339" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 437.5 10 L 437.5 339" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 463.5 10 L 463.5 339" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 490.5 10 L 490.5 339" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 516.5 10 L 516.5 339" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 543.5 10 L 543.5 339" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 570.5 10 L 570.5 339" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 596.5 10 L 596.5 339" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 623.5 10 L 623.5 339" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 649.5 10 L 649.5 339" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 676.5 10 L 676.5 339" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 703.5 10 L 703.5 339" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 729.5 10 L 729.5 339" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 756.5 10 L 756.5 339" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 783.5 10 L 783.5 339" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 809.5 10 L 809.5 339" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 836.5 10 L 836.5 339" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 862.5 10 L 862.5 339" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 890.5 10 L 890.5 339" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 64.5 10 L 64.5 339" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path></g><g class="highcharts-grid" zIndex="1"><path fill="none" d="M 65 339.5 L 890 339.5" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 65 316.5 L 890 316.5" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 65 292.5 L 890 292.5" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 65 269.5 L 890 269.5" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 65 245.5 L 890 245.5" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 65 222.5 L 890 222.5" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 65 198.5 L 890 198.5" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 65 175.5 L 890 175.5" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 65 151.5 L 890 151.5" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 65 128.5 L 890 128.5" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 65 104.5 L 890 104.5" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 65 81.5 L 890 81.5" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 65 57.5 L 890 57.5" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 65 34.5 L 890 34.5" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 65 9.5 L 890 9.5" stroke="#ebebeb" stroke-width="1" zIndex="1" opacity="1"></path></g><g class="highcharts-axis" zIndex="2"><path fill="none" d="M 91.5 339 L 91.5 349" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 117.5 339 L 117.5 349" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 144.5 339 L 144.5 349" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 170.5 339 L 170.5 349" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 197.5 339 L 197.5 349" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 224.5 339 L 224.5 349" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 250.5 339 L 250.5 349" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 277.5 339 L 277.5 349" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 304.5 339 L 304.5 349" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 330.5 339 L 330.5 349" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 357.5 339 L 357.5 349" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 383.5 339 L 383.5 349" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 410.5 339 L 410.5 349" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 437.5 339 L 437.5 349" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 463.5 339 L 463.5 349" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 490.5 339 L 490.5 349" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 516.5 339 L 516.5 349" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 543.5 339 L 543.5 349" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 570.5 339 L 570.5 349" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 596.5 339 L 596.5 349" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 623.5 339 L 623.5 349" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 649.5 339 L 649.5 349" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 676.5 339 L 676.5 349" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 703.5 339 L 703.5 349" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 729.5 339 L 729.5 349" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 756.5 339 L 756.5 349" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 783.5 339 L 783.5 349" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 809.5 339 L 809.5 349" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 836.5 339 L 836.5 349" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 862.5 339 L 862.5 349" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 890.5 339 L 890.5 349" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 64.5 339 L 64.5 349" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><text x="890" zIndex="7" text-anchor="end" transform="translate(0,0)" class=" highcharts-xaxis-title" style="color:#64AEFF;fill:#64AEFF;" visibility="visible" y="381">日期</text><path fill="none" d="M 65 339.5 L 890 339.5" stroke="#ebebeb" stroke-width="1" zIndex="7" visibility="visible"></path></g><g class="highcharts-axis" zIndex="2"><text x="26.100000381469727" zIndex="7" text-anchor="end" transform="translate(0,0) rotate(270 26.100000381469727 10)" class=" highcharts-yaxis-title" style="color:#64AEFF;fill:#64AEFF;" visibility="visible" y="10">访问次数</text><path fill="none" d="M 64.5 10 L 64.5 339" stroke="#ebebeb" stroke-width="1" zIndex="7" visibility="visible"></path></g><g class="highcharts-series-group" zIndex="3"><path fill="rgba(63,159,255,0.25)" d="M 0 0"></path><g class="highcharts-series" visibility="visible" zIndex="0.1" transform="translate(65,10) scale(1 1)" clip-path="url(#highcharts-386)"><path fill="none" d="M 13.306451612903226 329 L 39.91935483870968 329 L 66.53225806451613 329 L 93.14516129032259 329 L 119.75806451612904 329 L 146.3709677419355 155.1 L 172.98387096774195 178.6 L 199.59677419354838 329 L 226.20967741935485 23.5 L 252.8225806451613 249.1 L 279.43548387096774 225.6 L 306.0483870967742 300.8 L 332.66129032258067 286.7 L 359.27419354838713 314.9 L 385.88709677419354 329 L 412.5 98.69999999999999 L 439.11290322580646 305.5 L 465.7258064516129 329 L 492.3387096774194 329 L 518.9516129032257 296.1 L 545.5645161290322 305.5 L 572.1774193548387 329 L 598.7903225806451 249.1 L 625.4032258064516 329 L 652.016129032258 329 L 678.6290322580645 329 L 705.241935483871 329 L 731.8548387096773 329 L 758.4677419354838 329 L 785.0806451612902 329 L 811.6935483870967 329" stroke="#3F9FFF" stroke-width="2" zIndex="1" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M 3.306451612903226 329 L 13.306451612903226 329 L 39.91935483870968 329 L 66.53225806451613 329 L 93.14516129032259 329 L 119.75806451612904 329 L 146.3709677419355 155.1 L 172.98387096774195 178.6 L 199.59677419354838 329 L 226.20967741935485 23.5 L 252.8225806451613 249.1 L 279.43548387096774 225.6 L 306.0483870967742 300.8 L 332.66129032258067 286.7 L 359.27419354838713 314.9 L 385.88709677419354 329 L 412.5 98.69999999999999 L 439.11290322580646 305.5 L 465.7258064516129 329 L 492.3387096774194 329 L 518.9516129032257 296.1 L 545.5645161290322 305.5 L 572.1774193548387 329 L 598.7903225806451 249.1 L 625.4032258064516 329 L 652.016129032258 329 L 678.6290322580645 329 L 705.241935483871 329 L 731.8548387096773 329 L 758.4677419354838 329 L 785.0806451612902 329 L 811.6935483870967 329 L 821.6935483870967 329" stroke-linejoin="round" visibility="visible" stroke="rgba(192,192,192,0.0001)" stroke-width="22" zIndex="2" class=" highcharts-tracker" style=""></path></g><g class="highcharts-markers highcharts-tracker" visibility="visible" zIndex="0.1" transform="translate(65,10) scale(1 1)" clip-path="url(#highcharts-387)" style=""><path fill="#3F9FFF" d="M 811 325 C 816.328 325 816.328 333 811 333 C 805.672 333 805.672 325 811 325 Z"></path><path fill="#3F9FFF" d="M 785 325 C 790.328 325 790.328 333 785 333 C 779.672 333 779.672 325 785 325 Z"></path><path fill="#3F9FFF" d="M 758 325 C 763.328 325 763.328 333 758 333 C 752.672 333 752.672 325 758 325 Z"></path><path fill="#3F9FFF" d="M 731 325 C 736.328 325 736.328 333 731 333 C 725.672 333 725.672 325 731 325 Z"></path><path fill="#3F9FFF" d="M 705 325 C 710.328 325 710.328 333 705 333 C 699.672 333 699.672 325 705 325 Z"></path><path fill="#3F9FFF" d="M 678 325 C 683.328 325 683.328 333 678 333 C 672.672 333 672.672 325 678 325 Z"></path><path fill="#3F9FFF" d="M 652 325 C 657.328 325 657.328 333 652 333 C 646.672 333 646.672 325 652 325 Z"></path><path fill="#3F9FFF" d="M 625 325 C 630.328 325 630.328 333 625 333 C 619.672 333 619.672 325 625 325 Z"></path><path fill="#3F9FFF" d="M 598 245.1 C 603.328 245.1 603.328 253.1 598 253.1 C 592.672 253.1 592.672 245.1 598 245.1 Z"></path><path fill="#3F9FFF" d="M 572 325 C 577.328 325 577.328 333 572 333 C 566.672 333 566.672 325 572 325 Z"></path><path fill="#3F9FFF" d="M 545 301.5 C 550.328 301.5 550.328 309.5 545 309.5 C 539.672 309.5 539.672 301.5 545 301.5 Z"></path><path fill="#3F9FFF" d="M 518 292.1 C 523.328 292.1 523.328 300.1 518 300.1 C 512.672 300.1 512.672 292.1 518 292.1 Z"></path><path fill="#3F9FFF" d="M 492 325 C 497.328 325 497.328 333 492 333 C 486.672 333 486.672 325 492 325 Z"></path><path fill="#3F9FFF" d="M 465 325 C 470.328 325 470.328 333 465 333 C 459.672 333 459.672 325 465 325 Z"></path><path fill="#3F9FFF" d="M 439 301.5 C 444.328 301.5 444.328 309.5 439 309.5 C 433.672 309.5 433.672 301.5 439 301.5 Z"></path><path fill="#3F9FFF" d="M 412 94.69999999999999 C 417.328 94.69999999999999 417.328 102.69999999999999 412 102.69999999999999 C 406.672 102.69999999999999 406.672 94.69999999999999 412 94.69999999999999 Z"></path><path fill="#3F9FFF" d="M 385.88709677419354 325 C 391.2150967741935 325 391.2150967741935 333 385.88709677419354 333 C 380.55909677419356 333 380.55909677419356 325 385.88709677419354 325 Z" stroke-width="1"></path><path fill="#3F9FFF" d="M 359 310.9 C 364.328 310.9 364.328 318.9 359 318.9 C 353.672 318.9 353.672 310.9 359 310.9 Z"></path><path fill="#3F9FFF" d="M 332.66129032258067 282.7 C 337.98929032258064 282.7 337.98929032258064 290.7 332.66129032258067 290.7 C 327.3332903225807 290.7 327.3332903225807 282.7 332.66129032258067 282.7 Z" stroke-width="1"></path><path fill="#3F9FFF" d="M 306.0483870967742 296.8 C 311.3763870967742 296.8 311.3763870967742 304.8 306.0483870967742 304.8 C 300.72038709677423 304.8 300.72038709677423 296.8 306.0483870967742 296.8 Z" stroke-width="1"></path><path fill="#3F9FFF" d="M 279.43548387096774 221.6 C 284.7634838709677 221.6 284.7634838709677 229.6 279.43548387096774 229.6 C 274.10748387096777 229.6 274.10748387096777 221.6 279.43548387096774 221.6 Z" stroke-width="1"></path><path fill="#3F9FFF" d="M 252.8225806451613 245.1 C 258.1505806451613 245.1 258.1505806451613 253.1 252.8225806451613 253.1 C 247.4945806451613 253.1 247.4945806451613 245.1 252.8225806451613 245.1 Z" stroke-width="1"></path><path fill="#3F9FFF" d="M 226 19.5 C 231.328 19.5 231.328 27.5 226 27.5 C 220.672 27.5 220.672 19.5 226 19.5 Z"></path><path fill="#3F9FFF" d="M 199.59677419354838 325 C 204.9247741935484 325 204.9247741935484 333 199.59677419354838 333 C 194.26877419354838 333 194.26877419354838 325 199.59677419354838 325 Z" stroke-width="1"></path><path fill="#3F9FFF" d="M 172 174.6 C 177.328 174.6 177.328 182.6 172 182.6 C 166.672 182.6 166.672 174.6 172 174.6 Z"></path><path fill="#3F9FFF" d="M 146.3709677419355 151.1 C 151.6989677419355 151.1 151.6989677419355 159.1 146.3709677419355 159.1 C 141.04296774193548 159.1 141.04296774193548 151.1 146.3709677419355 151.1 Z" stroke-width="1"></path><path fill="#3F9FFF" d="M 119 325 C 124.328 325 124.328 333 119 333 C 113.672 333 113.672 325 119 325 Z"></path><path fill="#3F9FFF" d="M 93 325 C 98.328 325 98.328 333 93 333 C 87.672 333 87.672 325 93 325 Z"></path><path fill="#3F9FFF" d="M 66 325 C 71.328 325 71.328 333 66 333 C 60.672 333 60.672 325 66 325 Z"></path><path fill="#3F9FFF" d="M 39.91935483870968 325 C 45.24735483870968 325 45.24735483870968 333 39.91935483870968 333 C 34.59135483870968 333 34.59135483870968 325 39.91935483870968 325 Z" stroke-width="1"></path><path fill="#3F9FFF" d="M 13.306451612903226 325 C 18.634451612903224 325 18.634451612903224 333 13.306451612903226 333 C 7.978451612903226 333 7.978451612903226 325 13.306451612903226 325 Z" stroke-width="1"></path></g></g><g class="highcharts-axis-labels highcharts-xaxis-labels" zIndex="7"><text x="78.30645161290322" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" transform="translate(0,0)" y="358" opacity="1">12-01</text><text x="0" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" transform="translate(0,0)" y="-9999">12-02</text><text x="131.53225806451613" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" transform="translate(0,0)" y="358" opacity="1">12-03</text><text x="0" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" transform="translate(0,0)" y="-9999">12-04</text><text x="184.75806451612902" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" transform="translate(0,0)" y="358" opacity="1">12-05</text><text x="0" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" transform="translate(0,0)" y="-9999">12-06</text><text x="237.98387096774195" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" transform="translate(0,0)" y="358" opacity="1">12-07</text><text x="0" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" transform="translate(0,0)" y="-9999">12-08</text><text x="291.2096774193548" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" transform="translate(0,0)" y="358" opacity="1">12-09</text><text x="0" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" transform="translate(0,0)" y="-9999">12-10</text><text x="344.43548387096774" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" transform="translate(0,0)" y="358" opacity="1">12-11</text><text x="0" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" transform="translate(0,0)" y="-9999">12-12</text><text x="397.66129032258067" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" transform="translate(0,0)" y="358" opacity="1">12-13</text><text x="0" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" transform="translate(0,0)" y="-9999">12-14</text><text x="450.88709677419354" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" transform="translate(0,0)" y="358" opacity="1">12-15</text><text x="0" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" transform="translate(0,0)" y="-9999">12-16</text><text x="504.1129032258065" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" transform="translate(0,0)" y="358" opacity="1">12-17</text><text x="0" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" transform="translate(0,0)" y="-9999">12-18</text><text x="557.3387096774195" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" transform="translate(0,0)" y="358" opacity="1">12-19</text><text x="0" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" transform="translate(0,0)" y="-9999">12-20</text><text x="610.5645161290323" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" transform="translate(0,0)" y="358" opacity="1">12-21</text><text x="0" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" transform="translate(0,0)" y="-9999">12-22</text><text x="663.7903225806451" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" transform="translate(0,0)" y="358" opacity="1">12-23</text><text x="0" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" transform="translate(0,0)" y="-9999">12-24</text><text x="717.016129032258" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" transform="translate(0,0)" y="358" opacity="1">12-25</text><text x="0" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" transform="translate(0,0)" y="-9999">12-26</text><text x="770.241935483871" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" transform="translate(0,0)" y="358" opacity="1">12-27</text><text x="0" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" transform="translate(0,0)" y="-9999">12-28</text><text x="823.4677419354839" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" transform="translate(0,0)" y="358" opacity="1">12-29</text><text x="0" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" transform="translate(0,0)" y="-9999">12-30</text><text x="876.6935483870968" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" transform="translate(0,0)" y="358" opacity="1">12-31</text></g><g class="highcharts-axis-labels highcharts-yaxis-labels" zIndex="7"><text x="50" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:287px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="342" opacity="1">0</text><text x="50" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:287px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="318" opacity="1">5</text><text x="50" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:287px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="295" opacity="1">10</text><text x="50" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:287px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="271" opacity="1">15</text><text x="50" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:287px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="248" opacity="1">20</text><text x="50" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:287px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="224" opacity="1">25</text><text x="50" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:287px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="201" opacity="1">30</text><text x="50" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:287px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="177" opacity="1">35</text><text x="50" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:287px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="154" opacity="1">40</text><text x="50" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:287px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="130" opacity="1">45</text><text x="50" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:287px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="107" opacity="1">50</text><text x="50" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:287px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="83" opacity="1">55</text><text x="50" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:287px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="60" opacity="1">60</text><text x="50" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:287px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="36" opacity="1">65</text><text x="50" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:287px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="13" opacity="1">70</text></g><g class="highcharts-tooltip" zIndex="8" style="cursor:default;padding:0;white-space:nowrap;" transform="translate(85,-9999)" opacity="0"><path fill="none" d="M 3.5 0.5 L 463.5 0.5 C 466.5 0.5 466.5 0.5 466.5 3.5 L 466.5 231.5 C 466.5 234.5 466.5 234.5 463.5 234.5 L 238.5 234.5 232.5 240.5 226.5 234.5 3.5 234.5 C 0.5 234.5 0.5 234.5 0.5 231.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.049999999999999996" stroke-width="5" transform="translate(1, 1)" width="466" height="234"></path><path fill="none" d="M 3.5 0.5 L 463.5 0.5 C 466.5 0.5 466.5 0.5 466.5 3.5 L 466.5 231.5 C 466.5 234.5 466.5 234.5 463.5 234.5 L 238.5 234.5 232.5 240.5 226.5 234.5 3.5 234.5 C 0.5 234.5 0.5 234.5 0.5 231.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.09999999999999999" stroke-width="3" transform="translate(1, 1)" width="466" height="234"></path><path fill="none" d="M 3.5 0.5 L 463.5 0.5 C 466.5 0.5 466.5 0.5 466.5 3.5 L 466.5 231.5 C 466.5 234.5 466.5 234.5 463.5 234.5 L 238.5 234.5 232.5 240.5 226.5 234.5 3.5 234.5 C 0.5 234.5 0.5 234.5 0.5 231.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.15" stroke-width="1" transform="translate(1, 1)" width="466" height="234"></path><path fill="rgba(249, 249, 249, .85)" d="M 3.5 0.5 L 463.5 0.5 C 466.5 0.5 466.5 0.5 466.5 3.5 L 466.5 231.5 C 466.5 234.5 466.5 234.5 463.5 234.5 L 238.5 234.5 232.5 240.5 226.5 234.5 3.5 234.5 C 0.5 234.5 0.5 234.5 0.5 231.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" stroke="#3F9FFF" stroke-width="1"></path></g></svg><div class="highcharts-tooltip" style="position: absolute; left: 85px; top: -9999px; visibility: visible;"><span style="position: absolute; font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif; font-size: 12px; white-space: nowrap; color: rgb(51, 51, 51); margin-left: 0px; margin-top: 0px; left: 8px; top: 8px;" zindex="1">12-10 访问总次数: 17次<div id="videoLong2" style="width:450px;height:200px;" data-highcharts-chart="157"><div class="highcharts-container" id="highcharts-482" style="position: relative; overflow: hidden; width: 450px; height: 200px; text-align: left; line-height: normal; z-index: 0; left: 0px; top: 0px;"><svg version="1.1" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="450" height="200"><desc>Created with Highcharts 4.1.7</desc><defs><clipPath id="highcharts-483"><rect x="0" y="0" width="375" height="129"></rect></clipPath></defs><rect x="0" y="0" width="450" height="200" strokeWidth="0" fill="#FFFFFF" class=" highcharts-background"></rect><g class="highcharts-grid" zIndex="1"></g><g class="highcharts-grid" zIndex="1"><path fill="none" d="M 65 139.5 L 440 139.5" stroke="#D8D8D8" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 65 75.5 L 440 75.5" stroke="#D8D8D8" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 65 9.5 L 440 9.5" stroke="#D8D8D8" stroke-width="1" zIndex="1" opacity="1"></path></g><g class="highcharts-axis" zIndex="2"><path fill="none" d="M 127.5 139 L 127.5 149" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 189.5 139 L 189.5 149" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 252.5 139 L 252.5 149" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 314.5 139 L 314.5 149" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 377.5 139 L 377.5 149" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 440.5 139 L 440.5 149" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 64.5 139 L 64.5 149" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><text x="440" zIndex="7" text-anchor="end" transform="translate(0,0)" class=" highcharts-xaxis-title" style="color:#64AEFF;fill:#64AEFF;" visibility="visible" y="181">时段</text><path fill="none" d="M 65 139.5 L 440 139.5" stroke="#C0D0E0" stroke-width="1" zIndex="7" visibility="visible"></path></g><g class="highcharts-axis" zIndex="2"><text x="26.100000381469727" zIndex="7" text-anchor="end" transform="translate(0,0) rotate(270 26.100000381469727 10)" class=" highcharts-yaxis-title" style="color:#64AEFF;fill:#64AEFF;" visibility="visible" y="10">访问次数</text></g><g class="highcharts-series-group" zIndex="3"><g class="highcharts-series highcharts-tracker" visibility="visible" zIndex="0.1" transform="translate(65,10) scale(1 1)" style="" clip-path="url(#highcharts-483)"><rect x="20.5" y="129.5" width="20" height="0" stroke="#FFFFFF" stroke-width="1" fill="#3F9FFF" rx="0" ry="0"></rect><rect x="83.5" y="129.5" width="20" height="0" stroke="#FFFFFF" stroke-width="1" fill="#3F9FFF" rx="0" ry="0"></rect><rect x="145.5" y="129.5" width="20" height="0" stroke="#FFFFFF" stroke-width="1" fill="#3F9FFF" rx="0" ry="0"></rect><rect x="208.5" y="129.5" width="20" height="0" stroke="#FFFFFF" stroke-width="1" fill="#3F9FFF" rx="0" ry="0"></rect><rect x="270.5" y="110.5" width="20" height="19" stroke="#FFFFFF" stroke-width="1" fill="#3F9FFF" rx="0" ry="0"></rect><rect x="333.5" y="39.5" width="20" height="90" stroke="#FFFFFF" stroke-width="1" fill="#3F9FFF" rx="0" ry="0"></rect></g><g class="highcharts-markers" visibility="visible" zIndex="0.1" transform="translate(65,10) scale(1 1)" clip-path="none"></g></g><g class="highcharts-data-labels highcharts-tracker" visibility="visible" zIndex="6" transform="translate(65,10) scale(1 1)" opacity="1" style=""><g zIndex="1" style="" transform="translate(22,103)"><text x="5" zIndex="1" style="font-size: 11px; font-weight: bold; color: rgb(0, 0, 0); fill: rgb(0, 0, 0); text-shadow: rgb(255, 255, 255) 0px 0px 6px, rgb(255, 255, 255) 0px 0px 3px;" y="16"><tspan>0</tspan></text></g><g zIndex="1" style="" transform="translate(85,103)"><text x="5" zIndex="1" style="font-size: 11px; font-weight: bold; color: rgb(0, 0, 0); fill: rgb(0, 0, 0); text-shadow: rgb(255, 255, 255) 0px 0px 6px, rgb(255, 255, 255) 0px 0px 3px;" y="16"><tspan>0</tspan></text></g><g zIndex="1" style="" transform="translate(147,103)"><text x="5" zIndex="1" style="font-size: 11px; font-weight: bold; color: rgb(0, 0, 0); fill: rgb(0, 0, 0); text-shadow: rgb(255, 255, 255) 0px 0px 6px, rgb(255, 255, 255) 0px 0px 3px;" y="16"><tspan>0</tspan></text></g><g zIndex="1" style="" transform="translate(210,103)"><text x="5" zIndex="1" style="font-size: 11px; font-weight: bold; color: rgb(0, 0, 0); fill: rgb(0, 0, 0); text-shadow: rgb(255, 255, 255) 0px 0px 6px, rgb(255, 255, 255) 0px 0px 3px;" y="16"><tspan>0</tspan></text></g><g zIndex="1" style="" transform="translate(272,84)"><text x="5" zIndex="1" style="font-size: 11px; font-weight: bold; color: rgb(0, 0, 0); fill: rgb(0, 0, 0); text-shadow: rgb(255, 255, 255) 0px 0px 6px, rgb(255, 255, 255) 0px 0px 3px;" y="16"><tspan>3</tspan></text></g><g zIndex="1" style="" transform="translate(332,13)"><text x="5" zIndex="1" style="font-size: 11px; font-weight: bold; color: rgb(0, 0, 0); fill: rgb(0, 0, 0); text-shadow: rgb(255, 255, 255) 0px 0px 6px, rgb(255, 255, 255) 0px 0px 3px;" y="16"><tspan>14</tspan></text></g></g><g class="highcharts-axis-labels highcharts-xaxis-labels" zIndex="7"><text x="66.25" style="color:#606060;cursor:default;font-size:10px;font-weight:bold;fill:#606060;" text-anchor="start" transform="translate(0,0)" y="159" opacity="1">00-04点</text><text x="128.75" style="color:#606060;cursor:default;font-size:10px;font-weight:bold;fill:#606060;" text-anchor="start" transform="translate(0,0)" y="159" opacity="1">04-08点</text><text x="191.25" style="color:#606060;cursor:default;font-size:10px;font-weight:bold;fill:#606060;" text-anchor="start" transform="translate(0,0)" y="159" opacity="1">08-12点</text><text x="253.75" style="color:#606060;cursor:default;font-size:10px;font-weight:bold;fill:#606060;" text-anchor="start" transform="translate(0,0)" y="159" opacity="1">12-16点</text><text x="316.25" style="color:#606060;cursor:default;font-size:10px;font-weight:bold;fill:#606060;" text-anchor="start" transform="translate(0,0)" y="159" opacity="1">16-20点</text><text x="378.75" style="color:#606060;cursor:default;font-size:10px;font-weight:bold;fill:#606060;" text-anchor="start" transform="translate(0,0)" y="159" opacity="1">20-24点</text></g><g class="highcharts-axis-labels highcharts-yaxis-labels" zIndex="7"><text x="50" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:139px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="142" opacity="1">0</text><text x="50" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:139px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="77" opacity="1">10</text><text x="50" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:139px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="13" opacity="1">20</text></g></svg></div></div><script>var pvPData=pvData[textConfig.point.index];jQuery("#videoLong2").highcharts({chart: {type: "column"},legend: {enabled: false},colors:["#3F9FFF"],credits:{enabled:false},title: {text: null},tooltip: {enabled:false},plotOptions: {column:{animation:false,pointWidth: 20,dataLabels:{enabled: true}}},xAxis: {labels:{step:1,align: "left",x: -30,y:20,style: {fontSize:"10px",fontWeight:"bold"}},categories: ["00-04点","04-08点","08-12点","12-16点","16-20点","20-24点"],title: {text: "时段", align: "high",style:{color:"#64AEFF"}}},yAxis: {min:0,title: {text: "访问次数", align: "high",style:{color:"#64AEFF"}}},series: [{name: "访问次数",data: pvPData}]});</script></span></div></div></div>
+				                <div id="studentVisitedStatistics">
+				
+								</div>
+				            </div>
+				        </div>
+				    </div>
+					
+				    <!-- 课程任务点类型分布************************************************************* -->
+				    <div class="noticeTitle flex-line">
+						<div class="title" style="width: 220px;">课程任务点类型分布</div>
+						<div class="title" style="margin-right: 296px;width: 220px;">学生综合成绩分布</div>
+					</div>
+					<div style="width:1020px;height:350px;padding-top:10px;">
+				        <div class="tjColor fl" style="width:500px;" id="courseTaskDistributionContent">
+				            <div class="ZLM2con" style="width:500px;height:300px;margin-top: 25px;" id="courseTaskDistribution">
+				                
+				            </div>
+				        </div>
+				        <div class="tjColor fr" style="width: 500px;" id="studentGradeDistributionContent">
+				            <div class="ZLM2con" id="studentGradeDistribution" style="width:500px;height:300px;margin-top: 25px;">
+				            	
+				            </div>
+				        </div>
+				    </div>
+				    
+				    <!-- 课程学习进度  ************************************************************* -->
+				    <div class="noticeTitle flex-line">
+						<div class="title" style="width: 155px;">课程学习进度  </div>
+					</div>
+					<div style="width:1020px;height:400px;">
+				        <div id="con-j1" class="tjColor fl" style="width:500px;height:350px;margin-top:30px;">
+				        	
+				        </div>
+				
+				        <div id="con-j2" class="tjColor fr" style="width:500px;height:350px;margin-top:30px;">
+				        	
+				        </div>
+				    </div>
+					
+				</div>
+				
+	    </div>
+	    
+        
+		<script src="../js/jquery.min1.9.1.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../js/jquery.easing.js"></script>
+        <script src="../lib/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../lib/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" src="../js/echarts.common.min.js"></script>
+        
+        <script src="../js/theme/shine.js" type="text/javascript" charset="utf-8"></script>
+        <!--<script src="../js/theme/vintage.js" type="text/javascript" charset="utf-8"></script>-->
+        <script src="../js/highchart.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../js/KT-content-common.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../js/KT-content2.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript">
+        	var myChart = echarts.init(document.getElementById('con-j2'));
+        	
+			var option = {
+			    tooltip: {
+			        trigger: 'axis',
+			        axisPointer: {
+			            type: 'shadow'
+			        }
+			    },
+			    dataset: {
+			        source: [
+			            ['score', 'amount', 'product'],
+			            [89.3, 99.88, '最短观看时长'],
+			            [57.1, 230, '最长观看时长'],
+			            [74.4, 150.88, '平均观看时长'],
+			        ]
+			    },
+			    grid: {
+			        left: '0%',
+			        right: '9%',
+			        bottom: '3%',
+			        containLabel: true
+			    },
+			    xAxis: {name: '分钟'},
+			    yAxis: {type: 'category'},
+			    series: [
+			        {
+			        	color: ['#7edbba'],
+			            barWidth: '50%',
+			            type: 'bar',
+			            encode: {
+			                x: 'amount',
+			                y: 'product'
+			            }
+			        },
+			    ]
+			};
+
+
+			myChart.setOption(option);
+        </script>
+        <script type="text/javascript">
+        	var myChart = echarts.init(document.getElementById('con-j1'));
+        	
+        	option = {
+			    color: ['#1ac587'],
+			    tooltip : {
+			        trigger: 'axis',
+			        axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+			            type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+			        }
+			    },
+			    legend: {
+			        data: ['未完成任务', '已完成任务']
+			    },
+			    xAxis: {
+			        type: 'category',
+			        data: ['平均进度', '最快进度', '最慢进度']
+			    },
+			    yAxis: {
+			        type: 'value'
+			    },
+			    grid: {
+			        left: '3%',
+			        right: '4%',
+			        bottom: '3%',
+			        containLabel: true
+			    },
+			    series: [
+				    {
+			            name: '已完成任务',
+			            barWidth: '50%',
+			            type: 'bar',
+			            stack: '总量',
+			            label: {
+			                normal: {
+			                    show: true,
+			                }
+			            },
+			            color: ['#1ac587'],
+			            data: [18, 33, 4]
+			        },
+			        {
+			            name: '未完成任务',
+			            barWidth: '50%',
+			            type: 'bar',
+			            stack: '总量',
+			            label: {
+			                normal: {
+			                    show: true,
+			                }
+			            },
+			            color: ['#8fe6c7'],
+			            data: [20, 5, 34]
+			        },
+			    ]
+			};
+
+			myChart.setOption(option);
+        </script>
+        <script type="text/javascript">
+        	var myChart = echarts.init(document.getElementById('studentGradeDistribution'));
+        	
+        	option = {
+			    tooltip: {
+			        trigger: 'item',
+			        formatter: "{a} <br/>{b}: {c} ({d}%)"
+			    },
+			    legend: {
+			        orient: 'vertical',
+			        x: 'left',
+			        data:['20以下','20-40分','40-60分','60-80分','80-100分']
+			    },
+			    series: [
+			        {
+			            name:'访问来源',
+			            type:'pie',
+			            radius: ['0%', '65%'],
+			            avoidLabelOverlap: false,
+			            color:['#37a2da','#67e0e3','#ffdb5c','#ff9f7f','#e062ae'],
+			            data:[
+			                {value:5, name:'20以下', selected:true},
+			                {value:8, name:'20-40分', selected:true},
+			                {value:10, name:'40-60分', selected:true},
+			                {value:50, name:'60-80分'},
+			                {value:10, name:'80-100分'}
+			            ]
+			        }
+			    ]
+			};
+			myChart.setOption(option);
+        </script>
+        <script type="text/javascript">
+        	var myChart = echarts.init(document.getElementById('courseTaskDistribution'), 'shine');
+        	option = {
+				tooltip: {
+				    trigger: 'item',
+				    formatter: "{a} <br/>{b}: {c} ({d}%)"
+				},
+				legend: {
+				    orient: 'vertical',
+				    x: 'left',
+				    data:['直接访问','邮件营销','联盟广告','视频广告','搜索引擎']
+				},
+				series: [
+				    {
+				        name:'任务点',
+				        type:'pie',
+				        radius: ['50%', '80%'],
+				        avoidLabelOverlap: false,
+				        label: {
+//				        	textStyle: {
+//			                        fontSize: '18',
+//			                        fontWeight: 'bold',
+//			                    }
+			            },
+				        color:['#ffdb5c','#e7bcf3'],
+				        data:[
+			                {value:80, name:'视频'},
+			                {value:20, name:'文档'},
+			            ]
+				    }
+				]
+			};
+			myChart.setOption(option);
+        </script>	
+        <script type="text/javascript">
+	        // 基于准备好的dom，初始化echarts实例
+	        var myChart = echarts.init(document.getElementById('deviceTypeDistribution'), 'shine');
+			
+       		option = {
+			    tooltip : {
+			        trigger: 'item',
+			        formatter: "{a} <br/>{b} :  ({d}%)"
+			    },
+			    legend: {
+			        orient: 'vertical',
+			        left: 'left',
+			        data: ['移动客户端','电脑网页版','电脑网页版2','电脑网页版3','电脑网页版4','电脑网页版5','电脑网页版6','电脑网页版7']
+			    },
+			    series : [
+			        {
+			            name: '访问量',
+			            type: 'pie',
+			            radius : '75%',
+			            center: ['58%', '57%'],
+			            data:[
+			                {value:70, name:'移动客户端'},
+			                {value:30, name:'电脑网页版'},
+			            ],
+			    		color:['#2e8eee','#a1d0fe'],
+			            itemStyle: {
+			                emphasis: {
+			                    shadowBlur: 10,
+			                    shadowOffsetX: 0,
+			                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+			                }
+			            }
+			        }
+			    ]
+			};
+			
+	        // 使用刚指定的配置项和数据显示图表。
+	        myChart.setOption(option);
+	    </script>
+		<script type="text/javascript">
+			layui.use(['form','element','jquery','layer','laydate'], function(){
+			  	var $ = layui.$
+			  	,form = layui.form
+			  	,layer = parent.layer ==undefined?layui.layer:parent.layer
+			 	,layedit = layui.layedit
+			  	,laydate = layui.laydate
+			  	,element=layui.element;
+			  	
+			  	
+			  	//layui文件必须要的文件******************************************************************************
+			  	var _hmt = _hmt || [];
+				(function() {
+				  	var hm = document.createElement("script");
+				  	hm.src = "https://hm.baidu.com/hm.js?b393d153aeb26b46e9431fabaf0f6190";
+				  	var s = document.getElementsByTagName("script")[0]; 
+				  	s.parentNode.insertBefore(hm, s);
+				})();
+								
+			  	$("#KT-content3-10").on("click",function () {
+			  		window.location.href = "KT-content3-10.html";
+			  	});
+			  	
+			  	$("#cj").on("click",function () {
+			  		window.location.href = "KT-content3-6.html";
+			  	});
+			  	
+			});
+		</script>
+        
+        <div class="layui-layer-shade" id="layui-layer-shade9" times="9" style="display:none;z-index:19891022; background-color:#000; opacity:0.5; filter:alpha(opacity=50);"></div>
+        <div class="layui-layer layui-anim-01 layui-layer-page " id="layui-layer9" type="page" times="9" showtime="0" contype="string" style="display:none;z-index: 19891023; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgba(255, 255, 255, 0);">
+        	<div class="layui-layer-content" style="height: 237px;">
+	        	<div class="course_qcode" style="width:100%;">
+					<div class="left-innerbox">
+						<h2 class="classcode">加课码：WeChat</h2>
+						<img src="../images-tou/showqrcode.jpg">
+						<input class="codetips" value="微信扫码二维码">
+					</div>
+					<div class="right-innerbox">
+						<div class="title-tips">已加课人数</div>
+						<div class="student-num">20</div>
+					</div>
+				</div>
+        	</div>
+        	<span class="layui-layer-setwin">
+        		<a class="layui-layer-ico layui-layer-close layui-layer-close2" href="javascript:;"></a>
+        	</span>
+        </div>
+		
+    </body>
+</html>

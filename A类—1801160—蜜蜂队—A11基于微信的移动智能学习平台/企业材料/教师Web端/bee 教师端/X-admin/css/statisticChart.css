@@ -1,0 +1,205 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0; padding:0;}
+body{font:12px/1.5 微软雅黑, 黑体, Arial, Helvetica, sans-serif; color:#000; }
+table{width:100%; border:0; border-collapse:collapse; border-spacing:0;}
+table th{font-weight:normal; text-align:left;}
+ul,ol{list-style-type:none;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+input,select,textarea{vertical-align:middle; font:12px/1.5 微软雅黑, 黑体, Arial, Helvetica, sans-serif; color:#000;}
+a{color:#000; text-decoration:none;}
+
+.fl{float:left;}
+.fr{float:right;}
+.Wrapmian{width:1022px;height:900px;margin:0 auto;padding:20px 50px 0 50px;background:#fff;}
+.WGDbt{width:954px;height:39px;border-bottom:1px solid #d8d8d8;padding-left:68px;}
+.picMain{position:relative;height:39px;width:840px;;float:left}
+.box_l{z-index:9999;float:left;padding-top:5px;}
+.leftBtnNone{background:url(images/button.png) no-repeat -4px -75px;width:14px;height:30px;display:block;margin-left:0px;}
+.leftBtn{background:url(images/button.png) no-repeat -4px -6px;width:14px;height:30px;display:block;margin-left:0px;}
+.box_r{z-index:99999;float:right;padding-top:5px;}
+.rightBtnNone{background:url(images/button.png) no-repeat -4px -112px;width:14px;height:30px;display:block;}
+.rightBtn{background:url(images/button.png) no-repeat -4px -41px;width:14px;height:30px;;display:block;}
+.picMain .box{width:821px;margin:0 0 0 16px;height:40px;overflow: hidden; position: relative;}
+
+/*.box ul li{width:134px;height:40px;text-align:center;line-height:40px;float:left;_padding-top:5px;border:1px solid #a8abae;background:#a8abae;
+border-radius:3px;margin-right:1px;color:#fff}*/
+.box ul li{float:left;width:160px;height:30px;line-height:30px;cursor:pointer;text-align:center;font-size:18px;color:#555;border-bottom:3px solid #bbb;padding-top:0px;padding-bottom:8px;}
+.box ul li.current01{color:#7b9e31;border-bottom-color:#7b9e31}
+.box ul li a{color:#fff}
+
+/*.box ul li.licurbg{background:#FFF;border-bottom:0;height:42px;line-height:37px;}*/
+.box ul li.licurbg a{color:#000}
+.box ul li.licurbg2{color:#000}
+/*#s2 .imglist_w ul{height:auto;padding-left:20px;position:absolute;left:0px;top:0px;}*/
+.YJDCbton{display:inline-block;height:26px;line-height:26px;color:#FFF;text-align:center;font-size:12px;padding:0 10px;border-radius:3px;background:#7b9e31;float:right;margin-top:5px;width:80px;}
+.YJDCbton:hover{color:#FFF}
+.Wrapcon{width:800px;height:480px;margin:0 auto;margin-top:50px;}
+.Warpleft{width:286px;height:300px;float:left;}
+.Wrapct1{width:286px;height:89px;background:#fa6567;margin-bottom:3px;position:relative;box-shadow: 0px 1px 2px #bbb;}
+.Wrapct1 a{display:block;width:226px;height:59px;padding-left:20px;padding-top:20px;}
+.Wrapct1 i{display:inline-block;width:48px;height:42px;background:url(../images/sktb.png) no-repeat -51px -2px;float:left ;margin-right:15px;}
+.Wrapct1 span{color:#fff;font-size:18px;line-height:20px;display:inline-block;float:left;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.Wrapct1 b{color:#fff;font-size:30px;line-height:45px;float:left;margin-left:5px;}
+
+.Wrapct2{background:#64d293}
+.Wrapct2 i{background-position:-296px 0;}
+.Wrapct2 span{line-height:45px;}
+.Wrapct3{background:#83a8c3}
+.Wrapct3 i{background-position:-509px -2px;;}
+.Wrapct3 span{line-height:45px;}
+.Wrapcenter{width:238px;height:300px;float:left;margin:0 3px;}
+.Wrapct4{width:238px;height:135px;background:#71c5f4;position: relative;box-shadow: 0px 1px 2px #bbb;}
+.Wrapct4 a{display:block;width:238px;height:59px;padding-top:10px;}
+.Wrapct4 i{display:inline-block;width:37px;height:49px;background:url(../images/sktb.png) no-repeat -51px -219px;margin-top:30px;margin-left:20px;float:left;}
+.Wrapct4 span{display:inline-block;float: left;color:#fff;line-height:110px;font-size:18px;margin-left: 10px;}
+.Wrapct4 b{color:#fff;line-height:110px;font-size:30px;margin-left:5px;}
+.curMonthPv{height: 29px;bottom: 0px;right: 12px;position: absolute;width: auto;}
+.curMonthPv div{color: #fff;}
+
+.Wrapct5{background:#a173be;margin-top:3px;height:135px;}
+.Wrapct5 a{display:block;padding-top:10px;height:95px;}
+.Wrapct5 i{background-position:-296px -219px;}
+
+.Wrapright{width:247px;height:300px;float:left}
+
+.Wrapct6{width:227px;height:109px;background:#ea895f;margin-bottom:3px;;}
+.Wrapct6 a{display:block;width:187px;height:79px;padding-left:40px;padding-top:30px;}
+.Wrapct6 i{display:inline-block;width:49px;height:47px;background:url(../images/sktb.png) no-repeat -52px -450px;;float:left ;margin-right:13px;}
+.Wrapct6 span{font-size:18px;color:#fff;line-height:55px;}
+.Wrapct7{background:#eace60}
+.Wrapct7 i{background-position:-296px -451px;}
+
+.Wrapct8{background:#527698}
+.Wrapct8 i{background-position:-509px -221px;}
+
+
+.Wrapct6_new{width:227px;height:135px;background:#ea895f;margin-bottom:3px;position:relative;box-shadow: 0px 1px 2px #bbb;}
+.Wrapct6_new a{display:block;width:180px;height:84px;padding-left:20px;padding-top:50px;}
+.Wrapct6_new i{display:inline-block;width:49px;height:49px;background:url(../images/sktb_new.png) no-repeat -52px -450px;;float:left ;margin-right:13px;}
+.Wrapct6_new span{font-size:18px;color:#fff;line-height:40px;text-align:center;}
+.Wrapct7_new{background:#eace60;}
+.Wrapct7_new i{background-position:-511px -451px;}
+
+
+
+/*2018.7.31*/
+.ctMask{display:block;cursor:pointer;width:100%;height:100%;background:rgba(0,0,0,0.8);position:absolute;left:0;top:0;z-index:10;font-size:16px;text-align:center;line-height:89px;color:#fff;display:none;}
+.Wrapct1 .ctMask b{display:inline-block;padding:0 15px;border:1px solid #fff;border-radius:5px;line-height:30px;font-size: 16px;  float: inherit; margin-top: 28px;}
+.ctMask2{line-height:135px;}
+.sign,.integral {position:relative}
+.Wrapct1:hover .ctMask{display:block}
+.Wrapct4:hover .ctMask{display:block}
+.Wrapct6_new:hover .ctMask{display:block}
+.sign:hover .ctMask{display:block}
+.integral:hover .ctMask{display:block}
+.Wrapct4 .ctMask b{display:inline-block;padding:0 15px;border:1px solid #fff;border-radius:5px;line-height:30px;font-size: 16px;  float: inherit; margin-top: 55px;}
+.Wrapct6_new .ctMask b{display:inline-block;padding:0 15px;border:1px solid #fff;border-radius:5px;line-height:30px;font-size: 16px;  float: inherit; margin-top: 55px;}
+.sign .ctMask b{display:inline-block;padding:0 15px;border:1px solid #fff;border-radius:5px;line-height:30px;font-size: 16px;  float: inherit; margin-top: 28px;}
+.integral .ctMask b{display:inline-block;padding:0 15px;border:1px solid #fff;border-radius:5px;line-height:30px;font-size: 16px;  float: inherit; margin-top: 28px;}
+
+.WrapCount {
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+    top: -21px;
+    float: left;
+}
+
+.work {
+    width: 288px;
+    height: 70px;
+    background: #FF9900;
+    font-size: 18px;
+    position: relative;
+    box-shadow: 0px 1px 2px #bbb;
+}
+
+.exam {
+    width: 466px;
+    height: 70px;
+    background: #009AFF;
+    font-size: 18px;
+    position: relative;
+    margin-left: 3px;
+    box-shadow: 0px 1px 2px #bbb;
+}
+
+.work a {
+    display: block;
+    line-height: 70px;
+    color: #FFFFFF;
+    width: 288px;
+    height: 70px;
+}
+
+.exam a {
+    display: block;
+    line-height: 70px;
+    color: #FFFFFF;
+    width: 464px;
+    height: 70px;
+}
+
+.work a i {
+    float: left;
+    margin-left: 20px;
+    margin-top: 0px;
+    width: 44px;
+    height: 41px;
+    margin-right: 20px;
+    background: url(../images/icon07.jpg) no-repeat;
+    background-position: top left;
+    font-size: 50px;
+}
+
+.work a b, .exam a b {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 70px;
+    float: left
+}
+
+.exam a i {
+    float: left;
+    margin-left: 20px;
+    margin-top: 1px;
+    width: 42px;
+    height: 46px;
+    margin-right: 20px;
+    background: url(../images/icon07.jpg) no-repeat;
+    background-position: bottom left;
+    font-size: 50px;
+}
+
+.work:hover .ctMask {
+    display: block
+}
+
+.exam:hover .ctMask {
+    display: block
+}
+
+.work .ctMask b {
+    display: inline-block;
+    padding: 0 15px;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    line-height: 30px;
+    font-size: 16px;
+    float: inherit;
+    margin-top: 20px;
+}
+
+.exam .ctMask b {
+    display: inline-block;
+    padding: 0 15px;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    line-height: 30px;
+    font-size: 16px;
+    float: inherit;
+    margin-top: 20px;
+}
+
+

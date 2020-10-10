@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>我的课堂</title>
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="../css/font.css">
+        <link rel="stylesheet" type="text/css" href="../lib/layui/css/layui.css"/>
+        <link rel="stylesheet" type="text/css" href="../lib/layer/mobile/need/layer.css" />
+        <link rel="stylesheet" href="../css/xadmin.css">
+        <link rel="stylesheet" type="text/css" href="../css/KT-content-common.css"/>
+        <link rel="stylesheet" href="../css/KT-content5.css" />
+        <link rel="stylesheet" href="../css/statisticChart.css" />
+        <link rel="stylesheet" href="../css/KT-content3.css" />
+        <link rel="stylesheet" href="../css/work-TestCount.css" />
+        <link rel="stylesheet" href="../css/moockTj.css" />
+    </head>
+    <body style="text-align: left;background: #f9f9f9;">
+	    <div class="x-body" style="padding: 0px;">
+	    		<!--顶部--> 
+				<div class="top">
+					<ul class="layui-nav">
+						<li style="font-size: 24px;color: #333;float: left;line-height: 60px;">高等数学（一）</li>
+						<li style="float: left;">
+							<div class="box-box">
+				                <div class="sele" id="course-code-select" data-abc="WeChat">
+			                    	<div class="qrcode fl"></div>
+			                    	<div class="codetext">WeChat</div>
+				                </div>
+				                <div class="selecon cl" style="display: none;">
+				                    <ul>
+				                        <li><a id="stop-course-code" href="javascript:;">停用</a></li>
+				                        <li><a id="start-course-code" href="javascript:;">启用</a></li>
+				                    </ul>
+				                </div>
+				            </div>
+						</li>
+					  	<li class="layui-nav-item"><a href="KT-content10.html">直播</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content9.html">讨论</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content8.html">分组</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content7.html">考试</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content6.html">作业</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content5.html">通知</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content4.html">资源</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a id="act" class="choose" href="KT-content3.html">统计</a><div id="act2" class="t choose2"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content2.html">互动</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content.html">首页</a><div class="t"></div></li>
+					</ul>
+				</div>
+				<div class="content" style="width: 1115px;margin:0 auto;padding:0 40px 40px;background:#fff;height: 1657px;">
+					<span class="layui-breadcrumb" style="position: relative;top: 20px;">
+					  <a href="KT-content3.html">班级统计</a>
+					  <a><cite>成绩管理</cite></a>
+					</span>
+					<div class="noticeTitle flex-line" style="margin-top: 40px;">
+						<div class="title">成绩管理</div>
+					</div>
+					
+					<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+					  <ul class="layui-tab-title">
+					    <li class="layui-this">成绩统计</li>
+					    <li>权重设置</li>
+					  </ul>
+					  <div class="layui-tab-content" style="height: 100px;">
+					    <div class="layui-tab-item layui-show">
+					    	
+					    	<div class="tablecon">
+				                <table class="commonTable " style="margin-top:15px;" width="100%" cellspacing="0" cellpadding="0">
+				                    <thead>
+				                    <tr id="commonthead">
+				                        <th class="borLeftNone" width="10%"><span>学生姓名</span></th>
+				                        <th ordertype="loginname" class="sort sort_up_gray" onclick="sortBy(this)" width="8%"><span>学号/账号</span></th>
+				                        <th width="8%"><span>学校</span></th>
+																				                            <th ordertype="video" data-type="video" class="sort sort_up_gray" onclick="sortBy(this)" width="4%"><span>课程视频<br>（40%）</span></th>
+																						                            <th ordertype="ceyan" data-type="ceyan" class="sort sort_up_gray" onclick="sortBy(this)" width="4%"><span>章节测验<br>（20%）</span></th>
+																                            <th ordertype="visitTime" data-type="visitTime" class="sort sort_up_gray" onclick="sortBy(this)" width="4%"><span>访问次数<br>（10%）</span></th>
+																						                            <th ordertype="work" data-type="work" class="sort sort_up_gray" onclick="sortBy(this)" width="4%"><span>作业<br>（15%）</span></th>
+																                            <th ordertype="test" data-type="test" class="sort sort_up_gray" onclick="sortBy(this)" width="4%"><span>考试<br>（15%）</span></th>
+																																		                        												                        <th ordertype="score" class="borRightNone sort sort_up_gray" onclick="sortBy(this)" width="6%"><span>综合成绩</span></th>
+				                    </tr>
+				                    </thead>
+				                    <tbody><tr><td class="" width="10%" align="center"><span title="周嘉璐">小赵</span></td>
+						        <td width="8%" align="center"><span title="2016082138">2016082138</span></td>		        <td width="8%" align="center"><span title="湖州师范学院">Bee大学</span></td><td width="4%" align="center">
+										<span class="font14">
+																			40.0
+																	</span>
+									</td>
+																					<td width="4%" align="center">
+										<span class="font14">
+																			0.0
+																	</span>
+									</td>
+																	<td width="4%" align="center"><span class="font14">
+																			1.43
+																</span></td>
+																					<td width="4%" align="center">
+																	<span class="font14">
+																					0.0
+																			</span>
+															</td>
+																	<td width="4%" align="center"><span class="font14">
+											    							0.0
+				    											</span></td>
+												
+																										
+																		        <td class="borRightNone" width="6%" align="center"><span class="font14">
+																
+																								41.43
+														</span></td>
+								
+						    </tr><tr class="bgColor"><td class="" width="10%" align="center"><span title="吴倪聪">小钱</span></td>
+						        <td width="8%" align="center"><span title="2015082507">2015082507</span></td>		        <td width="8%" align="center"><span title="湖州师范学院">Bee大学</span></td><td width="4%" align="center">
+										<span class="font14">
+																			40.0
+																	</span>
+									</td>
+																					<td width="4%" align="center">
+										<span class="font14">
+																			0.0
+																	</span>
+									</td>
+																	<td width="4%" align="center"><span class="font14">
+																			0.13
+																</span></td>
+																					<td width="4%" align="center">
+																	<span class="font14">
+																					0.0
+																			</span>
+															</td>
+																	<td width="4%" align="center"><span class="font14">
+											    							0.0
+				    											</span></td>
+												
+																										
+																		        <td class="borRightNone" width="6%" align="center"><span class="font14">
+																
+																								40.13
+														</span></td>
+								
+						    </tr><tr><td class="" width="10%" align="center"><span title="罗星">小孙</span></td>
+						        <td width="8%" align="center"><span title="2016162629">2016162629</span></td>		        <td width="8%" align="center"><span title="湖州师范学院">Bee大学</span></td><td width="4%" align="center">
+										<span class="font14">
+																			40.0
+																	</span>
+									</td>
+																					<td width="4%" align="center">
+										<span class="font14">
+																			0.0
+																	</span>
+									</td>
+																	<td width="4%" align="center"><span class="font14">
+																			3.93
+																</span></td>
+																					<td width="4%" align="center">
+																	<span class="font14">
+																					0.0
+																			</span>
+															</td>
+																	<td width="4%" align="center"><span class="font14">
+											    							0.0
+				    											</span></td>
+												
+																										
+																		        <td class="borRightNone" width="6%" align="center"><span class="font14">
+																
+																								43.93
+														</span></td>
+								
+						    </tr><tr class="bgColor"><td class="" width="10%" align="center"><span title="陈益波">小李</span></td>
+						        <td width="8%" align="center"><span title="2016082107">2016082107</span></td>		        <td width="8%" align="center"><span title="湖州师范学院">Bee大学</span></td><td width="4%" align="center">
+										<span class="font14">
+																			40.0
+																	</span>
+									</td>
+																					<td width="4%" align="center">
+										<span class="font14">
+																			0.0
+																	</span>
+									</td>
+																	<td width="4%" align="center"><span class="font14">
+																			0.87
+																</span></td>
+																					<td width="4%" align="center">
+																	<span class="font14">
+																					0.0
+																			</span>
+															</td>
+																	<td width="4%" align="center"><span class="font14">
+											    							0.0
+				    											</span></td>
+												
+																										
+																		        <td class="borRightNone" width="6%" align="center"><span class="font14">
+																
+																								40.87
+														</span></td>
+								
+						    </tr><tr><td class="" width="10%" align="center"><span title="缪开拓">小周</span></td>
+						        <td width="8%" align="center"><span title="2015082510">2015082510</span></td>		        <td width="8%" align="center"><span title="湖州师范学院">Bee大学</span></td><td width="4%" align="center">
+										<span class="font14">
+																			40.0
+																	</span>
+									</td>
+																					<td width="4%" align="center">
+										<span class="font14">
+																			0.0
+																	</span>
+									</td>
+																	<td width="4%" align="center"><span class="font14">
+																			4.03
+																</span></td>
+																					<td width="4%" align="center">
+																	<span class="font14">
+																					0.0
+																			</span>
+															</td>
+																	<td width="4%" align="center"><span class="font14">
+											    							0.0
+				    											</span></td>
+												
+																										
+																		        <td class="borRightNone" width="6%" align="center"><span class="font14">
+																
+																								44.03
+														</span></td>
+								
+						    </tr><tr class="bgColor"><td class="" width="10%" align="center"><span title="周杨彬">小吴</span></td>
+						        <td width="8%" align="center"><span title="2016082116">2016082116</span></td>		        <td width="8%" align="center"><span title="湖州师范学院">Bee大学</span></td><td width="4%" align="center">
+										<span class="font14">
+																			40.0
+																	</span>
+									</td>
+																					<td width="4%" align="center">
+										<span class="font14">
+																			0.0
+																	</span>
+									</td>
+																	<td width="4%" align="center"><span class="font14">
+																			0.47
+																</span></td>
+																					<td width="4%" align="center">
+																	<span class="font14">
+																					0.0
+																			</span>
+															</td>
+																	<td width="4%" align="center"><span class="font14">
+											    							0.0
+				    											</span></td>
+												
+																										
+																		        <td class="borRightNone" width="6%" align="center"><span class="font14">
+																
+																								40.47
+														</span></td>
+								
+						    </tr><tr><td class="" width="10%" align="center"><span title="陶谦文">小郑</span></td>
+						        <td width="8%" align="center"><span title="2017082328">2017082328</span></td>		        <td width="8%" align="center"><span title="湖州师范学院">Bee大学</span></td><td width="4%" align="center">
+										<span class="font14">
+																			40.0
+																	</span>
+									</td>
+																					<td width="4%" align="center">
+										<span class="font14">
+																			0.0
+																	</span>
+									</td>
+																	<td width="4%" align="center"><span class="font14">
+																			0.3
+																</span></td>
+																					<td width="4%" align="center">
+																	<span class="font14">
+																					0.0
+																			</span>
+															</td>
+																	<td width="4%" align="center"><span class="font14">
+											    							0.0
+				    											</span></td>
+												
+																										
+																		        <td class="borRightNone" width="6%" align="center"><span class="font14">
+																
+																								40.3
+														</span></td>
+								
+						    </tr><tr class="bgColor"><td class="" width="10%" align="center"><span title="胡菲菲">小王</span></td>
+						        <td width="8%" align="center"><span title="2016082131">2016082131</span></td>		        <td width="8%" align="center"><span title="湖州师范学院">Bee大学</span></td><td width="4%" align="center">
+										<span class="font14">
+																			40.0
+																	</span>
+									</td>
+																					<td width="4%" align="center">
+										<span class="font14">
+																			0.0
+																	</span>
+									</td>
+																	<td width="4%" align="center"><span class="font14">
+																			1.67
+																</span></td>
+																					<td width="4%" align="center">
+																	<span class="font14">
+																					0.0
+																			</span>
+															</td>
+																	<td width="4%" align="center"><span class="font14">
+											    							0.0
+				    											</span></td>
+												
+																										
+																		        <td class="borRightNone" width="6%" align="center"><span class="font14">
+																
+																								41.67
+														</span></td>
+								
+						    </tr><tr><td class="" width="10%" align="center"><span title="窦钰哲">小冯</span></td>
+						        <td width="8%" align="center"><span title="2016021804">2016021804</span></td>		        <td width="8%" align="center"><span title="湖州师范学院">Bee大学</span></td><td width="4%" align="center">
+										<span class="font14">
+																			40.0
+																	</span>
+									</td>
+																					<td width="4%" align="center">
+										<span class="font14">
+																			0.0
+																	</span>
+									</td>
+																	<td width="4%" align="center"><span class="font14">
+																			0.47
+																</span></td>
+																					<td width="4%" align="center">
+																	<span class="font14">
+																					0.0
+																			</span>
+															</td>
+																	<td width="4%" align="center"><span class="font14">
+											    							0.0
+				    											</span></td>
+												
+																										
+																		        <td class="borRightNone" width="6%" align="center"><span class="font14">
+																
+																								40.47
+														</span></td>
+								
+						    </tr><tr class="bgColor"><td class="" width="10%" align="center"><span title="李雯">小陈</span></td>
+						        <td width="8%" align="center"><span title="2016062232">2016062232</span></td>		        <td width="8%" align="center"><span title="湖州师范学院">Bee大学</span></td><td width="4%" align="center">
+										<span class="font14">
+																			40.0
+																	</span>
+									</td>
+																					<td width="4%" align="center">
+										<span class="font14">
+																			0.0
+																	</span>
+									</td>
+																	<td width="4%" align="center"><span class="font14">
+																			0.9
+																</span></td>
+																					<td width="4%" align="center">
+																	<span class="font14">
+																					0.0
+																			</span>
+															</td>
+																	<td width="4%" align="center"><span class="font14">
+											    							0.0
+				    											</span></td>
+												
+																										
+																		        <td class="borRightNone" width="6%" align="center"><span class="font14">
+																
+																								40.9
+														</span></td>
+								
+						    </tr><tr><td class="" width="10%" align="center"><span title="岑凯阳">小褚</span></td>
+						        <td width="8%" align="center"><span title="2016082132">2016082132</span></td>		        <td width="8%" align="center"><span title="湖州师范学院">Bee大学</span></td><td width="4%" align="center">
+										<span class="font14">
+																			40.0
+																	</span>
+									</td>
+																					<td width="4%" align="center">
+										<span class="font14">
+																			0.0
+																	</span>
+									</td>
+																	<td width="4%" align="center"><span class="font14">
+																			0.63
+																</span></td>
+																					<td width="4%" align="center">
+																	<span class="font14">
+																					0.0
+																			</span>
+															</td>
+																	<td width="4%" align="center"><span class="font14">
+											    							0.0
+				    											</span></td>
+												
+																										
+																		        <td class="borRightNone" width="6%" align="center"><span class="font14">
+																
+																								40.63
+														</span></td>
+								
+						    </tr><tr class="bgColor"><td class="" width="10%" align="center"><span title="莫馨雨">小卫</span></td>
+						        <td width="8%" align="center"><span title="2016021611">2016021611</span></td>		        <td width="8%" align="center"><span title="湖州师范学院">Bee大学</span></td><td width="4%" align="center">
+										<span class="font14">
+																			40.0
+																	</span>
+									</td>
+																					<td width="4%" align="center">
+										<span class="font14">
+																			0.0
+																	</span>
+									</td>
+																	<td width="4%" align="center"><span class="font14">
+																			4.57
+																</span></td>
+																					<td width="4%" align="center">
+																	<span class="font14">
+																					0.0
+																			</span>
+															</td>
+																	<td width="4%" align="center"><span class="font14">
+											    							0.0
+				    											</span></td>
+												
+																										
+																		        <td class="borRightNone" width="6%" align="center"><span class="font14">
+																
+																								44.57
+														</span></td>
+								
+						    </tr><tr><td class="" width="10%" align="center"><span title="杨青">小蒋</span></td>
+						        <td width="8%" align="center"><span title="18868238026">18868238026</span></td>		        <td width="8%" align="center"><span title="超星网">Bee大学</span></td><td width="4%" align="center">
+										<span class="font14">
+																			40.0
+																	</span>
+									</td>
+																					<td width="4%" align="center">
+										<span class="font14">
+																			0.0
+																	</span>
+									</td>
+																	<td width="4%" align="center"><span class="font14">
+																			3.57
+																</span></td>
+																					<td width="4%" align="center">
+																	<span class="font14">
+																					0.0
+																			</span>
+															</td>
+																	<td width="4%" align="center"><span class="font14">
+											    							0.0
+				    											</span></td>
+												
+																										
+																		        <td class="borRightNone" width="6%" align="center"><span class="font14">
+																
+																								43.57
+														</span></td>
+								
+						    </tr><tr class="bgColor"><td class="" width="10%" align="center"><span title="胡涛">小沈</span></td>
+						        <td width="8%" align="center"><span title="2015082407">2015082407</span></td>		        <td width="8%" align="center"><span title="湖州师范学院">Bee大学</span></td><td width="4%" align="center">
+										<span class="font14">
+																			40.0
+																	</span>
+									</td>
+																					<td width="4%" align="center">
+										<span class="font14">
+																			0.0
+																	</span>
+									</td>
+																	<td width="4%" align="center"><span class="font14">
+																			2.67
+																</span></td>
+																					<td width="4%" align="center">
+																	<span class="font14">
+																					0.0
+																			</span>
+															</td>
+																	<td width="4%" align="center"><span class="font14">
+											    							0.0
+				    											</span></td>
+												
+																										
+																		        <td class="borRightNone" width="6%" align="center"><span class="font14">
+																
+																								42.67
+														</span></td>
+								
+						    </tr><tr><td class="" width="10%" align="center"><span title="黄美婷">小婷</span></td>
+						        <td width="8%" align="center"><span title="2015082517">2015082517</span></td>		        <td width="8%" align="center"><span title="湖州师范学院">Bee大学</span></td><td width="4%" align="center">
+										<span class="font14">
+																			40.0
+																	</span>
+									</td>
+																					<td width="4%" align="center">
+										<span class="font14">
+																			0.0
+																	</span>
+									</td>
+																	<td width="4%" align="center"><span class="font14">
+																			4.2
+																</span></td>
+																					<td width="4%" align="center">
+																	<span class="font14">
+																					0.0
+																			</span>
+															</td>
+																	<td width="4%" align="center"><span class="font14">
+											    							0.0
+				    											</span></td>
+												
+																										
+																		        <td class="borRightNone" width="6%" align="center"><span class="font14">
+																
+																								44.2
+														</span></td>
+								
+						    </tr><tr class="bgColor"><td class="" width="10%" align="center"><span title="孙甲慧">小慧</span></td>
+						        <td width="8%" align="center"><span title="2015082433">2015082433</span></td>		        <td width="8%" align="center"><span title="湖州师范学院">Bee大学</span></td><td width="4%" align="center">
+										<span class="font14">
+																			40.0
+																	</span>
+									</td>
+																					<td width="4%" align="center">
+										<span class="font14">
+																			0.0
+																	</span>
+									</td>
+																	<td width="4%" align="center"><span class="font14">
+																			0.07
+																</span></td>
+																					<td width="4%" align="center">
+																	<span class="font14">
+																					0.0
+																			</span>
+															</td>
+																	<td width="4%" align="center"><span class="font14">
+											    							0.0
+				    											</span></td>
+												
+																										
+																		        <td class="borRightNone" width="6%" align="center"><span class="font14">
+																
+																								40.07
+														</span></td>
+								
+						    </tr><tr><td class="" width="10%" align="center"><span title="周喜">小喜</span></td>
+						        <td width="8%" align="center"><span title="2015082415">2015082415</span></td>		        <td width="8%" align="center"><span title="湖州师范学院">Bee大学</span></td><td width="4%" align="center">
+										<span class="font14">
+																			40.0
+																	</span>
+									</td>
+																					<td width="4%" align="center">
+										<span class="font14">
+																			0.0
+																	</span>
+									</td>
+																	<td width="4%" align="center"><span class="font14">
+																			0.37
+																</span></td>
+																					<td width="4%" align="center">
+																	<span class="font14">
+																					0.0
+																			</span>
+															</td>
+																	<td width="4%" align="center"><span class="font14">
+											    							0.0
+				    											</span></td>
+												
+																										
+																		        <td class="borRightNone" width="6%" align="center"><span class="font14">
+																
+																								40.37
+														</span></td>
+								
+						    </tr><tr class="bgColor"><td class="" width="10%" align="center"><span title="桑行行">小桑</span></td>
+						        <td width="8%" align="center"><span title="2015082513">2015082513</span></td>		        <td width="8%" align="center"><span title="湖州师范学院">Bee大学</span></td><td width="4%" align="center">
+										<span class="font14">
+																			40.0
+																	</span>
+									</td>
+																					<td width="4%" align="center">
+										<span class="font14">
+																			0.0
+																	</span>
+									</td>
+																	<td width="4%" align="center"><span class="font14">
+																			0.47
+																</span></td>
+																					<td width="4%" align="center">
+																	<span class="font14">
+																					0.0
+																			</span>
+															</td>
+																	<td width="4%" align="center"><span class="font14">
+											    							0.0
+				    											</span></td>
+												
+																										
+																		        <td class="borRightNone" width="6%" align="center"><span class="font14">
+																
+																								40.47
+														</span></td>
+								
+						    </tr><tr><td class="" width="10%" align="center"><span title="方红娟">小娟</span></td>
+						        <td width="8%" align="center"><span title="2016082135">2016082135</span></td>		        <td width="8%" align="center"><span title="湖州师范学院">Bee大学</span></td><td width="4%" align="center">
+										<span class="font14">
+																			40.0
+																	</span>
+									</td>
+																					<td width="4%" align="center">
+										<span class="font14">
+																			0.0
+																	</span>
+									</td>
+																	<td width="4%" align="center"><span class="font14">
+																			1.1
+																</span></td>
+																					<td width="4%" align="center">
+																	<span class="font14">
+																					0.0
+																			</span>
+															</td>
+																	<td width="4%" align="center"><span class="font14">
+											    							0.0
+				    											</span></td>
+												
+																										
+																		        <td class="borRightNone" width="6%" align="center"><span class="font14">
+																
+																								41.1
+														</span></td>
+								
+						    </tr><tr class="bgColor"><td class="" width="10%" align="center"><span title="李佳楠">小楠</span></td>
+						        <td width="8%" align="center"><span title="2016082130">2016082130</span></td>		        <td width="8%" align="center"><span title="湖州师范学院">Bee大学</span></td><td width="4%" align="center">
+										<span class="font14">
+																			40.0
+																	</span>
+									</td>
+																					<td width="4%" align="center">
+										<span class="font14">
+																			0.0
+																	</span>
+									</td>
+																	<td width="4%" align="center"><span class="font14">
+																			0.1
+																</span></td>
+																					<td width="4%" align="center">
+																	<span class="font14">
+																					0.0
+																			</span>
+															</td>
+																	<td width="4%" align="center"><span class="font14">
+											    							0.0
+				    											</span></td>
+												
+																										
+																		        <td class="borRightNone" width="6%" align="center"><span class="font14">
+																
+																								40.1
+														</span></td>
+								
+						    </tr><tr><td class="" width="10%" align="center"><span title="张燕">小燕</span></td>
+						        <td width="8%" align="center"><span title="2015082434">2015082434</span></td>		        <td width="8%" align="center"><span title="湖州师范学院">Bee大学</span></td><td width="4%" align="center">
+										<span class="font14">
+																			40.0
+																	</span>
+									</td>
+																					<td width="4%" align="center">
+										<span class="font14">
+																			0.0
+																	</span>
+									</td>
+																	<td width="4%" align="center"><span class="font14">
+																			1.1
+																</span></td>
+																					<td width="4%" align="center">
+																	<span class="font14">
+																					0.0
+																			</span>
+															</td>
+																	<td width="4%" align="center"><span class="font14">
+											    							0.0
+				    											</span></td>
+												
+																										
+																		        <td class="borRightNone" width="6%" align="center"><span class="font14">
+																
+																								41.1
+														</span></td>
+								
+						    </tr><tr class="bgColor"><td class="" width="10%" align="center"><span title="顾盛达">小达</span></td>
+						        <td width="8%" align="center"><span title="2015082511">2015082511</span></td>		        <td width="8%" align="center"><span title="湖州师范学院">Bee大学</span></td><td width="4%" align="center">
+										<span class="font14">
+																			40.0
+																	</span>
+									</td>
+																					<td width="4%" align="center">
+										<span class="font14">
+																			0.0
+																	</span>
+									</td>
+																	<td width="4%" align="center"><span class="font14">
+																			3.83
+																</span></td>
+																					<td width="4%" align="center">
+																	<span class="font14">
+																					0.0
+																			</span>
+															</td>
+																	<td width="4%" align="center"><span class="font14">
+											    							0.0
+				    											</span></td>
+												
+																										
+																		        <td class="borRightNone" width="6%" align="center"><span class="font14">
+																
+																								43.83
+														</span></td>
+								
+						    </tr><tr><td class="" width="10%" align="center"><span title="屠明雪">小雪</span></td>
+						        <td width="8%" align="center"><span title="2015082420">2015082420</span></td>		        <td width="8%" align="center"><span title="湖州师范学院">Bee大学</span></td><td width="4%" align="center">
+										<span class="font14">
+																			40.0
+																	</span>
+									</td>
+																					<td width="4%" align="center">
+										<span class="font14">
+																			0.0
+																	</span>
+									</td>
+																	<td width="4%" align="center"><span class="font14">
+																			0.1
+																</span></td>
+																					<td width="4%" align="center">
+																	<span class="font14">
+																					0.0
+																			</span>
+															</td>
+																	<td width="4%" align="center"><span class="font14">
+											    							0.0
+				    											</span></td>
+												
+																										
+																		        <td class="borRightNone" width="6%" align="center"><span class="font14">
+																
+																								40.1
+														</span></td>
+								
+						    </tr><tr class="bgColor"><td class="" width="10%" align="center"><span title="包书馨">小馨</span></td>
+						        <td width="8%" align="center"><span title="2015082503">2015082503</span></td>		        <td width="8%" align="center"><span title="湖州师范学院">Bee大学</span></td><td width="4%" align="center">
+										<span class="font14">
+																			40.0
+																	</span>
+									</td>
+																					<td width="4%" align="center">
+										<span class="font14">
+																			0.0
+																	</span>
+									</td>
+																	<td width="4%" align="center"><span class="font14">
+																			3.9
+																</span></td>
+																					<td width="4%" align="center">
+																	<span class="font14">
+																					0.0
+																			</span>
+															</td>
+																	<td width="4%" align="center"><span class="font14">
+											    							0.0
+				    											</span></td>
+												
+																										
+																		        <td class="borRightNone" width="6%" align="center"><span class="font14">
+																
+																								43.9
+														</span></td>
+								
+						    </tr><tr><td class="" width="10%" align="center"><span title="黄琼">小琼</span></td>
+						        <td width="8%" align="center"><span title="2017082326">2017082326</span></td>		        <td width="8%" align="center"><span title="湖州师范学院">Bee大学</span></td><td width="4%" align="center">
+										<span class="font14">
+																			40.0
+																	</span>
+									</td>
+																					<td width="4%" align="center">
+										<span class="font14">
+																			0.0
+																	</span>
+									</td>
+																	<td width="4%" align="center"><span class="font14">
+																			4.07
+																</span></td>
+																					<td width="4%" align="center">
+																	<span class="font14">
+																					0.0
+																			</span>
+															</td>
+																	<td width="4%" align="center"><span class="font14">
+											    							0.0
+				    											</span></td>
+												
+																										
+																		        <td class="borRightNone" width="6%" align="center"><span class="font14">
+																
+																								44.07
+														</span></td>
+								
+						    </tr><tr class="bgColor"><td class="" width="10%" align="center"><span title="程灯">小灯</span></td>
+						        <td width="8%" align="center"><span title="2017082337">2017082337</span></td>		        <td width="8%" align="center"><span title="湖州师范学院">Bee大学</span></td><td width="4%" align="center">
+										<span class="font14">
+																			40.0
+																	</span>
+									</td>
+																					<td width="4%" align="center">
+										<span class="font14">
+																			0.0
+																	</span>
+									</td>
+																	<td width="4%" align="center"><span class="font14">
+																			4.03
+																</span></td>
+																					<td width="4%" align="center">
+																	<span class="font14">
+																					0.0
+																			</span>
+															</td>
+																	<td width="4%" align="center"><span class="font14">
+											    							0.0
+				    											</span></td>
+												
+																										
+																		        <td class="borRightNone" width="6%" align="center"><span class="font14">
+																
+																								44.03
+														</span></td>
+								
+						    </tr><tr><td class="" width="10%" align="center"><span title="黄伊朴">小朴</span></td>
+						        <td width="8%" align="center"><span title="2015071403">2015071403</span></td>		        <td width="8%" align="center"><span title="湖州师范学院">Bee大学</span></td><td width="4%" align="center">
+										<span class="font14">
+																			40.0
+																	</span>
+									</td>
+																					<td width="4%" align="center">
+										<span class="font14">
+																			0.0
+																	</span>
+									</td>
+																	<td width="4%" align="center"><span class="font14">
+																			0.07
+																</span></td>
+																					<td width="4%" align="center">
+																	<span class="font14">
+																					0.0
+																			</span>
+															</td>
+																	<td width="4%" align="center"><span class="font14">
+											    							0.0
+				    											</span></td>
+												
+																										
+																		        <td class="borRightNone" width="6%" align="center"><span class="font14">
+																
+																								40.07
+														</span></td>
+								
+						    </tr><tr class="bgColor"><td class="" width="10%" align="center"><span title="马丹妮">小妮</span></td>
+						        <td width="8%" align="center"><span title="2016162118">2016162118</span></td>		        <td width="8%" align="center"><span title="湖州师范学院">Bee大学</span></td><td width="4%" align="center">
+										<span class="font14">
+																			40.0
+																	</span>
+									</td>
+																					<td width="4%" align="center">
+										<span class="font14">
+																			0.0
+																	</span>
+									</td>
+																	<td width="4%" align="center"><span class="font14">
+																			1.63
+																</span></td>
+																					<td width="4%" align="center">
+																	<span class="font14">
+																					0.0
+																			</span>
+															</td>
+																	<td width="4%" align="center"><span class="font14">
+											    							0.0
+				    											</span></td>
+												
+																										
+																		        <td class="borRightNone" width="6%" align="center"><span class="font14">
+																
+																								41.63
+														</span></td>
+								
+						    </tr><tr><td class="" width="10%" align="center"><span title="陈中天">小天</span></td>
+						        <td width="8%" align="center"><span title="2015082401">2015082401</span></td>		        <td width="8%" align="center"><span title="湖州师范学院">Bee大学</span></td><td width="4%" align="center">
+										<span class="font14">
+																			40.0
+																	</span>
+									</td>
+																					<td width="4%" align="center">
+										<span class="font14">
+																			0.0
+																	</span>
+									</td>
+																	<td width="4%" align="center"><span class="font14">
+																			1.3
+																</span></td>
+																					<td width="4%" align="center">
+																	<span class="font14">
+																					0.0
+																			</span>
+															</td>
+																	<td width="4%" align="center"><span class="font14">
+											    							0.0
+				    											</span></td>
+												
+																										
+																		        <td class="borRightNone" width="6%" align="center"><span class="font14">
+																
+																								41.3
+														</span></td>
+								
+						    </tr><tr class="bgColor"><td class="" width="10%" align="center"><span title="许敬敬">小敬</span></td>
+						        <td width="8%" align="center"><span title="2015082506">2015082506</span></td>		        <td width="8%" align="center"><span title="湖州师范学院">Bee大学</span></td><td width="4%" align="center">
+										<span class="font14">
+																			40.0
+																	</span>
+									</td>
+																					<td width="4%" align="center">
+										<span class="font14">
+																			0.0
+																	</span>
+									</td>
+																	<td width="4%" align="center"><span class="font14">
+																			1.0
+																</span></td>
+																					<td width="4%" align="center">
+																	<span class="font14">
+																					0.0
+																			</span>
+															</td>
+																	<td width="4%" align="center"><span class="font14">
+											    							0.0
+				    											</span></td>
+												
+																										
+																		        <td class="borRightNone" width="6%" align="center"><span class="font14">
+																
+																								41.0
+														</span></td>
+								
+						    </tr></tbody>
+				                </table>
+				                <div class="zwo_item">
+				                    <dl class="zwo_rcon" id="fixedTitle" style="display: none;">
+				                        <dt><span>学生姓名</span></dt>
+				                        <dd ordertype="loginname" class="sort sort_up_gray" onclick="sortBy(this)"><span>学号/账号</span></dd>
+				                        <dd><span>学校</span></dd>
+																				                            <dd><span>课程视频<br>（40%）</span></dd>
+																						                            <dd><span>课程测验<br>（20%）</span></dd>
+																                            <dd><span>访问次数<br>（10%）</span></dd>
+																						                            <dd><span>作业<br>（15%）</span></dd>
+																                            <dd><span>考试<br>（15%）</span></dd>
+																																																				                        <dd ordertype="score" class="sort sort_up_gray" onclick="sortBy(this)" style="border-right:none;"><span>综合成绩</span></dd>
+				                    </dl>
+				                </div>
+				            </div>
+					    	
+					    </div>
+					    <div class="layui-tab-item">
+					    	<form class="layui-form" action="" style="margin-top: 42px;">
+							  <div class="layui-form-item" style="width: 210px;font-size: 19px;height: 49px;">
+							    <label class="layui-form-label" style="width: 130px;">作业:</label>
+							    <div class="layui-input-block" style="margin-left: 167px;">
+							      <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="15" class="layui-input">
+							    </div>
+							    <p style="display: inline-block;width: 686px;position: relative;top: -34px;left: 219px;">%</p>
+							    <p style="display: inline-block;width: 771px;position: relative;top: -62px;left: 281px;font-size: 16px;color: #868686;">所有作业的平均分</p>
+							  </div>
+							  <div class="layui-form-item" style="width: 210px;font-size: 19px;height: 49px;">
+							    <label class="layui-form-label" style="width: 130px;">课堂互动:</label>
+							    <div class="layui-input-block" style="margin-left: 167px;">
+							      <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="15" class="layui-input">
+							    </div>
+							    <p style="display: inline-block;width: 686px;position: relative;top: -34px;left: 219px;">%</p>
+							    <p style="display: inline-block;width: 771px;position: relative;top: -62px;left: 281px;font-size: 16px;color: #868686;"> 	
+
+参与投票/问卷、抢答、选人、讨论可以获得老师设置的相应分数，积分达300分为满分，最多不超过上限分数</p>
+							  </div>
+							  <div class="layui-form-item" style="width: 210px;font-size: 19px;height: 49px;">
+							    <label class="layui-form-label" style="width: 130px;">签到:</label>
+							    <div class="layui-input-block" style="margin-left: 167px;">
+							      <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="15" class="layui-input">
+							    </div>
+							    <p style="display: inline-block;width: 686px;position: relative;top: -34px;left: 219px;">%</p>
+							    <p style="display: inline-block;width: 771px;position: relative;top: -62px;left: 281px;font-size: 16px;color: #868686;"> 	
+
+按次数累计，每签到一次+1，签到数达30次为满分，最多不超过上限分数</p>
+							  </div>
+							  <div class="layui-form-item" style="width: 210px;font-size: 19px;height: 49px;">
+							    <label class="layui-form-label" style="width: 130px;">课程视频:</label>
+							    <div class="layui-input-block" style="margin-left: 167px;">
+							      <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="15" class="layui-input">
+							    </div>
+							    <p style="display: inline-block;width: 686px;position: relative;top: -34px;left: 219px;">%</p>
+							    <p style="display: inline-block;width: 771px;position: relative;top: -62px;left: 281px;font-size: 16px;color: #868686;"> 	
+
+课程视频/音频全部完成得满分,单个视频/音频分值平均分配，满分100分</p>
+							  </div>
+							  <div class="layui-form-item" style="width: 210px;font-size: 19px;height: 49px;">
+							    <label class="layui-form-label" style="width: 130px;">章节测验:</label>
+							    <div class="layui-input-block" style="margin-left: 167px;">
+							      <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="15" class="layui-input">
+							    </div>
+							    <p style="display: inline-block;width: 686px;position: relative;top: -34px;left: 219px;">%</p>
+							    <p style="display: inline-block;width: 771px;position: relative;top: -62px;left: 281px;font-size: 16px;color: #868686;"> 	
+
+学生接收到的所有测验任务点平均分配，未做测验按“零”分计算</p>
+							  </div>
+							  <div class="layui-form-item" style="width: 210px;font-size: 19px;height: 49px;">
+							    <label class="layui-form-label" style="width: 130px;">访问数:</label>
+							    <div class="layui-input-block" style="margin-left: 167px;">
+							      <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="15" class="layui-input">
+							    </div>
+							    <p style="display: inline-block;width: 686px;position: relative;top: -34px;left: 219px;">%</p>
+							    <p style="display: inline-block;width: 771px;position: relative;top: -62px;left: 281px;font-size: 16px;color: #868686;"> 	
+访问数300达次为满分，最多不超过上限分数</p>
+							  </div>
+							  <div class="layui-form-item" style="width: 210px;font-size: 19px;height: 49px;">
+							    <label class="layui-form-label" style="width: 130px;">讨论:</label>
+							    <div class="layui-input-block" style="margin-left: 167px;">
+							      <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="15" class="layui-input">
+							    </div>
+							    <p style="display: inline-block;width: 686px;position: relative;top: -34px;left: 219px;">%</p>
+							    <p style="display: inline-block;width: 771px;position: relative;top: -62px;left: 281px;font-size: 16px;color: #868686;"> 	
+
+发表或回复一个讨论得2分，获得一个赞得1分，满分100分</p>
+							  </div>
+							  <div class="layui-form-item" style="width: 210px;font-size: 19px;height: 49px;">
+							    <label class="layui-form-label" style="width: 130px;">阅读:</label>
+							    <div class="layui-input-block" style="margin-left: 167px;">
+							      <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="15" class="layui-input">
+							    </div>
+							    <p style="display: inline-block;width: 686px;position: relative;top: -34px;left: 219px;">%</p>
+							    <p style="display: inline-block;width: 771px;position: relative;top: -62px;left: 281px;font-size: 16px;color: #868686;"> 	
+
+资料模块中专题阅读总时长达到60分钟为满分，最多不超过上限分数</p>
+							  </div>
+							  <div class="layui-form-item" style="width: 210px;font-size: 19px;height: 49px;">
+							    <label class="layui-form-label" style="width: 130px;">直播:</label>
+							    <div class="layui-input-block" style="margin-left: 167px;">
+							      <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="15" class="layui-input">
+							    </div>
+							    <p style="display: inline-block;width: 686px;position: relative;top: -34px;left: 219px;">%</p>
+							    <p style="display: inline-block;width: 771px;position: relative;top: -62px;left: 281px;font-size: 16px;color: #868686;"> 	
+
+观看直播、直播回放总时长达到60分钟为满分，最多不超过上限分数</p>
+							  </div>
+							  <div class="layui-form-item" style="width: 210px;font-size: 19px;height: 49px;">
+							    <label class="layui-form-label" style="width: 130px;">考试:</label>
+							    <div class="layui-input-block" style="margin-left: 167px;">
+							      <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="15" class="layui-input">
+							    </div>
+							    <p style="display: inline-block;width: 686px;position: relative;top: -34px;left: 219px;">%</p>
+							    <p style="display: inline-block;width: 771px;position: relative;top: -62px;left: 281px;font-size: 16px;color: #868686;"> 	
+
+所有考试的平均分  </p>
+							  </div>
+							  <div class="layui-form-item" style="width: 210px;font-size: 19px;height: 49px;">
+							    <label class="layui-form-label" style="width: 130px;">奖励:</label>
+							    <div class="layui-input-block" style="margin-left: 167px;">
+							      <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="15" class="layui-input">
+							    </div>
+							    <p style="display: inline-block;width: 686px;position: relative;top: -34px;left: 219px;">%</p>
+							    <p style="display: inline-block;width: 771px;position: relative;top: -62px;left: 281px;font-size: 16px;color: #868686;"> 	
+
+教师对学生的奖励加分,奖励积分300分为满分，最多不超过上限分数  </p>
+							  </div>
+							</form>
+							
+							<a href="KT-content3.html"><button class="layui-btn layui-btn-normal" style="margin-left: 137px;margin-top: 50px;">确认</button></a>
+							<a href="KT-content3.html"><button class="layui-btn layui-btn-primary"style="margin-top: 50px;">取消</button></a>
+					    </div>
+					  </div>
+					</div>
+					
+			    </div>
+				
+	    </div>
+	    
+        
+		<script src="../js/jquery.min1.9.1.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../js/jquery.easing.js"></script>
+        <script src="../lib/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../lib/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" src="../js/echarts.common.min.js"></script>
+        
+        <script src="../js/theme/shine.js" type="text/javascript" charset="utf-8"></script>
+        <!--<script src="../js/theme/vintage.js" type="text/javascript" charset="utf-8"></script>-->
+        <script src="../js/highchart.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../js/KT-content-common.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../js/KT-content2.js" type="text/javascript" charset="utf-8"></script>
+        
+		<script type="text/javascript">
+			layui.use(['form','element','jquery','layer','laydate'], function(){
+			  	var $ = layui.$
+			  	,form = layui.form
+			  	,layer = parent.layer ==undefined?layui.layer:parent.layer
+			 	,layedit = layui.layedit
+			  	,laydate = layui.laydate
+			  	,element=layui.element;
+			  	
+			  	
+			  	//layui文件必须要的文件******************************************************************************
+			  	var _hmt = _hmt || [];
+				(function() {
+				  	var hm = document.createElement("script");
+				  	hm.src = "https://hm.baidu.com/hm.js?b393d153aeb26b46e9431fabaf0f6190";
+				  	var s = document.getElementsByTagName("script")[0]; 
+				  	s.parentNode.insertBefore(hm, s);
+				})();
+								
+			    //滑动门-------
+			        function tabs(tabTit, on, tabCon) {
+			            $(tabTit).children().click(function () {
+			                $(this).addClass(on).siblings().removeClass(on);
+			                var index = $(tabTit).children().index(this);
+			                $(tabCon).children().eq(index).show().siblings().hide();
+			            });
+			        };
+			        tabs(".statist_tab", "current", ".statist_cont");
+			    });
+			
+			    //滑动门-------
+			    $(function () {
+			        function tabs(tabTit, on, tabCon) {
+			            $(tabTit).children().click(function () {
+			                $(this).addClass(on).siblings().removeClass(on);
+			                var index = $(tabTit).children().index(this);
+			                $(tabCon).children().eq(index).show().siblings().hide();
+			            });
+			        };
+			        tabs(".statist_chart", "current", ".statist_com");
+			    });
+			
+			    $(".download").click(function () {
+			        var tableId = $(this).attr("id")
+			        if ("postWorkTableDownload" == tableId) {
+			            $("#postWorkCountTable").table2excel({
+			                name: "发布作业统计",
+			                filename: "发布作业统计"
+			            });
+			        } else if ("workPostTableDownload" == tableId) {
+			            $("#workPostCountTable").table2excel({
+			                name: "作业情况统计",
+			                filename: "作业情况统计"
+			            });
+			        } else if ("workScoreTableDownload" == tableId) {
+			            $("#workScoreCountTable").table2excel({
+			                name: "作业成绩统计（100分制）",
+			                filename: "作业成绩统计（100分制）"
+			            });
+			        } else if ("workScoreTableOriDownload" == tableId) {
+			            $("#workScoreCountTableOri").table2excel({
+			                name: "作业成绩统计原成绩",
+			                filename: "作业成绩统计 (原成绩)"
+			            });
+			        }
+			  	
+			});
+		</script>
+        
+        <div class="layui-layer-shade" id="layui-layer-shade9" times="9" style="display:none;z-index:19891022; background-color:#000; opacity:0.5; filter:alpha(opacity=50);"></div>
+        <div class="layui-layer layui-anim-01 layui-layer-page " id="layui-layer9" type="page" times="9" showtime="0" contype="string" style="display:none;z-index: 19891023; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgba(255, 255, 255, 0);">
+        	<div class="layui-layer-content" style="height: 237px;">
+	        	<div class="course_qcode" style="width:100%;">
+					<div class="left-innerbox">
+						<h2 class="classcode">加课码：WeChat</h2>
+						<img src="../images-tou/showqrcode.jpg">
+						<input class="codetips" value="微信扫码二维码">
+					</div>
+					<div class="right-innerbox">
+						<div class="title-tips">已加课人数</div>
+						<div class="student-num">20</div>
+					</div>
+				</div>
+        	</div>
+        	<span class="layui-layer-setwin">
+        		<a class="layui-layer-ico layui-layer-close layui-layer-close2" href="javascript:;"></a>
+        	</span>
+        </div>
+		
+    </body>
+</html>

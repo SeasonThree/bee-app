@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>我的课堂</title>
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="../css/font.css">
+        <link rel="stylesheet" type="text/css" href="../lib/layui/css/layui.css"/>
+        <link rel="stylesheet" type="text/css" href="../lib/layer/mobile/need/layer.css" />
+        <link rel="stylesheet" href="../css/xadmin.css">
+        <link rel="stylesheet" type="text/css" href="../css/KT-content-common.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/KT-content2/KT-content2-1.css"/>
+       	<link rel="stylesheet" type="text/css" href="../css/KT-content2/KT-content2-3.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/KT-content4.css"/>
+        <style type="text/css">.laytable-cell-1-0-10 {width: 243px !important;}</style>
+    </head>
+    <body style="text-align: left;background: #f9f9f9;">
+	    <div class="x-body" style="padding: 0px;">
+	    		<!--顶部--> 
+				<div class="top">
+					<ul class="layui-nav">
+						<li style="font-size: 24px;color: #333;float: left;line-height: 60px;">高等数学（一）</li>
+						<li style="float: left;">
+							<div class="box-box">
+				                <div class="sele" id="course-code-select" data-abc="WeChat">
+			                    	<div class="qrcode fl"></div>
+			                    	<div class="codetext">WeChat</div>
+				                </div>
+				                <div class="selecon cl" style="display: none;">
+				                    <ul>
+				                        <li><a id="stop-course-code" href="javascript:;">停用</a></li>
+				                        <li><a id="start-course-code" href="javascript:;">启用</a></li>
+				                    </ul>
+				                </div>
+				            </div>
+						</li>
+					  	<li class="layui-nav-item"><a href="KT-content10.html">直播</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content9.html">讨论</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content8.html">分组</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content7.html">考试</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content6.html">作业</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content5.html">通知</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a id="act" class="choose" href="KT-content4.html">资源</a><div id="act2" class="t choose2"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content3.html">统计</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content2.html">互动</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content.html">首页</a><div class="t"></div></li>
+					</ul>
+				</div>
+				<div class="content">
+					<div class="layui-tab layui-tab-brief tab" lay-filter="docDemoTabBrief">
+					  	<ul class="layui-tab-title">
+					   	 	<li class="layui-this"><a href="KT-content4.html">课程资源</a></li>
+					   	 	<li><a href="KT-content4(2).html">题库</a></li>
+					   	 	<li><a href="KT-content4(3).html">作业库</a></li>
+					   	 	<li><a href="KT-content4(4).html">试卷库</a></li>
+					   	 	
+					  	</ul>
+					  	<div class="layui-tab-content">
+					  		<!--*课程资源***********************************************************-->
+						    <div class="layui-tab-item layui-show">
+						    	<span class="layui-breadcrumb" style="position: relative;top: 20px;left: 40px;">
+									<a href="KT-content4.html">根目录</a>
+									<a><cite>第一单元</cite></a>
+								</span>
+						    	<!--搜索组件-->
+	        					<div class="demoTable" style="margin-top: 60px;margin-left: 39px;">
+								  	<div class="layui-inline" style="width: 201px;">
+								    	<input class="layui-input" name="id" id="demoReload" autocomplete="off" value="请输入关键字" style="color: #b7b7b7;">
+								  	</div>
+								  	<button class="layui-btn" data-type="reload"><i class="layui-icon">&#xe615;</i></button>
+								  	
+								  	<div style="width: 100px;display: inline-block;margin-left: 573px;" class="layui-upload">
+									  <button id="testList" class="layui-btn" style="color: #fff;"><i class="layui-icon">&#xe654;</i>添加资料</button>
+									</div>  
+								  	
+									<a href="javascript:;" style="width: 100px;display: inline-block;margin-left: 30px;"><button class="layui-btn" style="color: #fff;">新建文件夹</button></a>
+								</div>
+								<!--*资源表格***********************************************************-->
+								<div class="layui-form layui-border-box layui-table-view" lay-filter="LAY-table-1" lay-id="idTest" style="margin-left: 39px;margin-top: 25px;width: 93%;">
+									<div class="layui-table-box">
+										<div class="layui-table-header">
+											<table class="layui-table" cellspacing="0" cellpadding="0" border="0">
+												<thead>
+													<tr>
+														<th style="width: 81px;" data-field="0" data-key="1-0-0" data-unresize="true" class=" layui-table-col-special">
+															<div class="layui-table-cell laytable-cell-1-0-0 laytable-cell-checkbox">
+																<span style="font-size: 15px;">序号</span>
+															</div>
+														</th>
+														<th style="width: 389px;" data-field="id" data-key="1-0-1" class=" layui-unselect">
+															<div class="layui-table-cell laytable-cell-1-0-1">
+																<span style="font-size: 15px;">文件名</span>
+															</div>
+														</th>
+														<th style="width:81px;" data-field="username" data-key="1-0-2" class="">
+															<div class="layui-table-cell laytable-cell-1-0-2">
+																<span style="font-size: 15px;">上传者</span>
+															</div>
+														</th>
+														<th style="width:81px;" style="" data-field="sex" data-key="1-0-3" class=" layui-unselect">
+															<div class="layui-table-cell laytable-cell-1-0-3">
+																<span style="font-size: 15px;">大小</span>
+															</div>
+														</th>
+														<th style="width:106px;" data-field="wealth" data-key="1-0-8" class=" layui-unselect">
+															<div class="layui-table-cell laytable-cell-1-0-8">
+																<span style="font-size: 15px;">创建日期</span>
+																<span class="layui-table-sort layui-inline">
+																	<i class="layui-edge layui-table-sort-asc" title="升序"></i>
+																	<i class="layui-edge layui-table-sort-desc" title="降序"></i>
+																</span>
+															</div>
+														</th>
+														<th style="width:100px;" data-field="score" data-key="1-0-9" class=" layui-unselect">
+															<div class="layui-table-cell laytable-cell-1-0-9">
+																<span style="font-size: 15px;">下载人数</span>
+															</div>
+														</th>
+														<th style="width: 201px;" data-field="10" data-key="1-0-10" class=" layui-table-col-special">
+															<div class="layui-table-cell laytable-cell-1-0-10" align="center">
+																<span style="font-size: 15px;">操作</span>
+															</div>
+														</th>
+														<th class="layui-table-patch">
+															<div class="layui-table-cell" style="width: 17px;"></div>
+														</th>
+													</tr>
+												</thead>
+											</table>
+										</div>
+									
+										<div class="layui-table-body layui-table-main">
+											<table class="layui-table" cellspacing="0" cellpadding="0" border="0">
+												<tbody id="demoList">
+													
+												</tbody>
+											</table>
+										</div>
+										
+										<div class="layui-table-fixed layui-table-fixed-l"><div class="layui-table-header"><table class="layui-table" cellspacing="0" cellpadding="0" border="0"><thead><tr><th data-field="0" data-key="1-0-0" data-unresize="true" class=" layui-table-col-special"><div class="layui-table-cell laytable-cell-1-0-0 laytable-cell-checkbox"><input type="checkbox" name="layTableCheckbox" lay-skin="primary" lay-filter="layTableAllChoose"><div class="layui-unselect layui-form-checkbox" lay-skin="primary"><i class="layui-icon layui-icon-ok"></i></div></div></th><th data-field="id" data-key="1-0-1" class=" layui-unselect"><div class="layui-table-cell laytable-cell-1-0-1"><span>ID</span><span class="layui-table-sort layui-inline"><i class="layui-edge layui-table-sort-asc" title="升序"></i><i class="layui-edge layui-table-sort-desc" title="降序"></i></span></div></th></tr></thead></table></div><div class="layui-table-body" style="height: 233px;"><table class="layui-table" cellspacing="0" cellpadding="0" border="0"><tbody><tr data-index="0" class=""><td data-field="0" data-key="1-0-0" class="layui-table-col-special"><div class="layui-table-cell laytable-cell-1-0-0 laytable-cell-checkbox"><input type="checkbox" name="layTableCheckbox" lay-skin="primary"><div class="layui-unselect layui-form-checkbox" lay-skin="primary"><i class="layui-icon layui-icon-ok"></i></div></div></td><td data-field="id" data-key="1-0-1" class=""><div class="layui-table-cell laytable-cell-1-0-1">10000</div></td></tr><tr data-index="1" class=""><td data-field="0" data-key="1-0-0" class="layui-table-col-special"><div class="layui-table-cell laytable-cell-1-0-0 laytable-cell-checkbox"><input type="checkbox" name="layTableCheckbox" lay-skin="primary"><div class="layui-unselect layui-form-checkbox" lay-skin="primary"><i class="layui-icon layui-icon-ok"></i></div></div></td><td data-field="id" data-key="1-0-1" class=""><div class="layui-table-cell laytable-cell-1-0-1">10001</div></td></tr><tr data-index="2" class=""><td data-field="0" data-key="1-0-0" class="layui-table-col-special"><div class="layui-table-cell laytable-cell-1-0-0 laytable-cell-checkbox"><input type="checkbox" name="layTableCheckbox" lay-skin="primary"><div class="layui-unselect layui-form-checkbox" lay-skin="primary"><i class="layui-icon layui-icon-ok"></i></div></div></td><td data-field="id" data-key="1-0-1" class=""><div class="layui-table-cell laytable-cell-1-0-1">10002</div></td></tr><tr data-index="3" class=""><td data-field="0" data-key="1-0-0" class="layui-table-col-special"><div class="layui-table-cell laytable-cell-1-0-0 laytable-cell-checkbox"><input type="checkbox" name="layTableCheckbox" lay-skin="primary"><div class="layui-unselect layui-form-checkbox" lay-skin="primary"><i class="layui-icon layui-icon-ok"></i></div></div></td><td data-field="id" data-key="1-0-1" class=""><div class="layui-table-cell laytable-cell-1-0-1">10003</div></td></tr><tr data-index="4" class=""><td data-field="0" data-key="1-0-0" class="layui-table-col-special"><div class="layui-table-cell laytable-cell-1-0-0 laytable-cell-checkbox"><input type="checkbox" name="layTableCheckbox" lay-skin="primary"><div class="layui-unselect layui-form-checkbox" lay-skin="primary"><i class="layui-icon layui-icon-ok"></i></div></div></td><td data-field="id" data-key="1-0-1" class=""><div class="layui-table-cell laytable-cell-1-0-1">10004</div></td></tr><tr data-index="5" class=""><td data-field="0" data-key="1-0-0" class="layui-table-col-special"><div class="layui-table-cell laytable-cell-1-0-0 laytable-cell-checkbox"><input type="checkbox" name="layTableCheckbox" lay-skin="primary"><div class="layui-unselect layui-form-checkbox" lay-skin="primary"><i class="layui-icon layui-icon-ok"></i></div></div></td><td data-field="id" data-key="1-0-1" class=""><div class="layui-table-cell laytable-cell-1-0-1">10005</div></td></tr><tr data-index="6" class=""><td data-field="0" data-key="1-0-0" class="layui-table-col-special"><div class="layui-table-cell laytable-cell-1-0-0 laytable-cell-checkbox"><input type="checkbox" name="layTableCheckbox" lay-skin="primary"><div class="layui-unselect layui-form-checkbox" lay-skin="primary"><i class="layui-icon layui-icon-ok"></i></div></div></td><td data-field="id" data-key="1-0-1" class=""><div class="layui-table-cell laytable-cell-1-0-1">10006</div></td></tr><tr data-index="7" class=""><td data-field="0" data-key="1-0-0" class="layui-table-col-special"><div class="layui-table-cell laytable-cell-1-0-0 laytable-cell-checkbox"><input type="checkbox" name="layTableCheckbox" lay-skin="primary"><div class="layui-unselect layui-form-checkbox" lay-skin="primary"><i class="layui-icon layui-icon-ok"></i></div></div></td><td data-field="id" data-key="1-0-1" class=""><div class="layui-table-cell laytable-cell-1-0-1">10007</div></td></tr><tr data-index="8" class=""><td data-field="0" data-key="1-0-0" class="layui-table-col-special"><div class="layui-table-cell laytable-cell-1-0-0 laytable-cell-checkbox"><input type="checkbox" name="layTableCheckbox" lay-skin="primary"><div class="layui-unselect layui-form-checkbox" lay-skin="primary"><i class="layui-icon layui-icon-ok"></i></div></div></td><td data-field="id" data-key="1-0-1" class=""><div class="layui-table-cell laytable-cell-1-0-1">10008</div></td></tr><tr data-index="9" class=""><td data-field="0" data-key="1-0-0" class="layui-table-col-special"><div class="layui-table-cell laytable-cell-1-0-0 laytable-cell-checkbox"><input type="checkbox" name="layTableCheckbox" lay-skin="primary"><div class="layui-unselect layui-form-checkbox" lay-skin="primary"><i class="layui-icon layui-icon-ok"></i></div></div></td><td data-field="id" data-key="1-0-1" class=""><div class="layui-table-cell laytable-cell-1-0-1">10009</div></td></tr></tbody></table></div></div>
+										<div class="layui-table-fixed layui-table-fixed-r" style="right: 16px;"><div class="layui-table-header"><table class="layui-table" cellspacing="0" cellpadding="0" border="0"><thead><tr><th data-field="score" data-key="1-0-9" class=" layui-unselect"><div class="layui-table-cell laytable-cell-1-0-9"><span>评分</span><span class="layui-table-sort layui-inline"><i class="layui-edge layui-table-sort-asc" title="升序"></i><i class="layui-edge layui-table-sort-desc" title="降序"></i></span></div></th><th data-field="10" data-key="1-0-10" class=" layui-table-col-special"><div class="layui-table-cell laytable-cell-1-0-10" align="center"><span></span></div></th></tr></thead></table><div class="layui-table-mend"></div></div><div class="layui-table-body" style="height: 233px;"><table class="layui-table" cellspacing="0" cellpadding="0" border="0"><tbody><tr data-index="0" class=""><td data-field="score" data-key="1-0-9" class=""><div class="layui-table-cell laytable-cell-1-0-9">57</div></td><td data-field="10" data-key="1-0-10" data-off="true" class="layui-table-col-special" align="center"><div class="layui-table-cell laytable-cell-1-0-10"> <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a> <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a> <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a> </div></td></tr><tr data-index="1" class=""><td data-field="score" data-key="1-0-9" class=""><div class="layui-table-cell laytable-cell-1-0-9">27</div></td><td data-field="10" data-key="1-0-10" data-off="true" class="layui-table-col-special" align="center"><div class="layui-table-cell laytable-cell-1-0-10"> <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a> <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a> <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a> </div></td></tr><tr data-index="2" class=""><td data-field="score" data-key="1-0-9" class=""><div class="layui-table-cell laytable-cell-1-0-9">31</div></td><td data-field="10" data-key="1-0-10" data-off="true" class="layui-table-col-special" align="center"><div class="layui-table-cell laytable-cell-1-0-10"> <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a> <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a> <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a> </div></td></tr><tr data-index="3" class=""><td data-field="score" data-key="1-0-9" class=""><div class="layui-table-cell laytable-cell-1-0-9">68</div></td><td data-field="10" data-key="1-0-10" data-off="true" class="layui-table-col-special" align="center"><div class="layui-table-cell laytable-cell-1-0-10"> <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a> <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a> <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a> </div></td></tr><tr data-index="4" class=""><td data-field="score" data-key="1-0-9" class=""><div class="layui-table-cell laytable-cell-1-0-9">6</div></td><td data-field="10" data-key="1-0-10" data-off="true" class="layui-table-col-special" align="center"><div class="layui-table-cell laytable-cell-1-0-10"> <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a> <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a> <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a> </div></td></tr><tr data-index="5" class=""><td data-field="score" data-key="1-0-9" class=""><div class="layui-table-cell laytable-cell-1-0-9">87</div></td><td data-field="10" data-key="1-0-10" data-off="true" class="layui-table-col-special" align="center"><div class="layui-table-cell laytable-cell-1-0-10"> <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a> <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a> <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a> </div></td></tr><tr data-index="6" class=""><td data-field="score" data-key="1-0-9" class=""><div class="layui-table-cell laytable-cell-1-0-9">34</div></td><td data-field="10" data-key="1-0-10" data-off="true" class="layui-table-col-special" align="center"><div class="layui-table-cell laytable-cell-1-0-10"> <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a> <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a> <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a> </div></td></tr><tr data-index="7" class=""><td data-field="score" data-key="1-0-9" class=""><div class="layui-table-cell laytable-cell-1-0-9">28</div></td><td data-field="10" data-key="1-0-10" data-off="true" class="layui-table-col-special" align="center"><div class="layui-table-cell laytable-cell-1-0-10"> <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a> <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a> <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a> </div></td></tr><tr data-index="8" class=""><td data-field="score" data-key="1-0-9" class=""><div class="layui-table-cell laytable-cell-1-0-9">14</div></td><td data-field="10" data-key="1-0-10" data-off="true" class="layui-table-col-special" align="center"><div class="layui-table-cell laytable-cell-1-0-10"> <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a> <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a> <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a> </div></td></tr><tr data-index="9" class=""><td data-field="score" data-key="1-0-9" class=""><div class="layui-table-cell laytable-cell-1-0-9">75</div></td><td data-field="10" data-key="1-0-10" data-off="true" class="layui-table-col-special" align="center"><div class="layui-table-cell laytable-cell-1-0-10"> <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a> <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a> <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a> </div></td></tr></tbody></table></div></div>
+										
+									</div>	
+									
+									<style>.laytable-cell-1-0-0{ width: 48px; }.laytable-cell-1-0-1{ width: 80px; }.laytable-cell-1-0-2{ width: 80px; }.laytable-cell-1-0-3{ width: 80px; }.laytable-cell-1-0-4{ width: 80px; }.laytable-cell-1-0-5{ width: 160px; }.laytable-cell-1-0-6{ width: 80px; }.laytable-cell-1-0-7{ width: 80px; }.laytable-cell-1-0-8{ width: 135px; }.laytable-cell-1-0-9{ width: 80px; }.laytable-cell-1-0-10{ width: 178px; }</style>
+									
+									<!--<div class="layui-upload">
+									  <div class="layui-upload-list">
+									  <button type="button" class="layui-btn" id="testListAction">开始上传</button>
+									</div> -->
+									
+								</div>
+								
+						    </div>
+						    <!--*题库***********************************************************-->
+						    <div class="layui-tab-item">
+	        					
+						    </div>
+						    <!--*作业库***********************************************************-->
+						    <div class="layui-tab-item">
+	        					
+						    </div>
+						    <!--*试卷库***********************************************************-->
+						    <div class="layui-tab-item">
+	        					
+						    </div>
+					    </div>
+					</div>
+					
+					
+				</div>
+				
+	    </div>
+	    
+        
+		<script src="../js/jquery.min1.9.1.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../js/jquery.easing.js"></script>
+        <script src="../lib/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../lib/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../js/KT-content-common.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../js/KT-content2.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			layui.use(['form','element','jquery','layer','laydate','table','upload'], function(){
+			  	var $ = layui.$
+			  	,form = layui.form
+			  	,layer = parent.layer ==undefined?layui.layer:parent.layer
+			 	,layedit = layui.layedit
+			  	,laydate = layui.laydate
+			  	,table = layui.table
+			  	,element=layui.element
+			  	,upload = layui.upload;
+			  	
+			  	
+			  	//layui文件必须要的文件******************************************************************************
+			  	var _hmt = _hmt || [];
+				(function() {
+				  	var hm = document.createElement("script");
+				  	hm.src = "https://hm.baidu.com/hm.js?b393d153aeb26b46e9431fabaf0f6190";
+				  	var s = document.getElementsByTagName("script")[0]; 
+				  	s.parentNode.insertBefore(hm, s);
+				})();
+				
+				
+				
+			  	//多文件列表示例******************************************************************************
+				var demoListView = $('#demoList')
+				  ,uploadListIns = upload.render({
+				    elem: '#testList'
+				    ,url: '/upload/'
+				    ,accept: 'file'
+				    ,multiple: true
+				    ,auto: false
+				    ,bindAction: '#testListAction'
+				    ,choose: function(obj){   
+				      var files = this.files = obj.pushFile(); //将每次选择的文件追加到文件队列
+				      //读取本地文件
+				      obj.preview(function(index, file, result){
+				        var tr = $(['<tr id="upload-'+ index +'">'
+				        	,'<td data-field="0" data-key="1-0-0" class="layui-table-col-special"><div class="layui-table-cell laytable-cell-1-0-0 laytable-cell-checkbox"><input type="checkbox" name="layTableCheckbox" lay-skin="primary"><div class="layui-unselect layui-form-checkbox" lay-skin="primary"><i class="layui-icon"></i></div></div></td>'
+				          	,'<td data-field="id" data-key="1-0-1" class=""><div class="layui-table-cell laytable-cell-1-0-1"><a href=""><i class="iconfont" style="font-size: 30px;">&#xe6a2;</i><p class="wenjian" style="position: absolute;">'+ file.name +'</p></a></div></td>'
+				          	,'<td data-field="username" data-key="1-0-2" class=""><div class="layui-table-cell laytable-cell-1-0-2">执着</div></td>'
+				          	,'<td data-field="sex" data-key="1-0-3" class=""><div class="layui-table-cell laytable-cell-1-0-3">'+ (file.size/1014).toFixed(1) +'kb</div></td>'
+				          	,'<td data-field="wealth" data-key="1-0-8" class=""><div class="layui-table-cell laytable-cell-1-0-8">2019-02-21</div></td>'
+				          	,'<td data-field="score" data-key="1-0-9" class=""><div class="layui-table-cell laytable-cell-1-0-9">0</div></td>'
+				          	,'<td data-field="10" data-key="1-0-10" data-off="true" class="layui-table-col-special" align="center">'
+				            	,'<div class="layui-table-cell laytable-cell-1-0-10"> <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a> <a class="layui-btn layui-btn-xs" lay-event="edit"><i class="layui-icon">&#xe642;</i>重命名</a> <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del"><i class="layui-icon">&#xe640;</i>删除</a> </div>'
+				          	,'</td>'
+				        ,'</tr>'].join(''));
+				        
+				        //单个重传
+				        tr.find('.demo-reload').on('click', function(){
+				          obj.upload(index, file);
+				        });
+				        
+				        //删除
+				        tr.find('.demo-delete').on('click', function(){
+				          delete files[index]; //删除对应的文件
+				          tr.remove();
+				          uploadListIns.config.elem.next()[0].value = ''; //清空 input file 值，以免删除后出现同名文件不可选
+				        });
+				        
+				        demoListView.append(tr);
+				      });
+				    }
+				    ,done: function(res, index, upload){
+				      if(res.code == 0){ //上传成功
+				        var tr = demoListView.find('tr#upload-'+ index)
+				        ,tds = tr.children();
+				        tds.eq(2).html('<span style="color: #5FB878;">上传成功</span>');
+				        tds.eq(3).html(''); //清空操作
+				        return delete this.files[index]; //删除文件队列已经上传成功的文件
+				      }
+				      this.error(index, upload);
+				    }
+				    ,error: function(index, upload){
+				      var tr = demoListView.find('tr#upload-'+ index)
+				      ,tds = tr.children();
+				      tds.eq(2).html('<span style="color: #FF5722;">上传失败</span>');
+				      tds.eq(3).find('.demo-reload').removeClass('layui-hide'); //显示重传
+				    }
+				});
+								
+			  	
+			});
+		</script>
+        
+        <div class="layui-layer-shade" id="layui-layer-shade9" times="9" style="display:none;z-index:19891022; background-color:#000; opacity:0.5; filter:alpha(opacity=50);"></div>
+        <div class="layui-layer layui-anim-01 layui-layer-page " id="layui-layer9" type="page" times="9" showtime="0" contype="string" style="display:none;z-index: 19891023; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgba(255, 255, 255, 0);">
+        	<div class="layui-layer-content" style="height: 237px;">
+	        	<div class="course_qcode" style="width:100%;">
+					<div class="left-innerbox">
+						<h2 class="classcode">加课码：WeChat</h2>
+						<img src="../images-tou/showqrcode.jpg">
+						<input class="codetips" value="微信扫码二维码">
+					</div>
+					<div class="right-innerbox">
+						<div class="title-tips">已加课人数</div>
+						<div class="student-num">20</div>
+					</div>
+				</div>
+        	</div>
+        	<span class="layui-layer-setwin">
+        		<a class="layui-layer-ico layui-layer-close layui-layer-close2" href="javascript:;"></a>
+        	</span>
+        </div>
+		
+    </body>
+</html>

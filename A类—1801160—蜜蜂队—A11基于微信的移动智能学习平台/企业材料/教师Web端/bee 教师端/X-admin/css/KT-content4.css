@@ -1,0 +1,45 @@
+div .layui-table-fixed{
+	display: none;
+}
+.laytable-cell-1-0-9 {
+    width: 100px !important;
+    text-align: center;
+}
+.laytable-cell-1-0-8 {
+    width: 120px !important;
+    text-align: center;
+}
+.laytable-cell-1-0-10 {
+    width: 227px !important;
+}
+.laytable-cell-1-0-3 {
+    width: 80px !important;
+    text-align: center;
+}
+.laytable-cell-1-0-2 {
+    width: 80px !important;
+    text-align: center;
+}
+.laytable-cell-1-0-0{
+	width: 80px !important;
+	text-align: center;
+}
+.laytable-cell-1-0-1 {
+    width: 388px !important;
+}
+.layui-table-cell {
+    height: 50px;
+	line-height: 50px;
+}
+.wenjian{
+	display: inline-block;
+	margin-left: 15px;
+	cursor: pointer;
+}
+.wenjian:hover{
+	color: #ffd659;
+}
+.layui-table img {
+    max-width: 100px;
+    width: 11%;
+}

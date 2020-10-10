@@ -1,0 +1,179 @@
+.parent1{
+	position: relative;
+	background: #2a2c2e;
+	width: 100%;height:628px;
+}
+.parent2{
+	position: absolute;
+	top: 73px;
+	left:0px;
+	background: #e8e9eb;
+	width:100%;height:600px;
+}
+.parent3{
+	position:absolute;
+	top: -73px;
+	left:0px;
+	background: #fff url(../images/3.jpg) 0 0 no-repeat;
+	backgroun-size:100% 100%;
+	width:100%;height:200px;
+}
+.parent4{
+	margin: 72px auto 0px;
+	background: #ffffff; width:1000px;height: 600px;
+}
+.son{
+	position: absolute;
+	top: -1px;
+	left: 183px;
+	background: #4bbdb1; width:180px;height: 73px;
+	filter:alpha(opacity:8); opacity:0.8;
+}
+.layui-form-label {
+    padding: 9px 15px;
+    width: 80px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    margin-right: -32px;
+    left: -25px;
+}
+.layui-btn {
+    height: 40px;
+    line-height: 38px;
+    padding: 0 25px;
+    background-color: #009688;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 3px;
+}
+.layui-btn-primary {
+    border: 1px solid #C9C9C9;
+    background-color: #fff;
+    color: #666666;
+}
+.container {
+    width: 100%;
+    height: 45px;
+    background-color: #222;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+#test1{
+	float:right;
+	margin-right: 473px;
+	margin-top: -9px;
+}
+#demoText{
+	float: right;
+	margin-top: -168px;
+	margin-right: 309px;
+}
+.layui-progress-big, .layui-progress-big .layui-progress-bar {
+    height: 4px;
+    line-height: 0px;
+}
+.uploadTip {
+	font-size: 12px;
+    line-height: 24px;
+    margin-top: 16px;
+    float:right;
+    margin-right: 285px;
+	margin-top: -114px;
+}
+.clr_grey_6 {
+    color: #666;
+}
+.layui-btn .layui-icon {
+    margin-right: 5px;
+    margin-top: 1px;
+    float: left;
+}
+ul li{ list-style-type: square; }
+#btn1{
+	width: 100px;
+	height: 40px;
+}
+#btn2{
+	width: 100px;
+	height: 40px;
+}
+
+/*图片轮播********************************************************************************************/
+
+	/*卡片图片放大效果**********************************************************************************/
+	figure {width: 100%; overflow: hidden; margin:0px 0px;}
+	img{
+		border-radius:5-px;
+		width: 100%; margin: 0px 0px; -moz-transition: all 0.5s; -webkit-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; 
+	}
+	figure:hover img { -moz-transform: scale(1.1); -webkit-transform: scale(1.1); -o-transform: scale(1.1); -ms-transform: scale(1.1); }
+
+#ul1 li,#ul2 li{
+	float: left;
+	list-style:none;
+}
+#ul1{
+	height: 126px;
+	width: 100%;
+}
+#ul2{
+	height: 126px;
+	width: 100%;
+	margin-top:26px;
+}
+.t0{
+	width: 6px;
+	height: 1px;
+}
+.t{
+	width:9px;
+	height: 1px;
+}
+.t1{
+	width:12px;
+	height: 1px;
+}
+.h{
+	width: 1px;
+	height: 6px;
+}
+.h2{
+	height: 9px;
+	width: 1px;
+}
+.y{
+	float:left;
+}
+.z{
+	float:right;
+}
+.cl{
+	float:clear;
+}
+.layui-carousel-arrow {
+    opacity: 0;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    margin-top: -38px;
+    margin-left:-80px;
+    width: 60px;
+    height: 60px;
+    line-height: 36px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.2);
+    color: #fff;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+}
+.layui-carousel-arrow[lay-type="add"] {
+    left: auto !important;
+    right: 10px;
+    margin-left: 125px;
+    margin-right: -80px;
+}
+.layui-carousel-ind ul {
+   visibility: hidden;
+}

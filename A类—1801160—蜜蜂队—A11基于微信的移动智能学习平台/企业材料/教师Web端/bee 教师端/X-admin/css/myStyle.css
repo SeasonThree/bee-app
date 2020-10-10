@@ -1,0 +1,105 @@
+/*上导航区****************************************************************************************/
+	/*上导航--三角形位置*/
+.container .layui-nav-more {
+    top: 23px;
+}
+	/*上导航--消息通知小圆点*/
+.layui-nav .layui-badge, .layui-nav .layui-badge-dot {
+    margin: -9px 90px 0;
+}
+.weadmin-body {
+    padding: 20px 20px 20px 0;
+}
+.container {
+    background-color: #4c4c4c;
+}
+/*垂直导航区****************************************************************************************/
+	/*垂直导航--教师卡片*/
+.layadmin-homepage-pad-img {
+    margin-left: 56px; 
+    box-shadow: 0 0 0 4px rgba(0,0,0,.1);
+    border-radius: 50%;
+}
+.layadmin-homepage-font {
+    font-weight: 600;
+    color: #2b425b;
+    font-size: 1.2em;
+    text-align: center;
+}
+.layadmin-homepage-min-font {
+    margin: 5px 0 10px;
+    font-size: .9em;
+    color: #afb9c3;
+    text-align: center;
+}
+.layadmin-homepage-pad-ver {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.layui-card-body {
+    position: relative;
+    padding: 10px 15px;
+    line-height: 24px;
+}
+.layui-card:last-child {
+    margin-top: -17px;
+}
+	/*账号管理按钮*/
+.layui-btn-fluid {
+    width: 75%;
+    margin-left: 24px;
+}
+	/*导航菜单字体大小*/
+.left-nav #nav li a {
+    font-size: 18px;
+    padding: 9px 15px 10px 20px;
+}
+.left-nav {
+    background-color: #f9f9f9;
+}
+/*垂直导航区与右侧内容的比率***********************************************************************/
+.left-nav {
+    width: 220px;
+    max-width: 220px;
+}
+.page-content {
+    top: 46px;
+    right: 0;
+    bottom: 40px;
+    left: 264px;
+}
+
+/*内容区**************************************************************************************/
+	/*选项卡的高度*/
+.page-content .layui-tab-title li {
+    line-height: 0px;
+}
+.page-content .layui-tab-title {
+    height: 0px;
+}	
+.page-content .layui-tab-title .layui-this::after {
+    height: 0px;
+}
+	/*主页面距离选项卡的距离*/
+.page-content .layui-tab-content {
+    top: 32px;
+}
+.page-content .layui-tab-title li {
+    line-height: 0px;
+    margin-top: -45px;
+}
+
+
+/*底部区域**************************************************************************************/
+.footer {
+    background-color: #868181;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    line-height: 28px;
+    color: #fff;
+}
+.left-nav #nav li {
+    border-bottom: 0px solid #e5e5e5;
+}
+.left-nav #nav li:not(.cc) :hover {
+    color: #089cff;
+}

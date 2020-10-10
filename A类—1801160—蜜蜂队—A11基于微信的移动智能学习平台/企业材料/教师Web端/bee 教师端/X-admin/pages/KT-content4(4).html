@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>我的课堂</title>
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="../css/font.css">
+        <link rel="stylesheet" type="text/css" href="../lib/layui/css/layui.css"/>
+        <link rel="stylesheet" type="text/css" href="../lib/layer/mobile/need/layer.css" />
+        <link rel="stylesheet" href="../css/xadmin.css">
+        <link rel="stylesheet" type="text/css" href="../css/KT-content-common.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/KT-content2/KT-content2-1.css"/>
+       	<link rel="stylesheet" type="text/css" href="../css/KT-content2/KT-content2-3.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/KT-content4.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/tiku.css"/>
+        <style type="text/css">.laytable-cell-1-0-1 {width: 570px !important;}.layui-table img{width: 7%;}</style>
+    </head>
+    <body style="text-align: left;background: #f9f9f9;">
+	    <div class="x-body" style="padding: 0px;">
+	    		<!--顶部--> 
+				<div class="top">
+					<ul class="layui-nav">
+						<li style="font-size: 24px;color: #333;float: left;line-height: 60px;">高等数学（一）</li>
+						<li style="float: left;">
+							<div class="box-box">
+				                <div class="sele" id="course-code-select" data-abc="WeChat">
+			                    	<div class="qrcode fl"></div>
+			                    	<div class="codetext">WeChat</div>
+				                </div>
+				                <div class="selecon cl" style="display: none;">
+				                    <ul>
+				                        <li><a id="stop-course-code" href="javascript:;">停用</a></li>
+				                        <li><a id="start-course-code" href="javascript:;">启用</a></li>
+				                    </ul>
+				                </div>
+				            </div>
+						</li>
+					  	<li class="layui-nav-item"><a href="KT-content10.html">直播</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content9.html">讨论</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content8.html">分组</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content7.html">考试</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content6.html">作业</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content5.html">通知</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a id="act" class="choose" href="KT-content4.html">资源</a><div id="act2" class="t choose2"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content3.html">统计</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content2.html">互动</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content.html">首页</a><div class="t"></div></li>
+					</ul>
+				</div>
+				<div class="content">
+					<div class="layui-tab layui-tab-brief tab" lay-filter="docDemoTabBrief">
+					  	<ul class="layui-tab-title">
+					   	 	<li><a href="KT-content4.html">课程资源</a></li>
+					   	 	<li><a href="KT-content4(2).html">题库</a></li>
+					   	 	<li><a href="KT-content4(3).html">作业库</a></li>
+					   	 	<li class="layui-this"><a href="KT-content4(4).html">试卷库</a></li>
+					   	 	
+					  	</ul>
+					  	<div class="layui-tab-content">
+					  		<!--*课程资源***********************************************************-->
+						    <div class="layui-tab-item">
+					
+						    </div>
+						    <!--*题库***********************************************************-->
+						    <div class="layui-tab-item">
+						    	
+						    </div>
+						    <!--*作业库***********************************************************-->
+						    <div class="layui-tab-item">
+	        					
+						    </div>
+						    <!--*试卷库***********************************************************-->
+						    <div class="layui-tab-item  layui-show">
+	        					
+	        					<!--搜索组件-->
+	        					<div class="demoTable" style="margin-top: 30px;margin-left: 39px;">
+								  	<div class="layui-inline" style="width: 201px;">
+								    	<input class="layui-input" name="id" id="demoReload" autocomplete="off" value="请输入关键字" style="color: #b7b7b7;">
+								  	</div>
+								  	<button class="layui-btn" data-type="reload"><i class="layui-icon">&#xe615;</i></button>
+								  	
+								  	<a href="" style="width: 100px;display: inline-block;margin-left: 614px;"><button class="layui-btn" style="color: #fff;"><i class="layui-icon">&#xe654;</i>创建试卷</button></a>
+									<a href="" style="width: 100px;display: inline-block;margin-left: 30px;"><button class="layui-btn" style="color: #fff;">导入</button></a>
+								</div>
+						    	
+	        					<div class="layui-form layui-border-box layui-table-view" lay-filter="LAY-table-1" lay-id="idTest" style="margin-left: 39px;margin-top: 25px;width: 93%;">
+									<div class="layui-table-box">
+										<div class="layui-table-header">
+											<table class="layui-table" cellspacing="0" cellpadding="0" border="0">
+												<thead>
+													<tr>
+														<th style="width: 81px;" data-field="0" data-key="1-0-0" data-unresize="true" class=" layui-table-col-special">
+															<div class="layui-table-cell laytable-cell-1-0-0 laytable-cell-checkbox">
+																<span style="font-size: 15px;">序号</span>
+															</div>
+														</th>
+														<th style="width: 389px;" data-field="id" data-key="1-0-1" class=" layui-unselect">
+															<div class="layui-table-cell laytable-cell-1-0-1">
+																<span style="font-size: 15px;">试卷标题</span>
+															</div>
+														</th>
+														<th style="width:81px;" data-field="username" data-key="1-0-2" class="">
+															<div class="layui-table-cell laytable-cell-1-0-2">
+																<span style="font-size: 15px;">创建者</span>
+															</div>
+														</th>
+														<!--<th style="width:81px;" style="" data-field="sex" data-key="1-0-3" class=" layui-unselect">
+															<div class="layui-table-cell laytable-cell-1-0-3">
+																<span style="font-size: 15px;">大小</span>
+															</div>
+														</th>-->
+														<th style="width:106px;" data-field="wealth" data-key="1-0-8" class=" layui-unselect">
+															<div class="layui-table-cell laytable-cell-1-0-8">
+																<span style="font-size: 15px;">创建日期</span>
+																<span class="layui-table-sort layui-inline">
+																	<i class="layui-edge layui-table-sort-asc" title="升序"></i>
+																	<i class="layui-edge layui-table-sort-desc" title="降序"></i>
+																</span>
+															</div>
+														</th>
+														<!--<th style="width:100px;" data-field="score" data-key="1-0-9" class=" layui-unselect">
+															<div class="layui-table-cell laytable-cell-1-0-9">
+																<span style="font-size: 15px;">下载人数</span>
+															</div>
+														</th>-->
+														<th style="width: 201px;" data-field="10" data-key="1-0-10" class=" layui-table-col-special">
+															<div class="layui-table-cell laytable-cell-1-0-10" align="center">
+																<span style="font-size: 15px;">操作</span>
+															</div>
+														</th>
+														<th class="layui-table-patch">
+															<div class="layui-table-cell" style="width: 17px;"></div>
+														</th>
+													</tr>
+												</thead>
+											</table>
+										</div>
+									
+										<div class="layui-table-body layui-table-main">
+											<table class="layui-table" cellspacing="0" cellpadding="0" border="0">
+												<tbody>
+													<tr data-index="0" class="">
+														<td data-field="0" data-key="1-0-0" class="layui-table-col-special"><div class="layui-table-cell laytable-cell-1-0-0 laytable-cell-checkbox"><input type="checkbox" name="layTableCheckbox" lay-skin="primary"><div class="layui-unselect layui-form-checkbox" lay-skin="primary"><i class="layui-icon"></i></div></div></td>
+														<td data-field="id" data-key="1-0-1" class=""><div class="layui-table-cell laytable-cell-1-0-1"><a href="KT-content4(4)-1.html"><i class="iconfont" style="font-size: 30px;">&#xe6a2;</i><p class="wenjian" style="position: absolute;">第一单元（单元检测）</p></a></div></td>
+														<td data-field="username" data-key="1-0-2" class=""><div class="layui-table-cell laytable-cell-1-0-2">执着</div></td>
+														<td data-field="wealth" data-key="1-0-8" class=""><div class="layui-table-cell laytable-cell-1-0-8">2019-02-21</div></td>
+														<td data-field="10" data-key="1-0-10" data-off="true" class="layui-table-col-special" align="center"><div class="layui-table-cell laytable-cell-1-0-10">  <a class="layui-btn layui-btn-xs" lay-event="edit"><i class="layui-icon">&#xe642;</i>重命名</a> <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del"><i class="layui-icon">&#xe640;</i>删除</a><a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail"><i class="layui-icon">&#x1005;</i>发布</a> </div></td>
+													</tr>
+													<tr data-index="1" class="">
+														<td data-field="0" data-key="1-0-0" class="layui-table-col-special"><div class="layui-table-cell laytable-cell-1-0-0 laytable-cell-checkbox"><input type="checkbox" name="layTableCheckbox" lay-skin="primary"><div class="layui-unselect layui-form-checkbox" lay-skin="primary"><i class="layui-icon"></i></div></div></td>
+														<td data-field="id" data-key="1-0-1" class=""><div class="layui-table-cell laytable-cell-1-0-1"><a href="KT-content4(4)-1.html"><i class="iconfont" style="font-size: 30px;">&#xe6a2;</i><p class="wenjian" style="position: absolute;">第一单元（单元检测）</p></a></div></td>
+														<td data-field="username" data-key="1-0-2" class=""><div class="layui-table-cell laytable-cell-1-0-2">执着</div></td>
+														<td data-field="wealth" data-key="1-0-8" class=""><div class="layui-table-cell laytable-cell-1-0-8">2019-02-21</div></td>
+														<td data-field="10" data-key="1-0-10" data-off="true" class="layui-table-col-special" align="center"><div class="layui-table-cell laytable-cell-1-0-10">  <a class="layui-btn layui-btn-xs" lay-event="edit"><i class="layui-icon">&#xe642;</i>重命名</a> <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del"><i class="layui-icon">&#xe640;</i>删除</a><a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail"><i class="layui-icon">&#x1005;</i>发布</a> </div></td>
+													</tr>
+													<tr data-index="2" class="">
+														<td data-field="0" data-key="1-0-0" class="layui-table-col-special"><div class="layui-table-cell laytable-cell-1-0-0 laytable-cell-checkbox"><input type="checkbox" name="layTableCheckbox" lay-skin="primary"><div class="layui-unselect layui-form-checkbox" lay-skin="primary"><i class="layui-icon"></i></div></div></td>
+														<td data-field="id" data-key="1-0-1" class=""><div class="layui-table-cell laytable-cell-1-0-1"><a href="KT-content4(4)-1.html"><i class="iconfont" style="font-size: 30px;">&#xe6a2;</i><p class="wenjian" style="position: absolute;">第一单元（单元检测）</p></a></div></td>
+														<td data-field="username" data-key="1-0-2" class=""><div class="layui-table-cell laytable-cell-1-0-2">执着</div></td>
+														<td data-field="wealth" data-key="1-0-8" class=""><div class="layui-table-cell laytable-cell-1-0-8">2019-02-21</div></td>
+														<td data-field="10" data-key="1-0-10" data-off="true" class="layui-table-col-special" align="center"><div class="layui-table-cell laytable-cell-1-0-10">  <a class="layui-btn layui-btn-xs" lay-event="edit"><i class="layui-icon">&#xe642;</i>重命名</a> <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del"><i class="layui-icon">&#xe640;</i>删除</a><a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail"><i class="layui-icon">&#x1005;</i>发布</a> </div></td>
+													</tr>
+													<tr data-index="3" class="">
+														<td data-field="0" data-key="1-0-0" class="layui-table-col-special"><div class="layui-table-cell laytable-cell-1-0-0 laytable-cell-checkbox"><input type="checkbox" name="layTableCheckbox" lay-skin="primary"><div class="layui-unselect layui-form-checkbox" lay-skin="primary"><i class="layui-icon"></i></div></div></td>
+														<td data-field="id" data-key="1-0-1" class=""><div class="layui-table-cell laytable-cell-1-0-1"><a href="KT-content4(4)-1.html"><i class="iconfont" style="font-size: 30px;">&#xe6a2;</i><p class="wenjian" style="position: absolute;">第一单元（单元检测）</p></a></div></td>
+														<td data-field="username" data-key="1-0-2" class=""><div class="layui-table-cell laytable-cell-1-0-2">执着</div></td>
+														<td data-field="wealth" data-key="1-0-8" class=""><div class="layui-table-cell laytable-cell-1-0-8">2019-02-21</div></td>
+														<td data-field="10" data-key="1-0-10" data-off="true" class="layui-table-col-special" align="center"><div class="layui-table-cell laytable-cell-1-0-10">  <a class="layui-btn layui-btn-xs" lay-event="edit"><i class="layui-icon">&#xe642;</i>重命名</a> <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del"><i class="layui-icon">&#xe640;</i>删除</a><a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail"><i class="layui-icon">&#x1005;</i>发布</a> </div></td>
+													</tr>
+													<tr data-index="4" class="">
+														<td data-field="0" data-key="1-0-0" class="layui-table-col-special"><div class="layui-table-cell laytable-cell-1-0-0 laytable-cell-checkbox"><input type="checkbox" name="layTableCheckbox" lay-skin="primary"><div class="layui-unselect layui-form-checkbox" lay-skin="primary"><i class="layui-icon"></i></div></div></td>
+														<td data-field="id" data-key="1-0-1" class=""><div class="layui-table-cell laytable-cell-1-0-1"><a href="KT-content4(4)-1.html"><i class="iconfont" style="font-size: 30px;">&#xe6a2;</i><p class="wenjian" style="position: absolute;">第一单元（单元检测）</p></a></div></td>
+														<td data-field="username" data-key="1-0-2" class=""><div class="layui-table-cell laytable-cell-1-0-2">执着</div></td>
+														<td data-field="wealth" data-key="1-0-8" class=""><div class="layui-table-cell laytable-cell-1-0-8">2019-02-21</div></td>
+														<td data-field="10" data-key="1-0-10" data-off="true" class="layui-table-col-special" align="center"><div class="layui-table-cell laytable-cell-1-0-10">  <a class="layui-btn layui-btn-xs" lay-event="edit"><i class="layui-icon">&#xe642;</i>重命名</a> <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del"><i class="layui-icon">&#xe640;</i>删除</a><a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail"><i class="layui-icon">&#x1005;</i>发布</a> </div></td>
+													</tr>
+													<tr data-index="5" class="">
+														<td data-field="0" data-key="1-0-0" class="layui-table-col-special"><div class="layui-table-cell laytable-cell-1-0-0 laytable-cell-checkbox"><input type="checkbox" name="layTableCheckbox" lay-skin="primary"><div class="layui-unselect layui-form-checkbox" lay-skin="primary"><i class="layui-icon"></i></div></div></td>
+														<td data-field="id" data-key="1-0-1" class=""><div class="layui-table-cell laytable-cell-1-0-1"><a href="KT-content4(4)-1.html"><i class="iconfont" style="font-size: 30px;">&#xe6a2;</i><p class="wenjian" style="position: absolute;">第一单元（单元检测）</p></a></div></td>
+														<td data-field="username" data-key="1-0-2" class=""><div class="layui-table-cell laytable-cell-1-0-2">执着</div></td>
+														<td data-field="wealth" data-key="1-0-8" class=""><div class="layui-table-cell laytable-cell-1-0-8">2019-02-21</div></td>
+														<td data-field="10" data-key="1-0-10" data-off="true" class="layui-table-col-special" align="center"><div class="layui-table-cell laytable-cell-1-0-10">  <a class="layui-btn layui-btn-xs" lay-event="edit"><i class="layui-icon">&#xe642;</i>重命名</a> <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del"><i class="layui-icon">&#xe640;</i>删除</a><a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail"><i class="layui-icon">&#x1005;</i>发布</a> </div></td>
+													</tr>
+													
+													
+												</tbody>
+											</table>
+										</div>
+										
+										
+									</div>	
+									
+									
+									<style>.laytable-cell-1-0-0{ width: 48px; }.laytable-cell-1-0-1{ width: 80px; }.laytable-cell-1-0-2{ width: 80px; }.laytable-cell-1-0-3{ width: 80px; }.laytable-cell-1-0-4{ width: 80px; }.laytable-cell-1-0-5{ width: 160px; }.laytable-cell-1-0-6{ width: 80px; }.laytable-cell-1-0-7{ width: 80px; }.laytable-cell-1-0-8{ width: 135px; }.laytable-cell-1-0-9{ width: 80px; }.laytable-cell-1-0-10{ width: 178px; }</style>
+									
+								</div>
+								
+								<div id="demo0" style="text-align: center;"></div>
+	        					
+						    </div>
+					    </div>
+					</div>
+					
+					
+				</div>
+				
+	    </div>
+	    
+        
+		<script src="../js/jquery.min1.9.1.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../js/jquery.easing.js"></script>
+        <script src="../lib/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../lib/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../js/KT-content-common.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../js/KT-content2.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			layui.use(['form','element','jquery','layer','laydate','table','laypage'], function(){
+			  	var $ = layui.$
+			  	,form = layui.form
+			  	,layer = parent.layer ==undefined?layui.layer:parent.layer
+			 	,layedit = layui.layedit
+			  	,laydate = layui.laydate
+			  	,table = layui.table
+			  	,laypage = layui.laypage
+			  	,element=layui.element;
+			  	
+			  	
+			  	//layui文件必须要的文件******************************************************************************
+			  	var _hmt = _hmt || [];
+				(function() {
+				  	var hm = document.createElement("script");
+				  	hm.src = "https://hm.baidu.com/hm.js?b393d153aeb26b46e9431fabaf0f6190";
+				  	var s = document.getElementsByTagName("script")[0]; 
+				  	s.parentNode.insertBefore(hm, s);
+				})();
+				
+				
+				
+			  	//表格******************************************************************************
+				//总页数低于页码总数
+				  laypage.render({
+				    elem: 'demo0'
+				    ,count: 50 //数据总数
+				  });
+								
+			  	
+			  	
+			});
+		</script>
+        
+        <div class="layui-layer-shade" id="layui-layer-shade9" times="9" style="display:none;z-index:19891022; background-color:#000; opacity:0.5; filter:alpha(opacity=50);"></div>
+        <div class="layui-layer layui-anim-01 layui-layer-page " id="layui-layer9" type="page" times="9" showtime="0" contype="string" style="display:none;z-index: 19891023; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgba(255, 255, 255, 0);">
+        	<div class="layui-layer-content" style="height: 237px;">
+	        	<div class="course_qcode" style="width:100%;">
+					<div class="left-innerbox">
+						<h2 class="classcode">加课码：WeChat</h2>
+						<img src="../images-tou/showqrcode.jpg">
+						<input class="codetips" value="微信扫码二维码">
+					</div>
+					<div class="right-innerbox">
+						<div class="title-tips">已加课人数</div>
+						<div class="student-num">20</div>
+					</div>
+				</div>
+        	</div>
+        	<span class="layui-layer-setwin">
+        		<a class="layui-layer-ico layui-layer-close layui-layer-close2" href="javascript:;"></a>
+        	</span>
+        </div>
+		
+    </body>
+</html>

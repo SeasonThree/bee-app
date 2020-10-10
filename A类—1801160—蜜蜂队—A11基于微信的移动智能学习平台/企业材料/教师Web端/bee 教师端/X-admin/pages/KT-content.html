@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>我的课堂</title>
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="../css/font.css">
+        <link rel="stylesheet" type="text/css" href="../lib/layui/css/layui.css"/>
+        <link rel="stylesheet" type="text/css" href="../lib/layer/mobile/need/layer.css" />
+        <link rel="stylesheet" href="../css/xadmin.css">
+        <link rel="stylesheet" type="text/css" href="../css/KT-content.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/WYY.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/template.css"/>
+    </head>
+    <body style="text-align: left;background: #f9f9f9;">
+	    <div class="x-body layui-anim layui-anim-up" style="padding: 0px;">
+	    		<!--顶部--> 
+				<div class="top">
+					<ul class="layui-nav">
+						<li style="font-size: 24px;color: #333;float: left;line-height: 60px;">高等数学（一）</li>
+						<li style="float: left;">
+							<div class="box-box">
+				                <div class="sele" id="course-code-select" data-abc="WeChat">
+			                    	<div class="qrcode fl"></div>
+			                    	<div class="codetext">WeChat</div>
+				                </div>
+				                <div class="selecon cl" style="display: none;">
+				                    <ul>
+				                        <li><a id="stop-course-code" href="javascript:;">停用</a></li>
+				                        <li><a id="start-course-code" href="javascript:;">启用</a></li>
+				                    </ul>
+				                </div>
+				            </div>
+						</li>
+					  	<li class="layui-nav-item"><a href="KT-content10.html">直播</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content9.html">讨论</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content8.html">分组</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content7.html">考试</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content6.html">作业</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content5.html">通知</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content4.html">资源</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content3.html">统计</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content2.html">互动</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a id="act" class="choose" href="KT-content.html">首页</a><div id="act2" class="t choose2"></div></li>
+					</ul>
+				</div>
+				<div class="content">
+					<div class="left">
+						<div class="lefttop">
+							<span class="one">目录</span>
+							<a id="kc" href="KT-content-1.html"><button class="layui-btn"><i class="layui-icon">&#xe642;</i>课程编辑</button></a>
+						</div>
+						
+						
+						<div class="f-cb f-bg f-pr" id="j-chapter-list" style="z-index:10;">
+							<div class="f-cb">
+								<form class="layui-form" action="" style="float: left;position: relative;z-index: 20;">
+								  	<div class="layui-form-item">
+									    <div class="layui-input-block">
+									      	<input type="checkbox" name="close" lay-skin="switch" lay-text="">
+									    </div>
+									</div>
+								</form>
+								<h2 class="u-ctit f-thide f-fl" id="j-chapter-title" style="width:320px;">第一单元</h2>
+								<div class="u-cotinued f-fr" id="j-continued" style="">统计</div>
+								<div class="u-cotinued f-fr" id="j-continued" style="">发放</div>
+								<div class="f-fr u-muluchaptertime" id="muluchaptertime">
+								</div>
+							</div>
+							<div class="m-chapterList f-pr" id="auto-id-1549896359694">
+								<div class="chapter f-pr">
+									<div class="sectionarea">
+										<div class="section" data-lesson="0" data-chapter="0" id="auto-id-1549896359696">
+											<span class="f-fl f-thide ks">课时1</span>
+											<span style="background-position: -200px -80px;" id="circle" class="f-fl ksicon ksicon-0" title="未开始"></span>
+											<span class="f-fl f-thide ksname" title="第一课时">第一课时</span>
+											<a href="KT-content-1.html" class="f-fr ksbtn j-hovershow" style="display: none;"><span>课时编辑</span></a>
+											<span class="f-fr ksinfo j-hoverhide" style="display: block;">
+												<a href=""><i class="layui-icon">&#xe605;</i></a>
+										      	<a href=""><div class="layui-progress layui-progress-big" lay-showpercent="true">
+													<div class="layui-progress-bar" lay-percent="100%" style="position: relative;top: 0px;"></div>
+													</div>
+										      	</a>
+											</span>
+										</div>
+										<div class="section" data-lesson="1" data-chapter="0" id="auto-id-1549896359700">
+											<span class="f-fl f-thide ks">课时2</span>
+											<span style="background-position: -200px -80px;" id="circle" class="f-fl ksicon ksicon-0" title="未开始"></span>
+											<span class="f-fl f-thide ksname" title="第二课时">第二课时</span>
+											<a href="KT-content-1.html" class="f-fr ksbtn j-hovershow" style="display: none;"><span>课时编辑</span></a>
+											<span class="f-fr ksinfo j-hoverhide" style="display: block;">
+												<a href=""><i class="layui-icon">&#xe605;</i></a>
+										      	<a href=""><div class="layui-progress layui-progress-big" lay-showpercent="true">
+													<div class="layui-progress-bar" lay-percent="100%" style="position: relative;top: 0px;"></div>
+													</div>
+										      	</a>
+											</span>
+										</div>
+										<div class="section" data-lesson="2" data-chapter="0" id="auto-id-1549896359704">
+											<span class="f-fl f-thide ks">课时3</span>
+											<span style="background-position: -168px -80px;" id="circle" class="f-fl ksicon ksicon-0" title="未开始"></span>
+											<span class="f-fl f-thide ksname" title="第三课时">第三课时</span>
+											<a href="KT-content-1.html" class="f-fr ksbtn j-hovershow" style="display: none;"><span>课时编辑</span></a>
+											<span class="f-fr ksinfo j-hoverhide" style="display: block;">
+												<a href=""><i class="layui-icon">&#xe605;</i></a>
+										      	<a href=""><div class="layui-progress layui-progress-big" lay-showpercent="true">
+													<div class="layui-progress-bar" lay-percent="90%" style="position: relative;top: 0px;"></div>
+													</div>
+										      	</a>
+										</div>
+										<div class="section" data-lesson="3" data-chapter="0" id="auto-id-1549896359708">
+											<span class="f-fl f-thide ks">课时4</span>
+											<span style="background-position: -168px -80px;" id="circle" class="f-fl ksicon ksicon-0" title="未开始"></span>
+											<span class="f-fl f-thide ksname" title="第四课时">第四课时</span>
+											<a href="KT-content-1.html" class="f-fr ksbtn j-hovershow" style="display: none;"><span>课时编辑</span></a>
+											<span class="f-fr ksinfo j-hoverhide" style="display: block;">
+												<a href=""><i class="layui-icon">&#xe605;</i></a>
+										      	<a href=""><div class="layui-progress layui-progress-big" lay-showpercent="true">
+													<div class="layui-progress-bar" lay-percent="60%" style="position: relative;top: 0px;"></div>
+													</div>
+										      	</a>
+											</span>
+										</div>
+										<div class="section" data-lesson="4" data-chapter="0" id="auto-id-1549896359712">
+											<span class="f-fl f-thide ks">课时5</span>
+											<span style="background-position: -168px -80px;" id="circle" class="f-fl ksicon ksicon-0" title="未开始"></span>
+											<span class="f-fl f-thide ksname" title="第五课时">第五课时</span>
+											<a href="KT-content-1.html" class="f-fr ksbtn j-hovershow" style="display: none;"><span>课时编辑</span></a>
+											<span class="f-fr ksinfo j-hoverhide" style="display: block;">
+												<a href=""><i class="layui-icon">&#xe605;</i></a>
+										      	<a href=""><div class="layui-progress layui-progress-big" lay-showpercent="true">
+													<div class="layui-progress-bar" lay-percent="30%" style="position: relative;top: 0px;"></div>
+													</div>
+										      	</a>
+											</span>
+										</div>
+										<div class="section section-last" data-lesson="15" data-chapter="0" id="auto-id-1549950580984">
+											<span class="f-fl f-thide ks">课时6</span>
+											<span id="circle" class="f-fl ksicon ksicon-0" title="未开始"></span>
+											<span class="f-fl f-thide ksname" title="Particular&nbsp;第六课时">第六课时</span>
+											<a href="KT-content-1.html" class="f-fr ksbtn j-hovershow" style="display: none;"><span>课时编辑</span></a>
+											<span class="f-fr ksinfo j-hoverhide" style="display: block;">
+												<a href=""><i class="layui-icon">&#xe605;</i></a>
+										      	<a href=""><div class="layui-progress layui-progress-big" lay-showpercent="true">
+													<div class="layui-progress-bar" lay-percent="0%" style="position: relative;top: 0px;"></div>
+													</div>
+										      	</a>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="f-cb f-bg f-pr" id="j-chapter-list" style="z-index:10;">
+							<div class="f-cb">
+								<form class="layui-form" action="" style="float: left;position: relative;z-index: 20;">
+								  	<div class="layui-form-item">
+									    <div class="layui-input-block">
+									      	<input type="checkbox" name="close" lay-skin="switch" lay-text="">
+									    </div>
+									</div>
+								</form>
+								<h2 class="u-ctit f-thide f-fl" id="j-chapter-title" style="width:320px;">第二单元</h2>
+								<div class="f-fr u-muluchaptertime" id="muluchaptertime">
+								</div>
+							</div>
+							<div class="m-chapterList f-pr" id="auto-id-1549896359694">
+								<div class="chapter f-pr">
+									<div class="sectionarea">
+										<div class="section" data-lesson="0" data-chapter="0" id="auto-id-1549896359696">
+											<span class="f-fl f-thide ks">课时1</span>
+											<span style="background-position: -200px -80px;" id="circle" class="f-fl ksicon ksicon-0" title="未开始"></span>
+											<span class="f-fl f-thide ksname" title="第一课时">第一课时</span>
+											<a href="KT-content-1.html" class="f-fr ksbtn j-hovershow" style="display: none;"><span>课时编辑</span></a>
+											<span class="f-fr ksinfo j-hoverhide" style="display: block;">
+												<a href=""><i class="layui-icon">&#xe605;</i></a>
+										      	<a href=""><div class="layui-progress layui-progress-big" lay-showpercent="true">
+													<div class="layui-progress-bar" lay-percent="60%" style="position: relative;top: 0px;"></div>
+													</div>
+										      	</a>
+											</span>
+										</div>
+										<div class="section" data-lesson="1" data-chapter="0" id="auto-id-1549896359700">
+											<span class="f-fl f-thide ks">课时2</span>
+											<span style="background-position: -200px -80px;" id="circle" class="f-fl ksicon ksicon-0" title="未开始"></span>
+											<span class="f-fl f-thide ksname" title="第二课时">第二课时</span>
+											<a href="KT-content-1.html" class="f-fr ksbtn j-hovershow" style="display: none;"><span>课时编辑</span></a>
+											<span class="f-fr ksinfo j-hoverhide" style="display: block;">
+												<a href=""><i class="layui-icon">&#xe605;</i></a>
+										      	<a href=""><div class="layui-progress layui-progress-big" lay-showpercent="true">
+													<div class="layui-progress-bar" lay-percent="50%" style="position: relative;top: 0px;"></div>
+													</div>
+										      	</a>
+											</span>
+										</div>
+										<div class="section" data-lesson="2" data-chapter="0" id="auto-id-1549896359704">
+											<span class="f-fl f-thide ks">课时3</span>
+											<span style="background-position: -168px -80px;" id="circle" class="f-fl ksicon ksicon-0" title="未开始"></span>
+											<span class="f-fl f-thide ksname" title="第三课时">第三课时</span>
+											<a href="KT-content-1.html" class="f-fr ksbtn j-hovershow" style="display: none;"><span>课时编辑</span></a>
+											<span class="f-fr ksinfo j-hoverhide" style="display: block;">
+												<a href=""><i class="layui-icon">&#xe605;</i></a>
+										      	<a href=""><div class="layui-progress layui-progress-big" lay-showpercent="true">
+													<div class="layui-progress-bar" lay-percent="50%" style="position: relative;top: 0px;"></div>
+													</div>
+										      	</a>
+										</div>
+										<div class="section" data-lesson="3" data-chapter="0" id="auto-id-1549896359708">
+											<span class="f-fl f-thide ks">课时4</span>
+											<span style="background-position: -168px -80px;" id="circle" class="f-fl ksicon ksicon-0" title="未开始"></span>
+											<span class="f-fl f-thide ksname" title="第四课时">第四课时</span>
+											<a href="KT-content-1.html" class="f-fr ksbtn j-hovershow" style="display: none;"><span>课时编辑</span></a>
+											<span class="f-fr ksinfo j-hoverhide" style="display: block;">
+												<a href=""><i class="layui-icon">&#xe605;</i></a>
+										      	<a href=""><div class="layui-progress layui-progress-big" lay-showpercent="true">
+													<div class="layui-progress-bar" lay-percent="60%" style="position: relative;top: 0px;"></div>
+													</div>
+										      	</a>
+											</span>
+										</div>
+										<div class="section" data-lesson="4" data-chapter="0" id="auto-id-1549896359712">
+											<span class="f-fl f-thide ks">课时5</span>
+											<span style="background-position: -168px -80px;" id="circle" class="f-fl ksicon ksicon-0" title="未开始"></span>
+											<span class="f-fl f-thide ksname" title="第五课时">第五课时</span>
+											<a href="KT-content-1.html" class="f-fr ksbtn j-hovershow" style="display: none;"><span>课时编辑</span></a>
+											<span class="f-fr ksinfo j-hoverhide" style="display: block;">
+												<a href=""><i class="layui-icon">&#xe605;</i></a>
+										      	<a href=""><div class="layui-progress layui-progress-big" lay-showpercent="true">
+													<div class="layui-progress-bar" lay-percent="30%" style="position: relative;top: 0px;"></div>
+													</div>
+										      	</a>
+											</span>
+										</div>
+										<div class="section section-last" data-lesson="15" data-chapter="0" id="auto-id-1549950580984">
+											<span class="f-fl f-thide ks">课时6</span>
+											<span id="circle" class="f-fl ksicon ksicon-0" title="未开始"></span>
+											<span class="f-fl f-thide ksname" title="Particular&nbsp;第六课时">第六课时</span>
+											<a href="KT-content-1.html" class="f-fr ksbtn j-hovershow" style="display: none;"><span>课时编辑</span></a>
+											<span class="f-fr ksinfo j-hoverhide" style="display: block;">
+												<a href=""><i class="layui-icon">&#xe605;</i></a>
+										      	<a href=""><div class="layui-progress layui-progress-big" lay-showpercent="true">
+													<div class="layui-progress-bar" lay-percent="0%" style="position: relative;top: 0px;"></div>
+													</div>
+										      	</a>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					
+					<div class="right">
+						<form class="layui-form" action="">
+						  <div class="layui-form-item">
+						    <div class="layui-input-block" style="margin-left: 0px;">
+						      <input style="" type="text" name="title" lay-verify="title" autocomplete="off" placeholder="新建话题" class="layui-input">
+						    </div>
+						  </div>
+						</form>
+						
+						
+						<div class="layui-row">
+							
+						      <div class="layui-form">
+						        <div class="layui-form-item layui-form-text">
+						          <div class="layui-input-block" style="margin-left: 0px;">
+						            <textarea name="desc" placeholder="今天你还没有发表话题哦，快去发表一个吧！" class="layui-textarea"></textarea>
+						          </div>
+						        </div>
+						
+						        <div class="layui-form-item" style="overflow: hidden;">
+						          <div class="layui-input-block layui-input-right" style="margin-left: 107px;">
+						            <button class="layui-btn" lay-submit="" lay-filter="formDemo" style="padding: 0 18px;margin-left: 171px;height: 30px;line-height: 30px;box-shadow: 0px 0px 0px #fff;">发表</button>
+						            <button class="layui-btn layui-btn-primary" lay-submit="" lay-filter="formDemo" style="padding: 0 18px;margin-left: 270px;height: 30px;line-height: 30px;margin-top: -49px;box-shadow: 0px 0px 0px #fff;background-color: #fff;">取消</button>
+						          </div>
+						          
+						          <div class="layadmin-messag-icon" style="margin-top: -44px;margin-left: 10px;">
+						            <a href="javascript:;"><i class="layui-icon i" style="color: #f07012;">&#xe650;</i></a>
+						            <a href="javascript:;"><i class="layui-icon i" style="color: #29898d;">&#xe64a;</i></a>
+						          </div>
+						        </div>
+						        <div class="layui-form-item" style="width: 245px;">
+								    <div class="layui-input-block" style="margin-left: 147px;margin-top: -62px;">
+								      <select name="interest" lay-filter="aihao">
+								        <option value="0" selected="">全部班级</option>
+								        <option value="1">默认班级</option>
+								      </select>
+								    </div>
+								</div>
+						      </div>
+						    
+						    <div class="layui-col-md12 layadmin-homepage-list-imgtxt message-content" style="padding: 0 0px;">
+						       	<!--卡片话题-->
+						       	<div class="layui-card">
+							        <div class="layui-card-header" style="border-bottom: 1px solid #fff;">
+							        	<div class="media-body">
+								          <a href="javascript:;" class="media-left" style="float: left;">
+								            <script type="text/html" template="">
+								              <img src="../images/dfefdf.jpg" height="33px" width="33px">
+								            </script> <img src="../images/dfefdf.jpg" width="33px" height="33px">
+								            		  <img class="tea" src="../images/t.png" alt="" />
+								          </a>
+								          <div class="pad-btm">
+								            <p class="fontColor"><a href="javascript:;">执着</a></p>
+								            <p class="min-font">
+								              <span class="layui-breadcrumb" lay-separator="-">
+								                <a href="javascript:;" class="layui-icon layui-icon-cellphone"></a>
+								                <a href="javascript:;">从移动</a>
+								                <a href="javascript:;">3分钟前</a>
+								              </span>
+								            </p> 
+								            <div class="fr operation">
+												<i class="iconfont">&#xe699;</i>
+												<b></b>
+												<ul>
+													<li><a href="/bbscircle/to-edittopic?courseId=202379370&amp;topicid=85180543&amp;clazzid=5393824&amp;createrId=64026723&amp;ut=t" target="_blank">编辑</a></li>
+													<li><a href="javascript:;" onclick="delTopic2(5393824,85180543,64026723)">删除</a></li>
+												</ul>
+											</div>
+								          </div>
+								        </div>
+							        </div>
+							        <div class="layui-card-body">
+							          	<p class="message-text"><img src="../lib/layui/images/face/16.gif"/>&nbsp;&nbsp;今天的课程还算不错！</p>
+							          	<span class="card-body-dz">
+							          		<i class="iconfont iy i">&#xe717; </i><p id="p">赞</p>
+							          		<i class="iconfont iz i">&#xe69b; </i><p id="p">回复</p>
+							          	</span>
+							        </div>
+						      	</div>
+						      	
+						      	<div class="layui-card">
+							        <div class="layui-card-header" style="border-bottom: 1px solid #fff;">
+							        	<div class="media-body">
+								          <a href="javascript:;" class="media-left" style="float: left;">
+								            <script type="text/html" template="">
+								              <img src="../images/dfefdf.jpg" height="33px" width="33px">
+								            </script> <img src="../images/dfefdf.jpg" width="33px" height="33px"> 
+								            		  <img class="tea" src="../images/t.png" alt="" />
+								          </a>
+								          <div class="pad-btm">
+								            <p class="fontColor"><a href="javascript:;">Angle</a></p>
+								            <p class="min-font">
+								              <span class="layui-breadcrumb" lay-separator="-">
+								                <a href="javascript:;" class="layui-icon layui-icon-cellphone"></a>
+								                <a href="javascript:;">从移动</a>
+								                <a href="javascript:;">5分钟前</a>
+								              </span>
+								            </p>
+								            <div class="fr operation">
+												<i class="iconfont">&#xe699;</i>
+												<b></b>
+												<ul>
+													<li><a href="/bbscircle/to-edittopic?courseId=202379370&amp;topicid=85180543&amp;clazzid=5393824&amp;createrId=64026723&amp;ut=t" target="_blank">编辑</a></li>
+													<li><a href="javascript:;" onclick="delTopic2(5393824,85180543,64026723)">删除</a></li>
+												</ul>
+											</div>
+								          </div>
+								        </div>
+							        </div>
+							        <div class="layui-card-body">
+							          	<p class="message-text"><img src="../lib/layui/images/face/8.gif"/>&nbsp;&nbsp;今天老师教的很不错！</p>
+							          	<span class="card-body-dz">
+							          		<i class="iconfont iy i">&#xe717; </i><p id="p">赞</p>
+							          		<i class="iconfont iz i">&#xe69b; </i><p id="p">回复</p>
+							          	</span>
+							        </div>
+						      	</div>
+						      	
+						      	<div class="layui-card">
+							        <div class="layui-card-header" style="border-bottom: 1px solid #fff;">
+							        	<div class="media-body">
+								          <a href="javascript:;" class="media-left" style="float: left;">
+								            <script type="text/html" template="">
+								              <img src="../images/dfefdf.jpg" height="33px" width="33px">
+								            </script> <img src="../images/dfefdf.jpg" width="33px" height="33px"> 
+								            		  <img class="tea" src="../images/t.png" alt="" />
+								          </a>
+								          <div class="pad-btm">
+								            <p class="fontColor"><a href="javascript:;">天空</a></p>
+								            <p class="min-font">
+								              <span class="layui-breadcrumb" lay-separator="-">
+								                <a href="javascript:;" class="layui-icon layui-icon-cellphone"></a>
+								                <a href="javascript:;">从移动</a>
+								                <a href="javascript:;">11分钟前</a>
+								              </span>
+								            </p> 
+								            <div class="fr operation">
+												<i class="iconfont">&#xe699;</i>
+												<b></b>
+												<ul>
+													<li><a href="javascript:;" target="_blank">编辑</a></li>
+													<li><a href="javascript:;" onclick="">删除</a></li>
+												</ul>
+											</div>
+								          </div>
+								        </div>
+							        </div>
+							        <div class="layui-card-body">
+							          	<p class="message-text"><img src="../lib/layui/images/face/4.gif"/>&nbsp;&nbsp;最后一个知识点不是很能听懂谁能讲解一下！</p>
+							          	<span class="card-body-dz">
+							          		<i class="iconfont iy i">&#xe717; </i><p id="p">赞</p>
+							          		<i class="iconfont iz i">&#xe69b; </i><p id="p">回复</p>
+							          	</span>
+							        </div>
+						      	</div>
+						      	<!--卡片话题结束-->
+						      	
+						     </div>
+						
+						</div>
+						
+						
+						
+						<div class="img"></div>
+						<!--<p style="font-size: 18px;text-align: center;">还没有话题哦，快去发表一个吧！</p>-->
+						
+					</div>
+				</div>
+				
+	    </div>
+	    
+        
+		<script src="../js/jquery.min1.9.1.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../js/jquery.easing.js"></script>
+        <script src="../lib/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../lib/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../js/KT-create.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../js/KT-content.js" type="text/javascript" charset="utf-8"></script>
+
+        
+        <div class="layui-layer-shade" id="layui-layer-shade9" times="9" style="display:none;z-index:19891022; background-color:#000; opacity:0.5; filter:alpha(opacity=50);"></div>
+        <div class="layui-layer layui-anim-01 layui-layer-page " id="layui-layer9" type="page" times="9" showtime="0" contype="string" style="display:none;z-index: 19891023; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgba(255, 255, 255, 0);">
+        	<div class="layui-layer-content" style="height: 237px;">
+	        	<div class="course_qcode" style="width:100%;">
+					<div class="left-innerbox">
+						<h2 class="classcode">加课码：WeChat</h2>
+						<img src="../images-tou/showqrcode.jpg">
+						<input class="codetips" value="微信扫码二维码">
+					</div>
+					<div class="right-innerbox">
+						<div class="title-tips">已加课人数</div>
+						<div class="student-num">20</div>
+					</div>
+				</div>
+        	</div>
+        	<span class="layui-layer-setwin">
+        		<a class="layui-layer-ico layui-layer-close layui-layer-close2" href="javascript:;"></a>
+        	</span>
+        </div>
+		
+    </body>
+</html>

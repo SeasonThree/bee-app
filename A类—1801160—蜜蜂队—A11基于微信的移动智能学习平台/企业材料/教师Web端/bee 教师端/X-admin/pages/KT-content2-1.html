@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>我的课堂</title>
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="../css/font.css">
+        <link rel="stylesheet" type="text/css" href="../lib/layui/css/layui.css"/>
+        <link rel="stylesheet" type="text/css" href="../lib/layer/mobile/need/layer.css" />
+        <link rel="stylesheet" href="../../css/xadmin.css">
+        <link rel="stylesheet" type="text/css" href="../css/KT-content-common.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/KT-content2/KT-content2-1.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/attencev3.css"/>
+        
+    </head>
+    <body style="text-align: left;background: #f9f9f9;">
+	    <div class="x-body" style="padding: 0px;">
+	    		<!--顶部--> 
+				<div class="top">
+					<ul class="layui-nav">
+						<li style="font-size: 24px;color: #333;float: left;line-height: 60px;">高等数学（一）</li>
+						<li style="float: left;">
+							<div class="box-box">
+				                <div class="sele" id="course-code-select" data-abc="WeChat">
+			                    	<div class="qrcode fl"></div>
+			                    	<div class="codetext">WeChat</div>
+				                </div>
+				                <div class="selecon cl" style="display: none;">
+				                    <ul>
+				                        <li><a id="stop-course-code" href="javascript:;">停用</a></li>
+				                        <li><a id="start-course-code" href="javascript:;">启用</a></li>
+				                    </ul>
+				                </div>
+				            </div>
+						</li>
+					  	<li class="layui-nav-item"><a href="KT-content10.html">直播</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content9.html">讨论</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content8.html">分组</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content7.html">考试</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content6.html">作业</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content5.html">通知</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content4.html">资源</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content3.html">统计</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a id="act" class="choose" href="KT-content2.html">互动</a><div id="act2" class="t choose2"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content.html">首页</a><div class="t"></div></li>
+					</ul>
+				</div>
+				<div class="content">
+					<span class="layui-breadcrumb">
+						<a href="KT-content2.html">课堂活动</a>
+						<a><cite>创建签到</cite></a>
+					</span>
+					<div class="layui-tab layui-tab-brief tab" lay-filter="docDemoTabBrief">
+					  <ul class="layui-tab-title">
+					    <li class="layui-this">数字签到</li>
+					    <li>手势签到</li>
+					    <li>位置签到</li>
+					    <li>二维码签到</li>
+					  </ul>
+					  <div class="layui-tab-content" style="height: 300px;">
+					  	<!--数字签到************************************************************-->
+					    <div class="layui-tab-item layui-show">
+					    	<form class="layui-form" action="" style="margin-top: 30px;width: 240px;">
+								<div class="layui-form-item">
+								    <label class="layui-form-label">班级</label>
+								    <div class="layui-input-block">
+								      <select name="interest" lay-filter="aihao">
+								        <option value=""></option>
+								        <option value="0">默认班级</option>
+								        <option value="1" selected="">默认班级</option>
+								      </select>
+								    </div>
+								</div>
+							</form>
+							<form class="layui-form" action="" style="margin-top: 30px;width: 240px;">
+								<div class="layui-form-item">
+								    <label class="layui-form-label">有效时间</label>
+								    <div class="layui-input-block">
+								      <select name="interest" lay-filter="aihao">
+								        <option value=""></option>
+								        <option value="0">15秒</option>
+								        <option value="1" selected="">30秒</option>
+								        <option value="2">60秒</option>
+								        <option value="3">2分钟</option>
+								        <option value="4">3分钟</option>
+								        <option value="5">5分钟</option>
+								        <option value="6">10分钟</option>
+								      </select>
+								    </div>
+								</div>
+							</form>
+							<button id="startnum" class="layui-btn layui-btn-primary" style="margin-left: 111px;margin-top: 46px;background: #328eeb;color: #fff;">新建考勤</button>
+        					
+        					<div class="layui-layer-shade" id="layui-layer-shade8" times="9" style="display:none;z-index:19891016; background-color:#000; opacity:0.5; filter:alpha(opacity=50);"></div>
+							<div class="layui-layer  layui-layer-page " id="layui-layer3" type="page" times="3" showtime="0" contype="object" style="display:none;z-index: 19891017; height: 510px; top: 58px; left: 278.5px;">
+								<div class="layui-layer-content" style="height: 510px;">
+									<div class="del-pop layui-layer-wrap" id="number-attend" data-type="1" data-id="MDAwMDAwMDAwMLScz9yIubex" style="display: block;">
+									    <div class="pop-title">
+									        <h3>2019.02.18</h3>
+									        <a href="javascript:;" class="close"></a>
+									    </div>
+									    <div class="content">
+									        <div class="number-box">
+									            <span>1</span>
+									            <span>9</span>
+									            <span>5</span>
+									            <span>7</span>
+									        </div>
+									        <div class="opt clearfix">
+									            <span class="fl">学生通过以上数字完成签到<i class="tips">（了解详情）</i></span>
+									            <a href="javascript:;" class="fr change-one">更换一个</a>
+									            <img src="../images/kqlj.jpg" class="img-tip" style="display: none;">
+									        </div>
+									        <div class="sign-count">
+									            <span>已签到：</span>
+									            <i class="ing">0</i>
+									            <i class="line">/</i>
+									            <i class="total">20</i>
+									        </div>
+									    </div>
+									    <div class="btns">
+									        <a href="javascript:;" class="cancel close1">关闭</a>
+									        <a href="KT-content2-1-1.html" class="sure active close2">开始考勤</a>
+									    </div>
+									</div>
+								</div>
+								<span class="layui-layer-setwin"></span>
+							</div>
+					    </div>
+					    <!--手势签到*****************************************************************-->
+					    <div class="layui-tab-item">
+					    	<form class="layui-form" action="" style="margin-top: 30px;width: 240px;">
+								<div class="layui-form-item">
+								    <label class="layui-form-label">班级</label>
+								    <div class="layui-input-block">
+								      <select name="interest" lay-filter="aihao">
+								        <option value=""></option>
+								        <option value="0">默认班级</option>
+								        <option value="1" selected="">默认班级</option>
+								      </select>
+								    </div>
+								</div>
+							</form>
+							<form class="layui-form" action="" style="margin-top: 30px;width: 240px;">
+								<div class="layui-form-item">
+								    <label class="layui-form-label">有效时间</label>
+								    <div class="layui-input-block">
+								      <select name="interest" lay-filter="aihao">
+								        <option value=""></option>
+								        <option value="0">15秒</option>
+								        <option value="1" selected="">30秒</option>
+								        <option value="2">60秒</option>
+								        <option value="3">2分钟</option>
+								        <option value="4">3分钟</option>
+								        <option value="5">5分钟</option>
+								        <option value="6">10分钟</option>
+								      </select>
+								    </div>
+								</div>
+							</form>
+							<button id="startfive" class="layui-btn layui-btn-primary" style="margin-left: 111px;margin-top: 46px;background: #328eeb;color: #fff;">新建考勤</button>
+							
+							<div class="layui-layer-shade" id="layui-layer-shade7" times="9" style="display:none;z-index:19891016; background-color:#000; opacity:0.5; filter:alpha(opacity=50);"></div>
+							<div class="layui-layer  layui-layer-page " id="layui-layer4" type="page" times="3" showtime="0" contype="object" style="display:none;z-index: 19891017; height: 510px; top: 58px; left: 278.5px;">
+								<div class="layui-layer-content" style="height: 510px;">
+									<div class="del-pop layui-layer-wrap" id="number-attend" data-type="1" data-id="MDAwMDAwMDAwMLScz9yIubex" style="display: block;">
+									    <div class="pop-title">
+									        <h3>2019.02.18</h3>
+									        <a href="javascript:;" class="close"></a>
+									    </div>
+									    <div class="content">
+									        
+											<div id="gesture_div" class="qd_gesture fl border_right marr30" style="display: block;">
+												<div id="gesturepwd"></div>
+												<div class="rebuild">
+													<a href="javascript:;" shape="rect">
+														<span id="recctv" class="green blue" onclick="rebuildPass()"><i class="layui-icon">&#xe9aa;</i>重设手势</span></a>
+												</div>
+											</div>
+									        
+									        <div class="sign-count">
+									            <span>已签到：</span>
+									            <i class="ing">0</i>
+									            <i class="line">/</i>
+									            <i class="total">20</i>
+									        </div>
+									    </div>
+									    <div class="btns">
+									        <a href="javascript:;" class="cancel close1">关闭</a>
+									        <a href="KT-content2-1-2.html" class="sure active close2">开始考勤</a>
+									    </div>
+									</div>
+								</div>
+								<span class="layui-layer-setwin"></span>
+							</div>
+					    </div>
+					    <!--位置签到*****************************************************************-->
+					    <div class="layui-tab-item">
+					    	<form class="layui-form" action="" style="margin-top: 30px;width: 240px;">
+								<div class="layui-form-item">
+								    <label class="layui-form-label">班级</label>
+								    <div class="layui-input-block">
+								      <select name="interest" lay-filter="aihao">
+								        <option value=""></option>
+								        <option value="0">默认班级</option>
+								        <option value="1" selected="">默认班级</option>
+								      </select>
+								    </div>
+								</div>
+							</form>
+							<form class="layui-form" action="" style="margin-top: 30px;width: 240px;">
+								<div class="layui-form-item">
+								    <label class="layui-form-label">有效时间</label>
+								    <div class="layui-input-block">
+								      <select name="interest" lay-filter="aihao">
+								        <option value=""></option>
+								        <option value="0">15秒</option>
+								        <option value="1" selected="">30秒</option>
+								        <option value="2">60秒</option>
+								        <option value="3">2分钟</option>
+								        <option value="4">3分钟</option>
+								        <option value="5">5分钟</option>
+								        <option value="6">10分钟</option>
+								      </select>
+								    </div>
+								</div>
+							</form>
+							<button id="startposition" class="layui-btn layui-btn-primary" style="margin-left: 111px;margin-top: 46px;background: #328eeb;color: #fff;">新建考勤</button>
+							
+							<div class="layui-layer-shade" id="layui-layer-shade6" times="9" style="display:none;z-index:19891016; background-color:#000; opacity:0.5; filter:alpha(opacity=50);"></div>
+							<div class="layui-layer  layui-layer-page " id="layui-layer5" type="page" times="3" showtime="0" contype="object" style="display:none;z-index: 19891017; height: 510px; top: 58px; left: 278.5px;">
+								<div class="layui-layer-content" style="height: 510px;">
+									<div class="del-pop layui-layer-wrap" id="number-attend" data-type="1" data-id="MDAwMDAwMDAwMLScz9yIubex" style="display: block;">
+									    <div class="pop-title">
+									        <h3>2019.02.18</h3>
+									        <a href="javascript:;" class="close"></a>
+									    </div>
+									    <div class="content">
+									    	
+									    	<div class="qd_gesture fl border_right marr30" style="display: block;">
+													<div class="layui-anim layui-anim-scale layui-anim-loop">
+														<i class="layui-icon" style="position: relative;top: 48px;left: 67px;font-size: 100px;">&#xe715;</i>
+													</div>
+												<div class="rebuild">
+													<a style="position: relative;left: -20px;top: 70px;" href="javascript:;" shape="rect">
+														参与人需开启位置服务
+													</a>
+												</div>
+											</div>
+									    	
+									        <div class="sign-count">
+									            <span>已签到：</span>
+									            <i class="ing">0</i>
+									            <i class="line">/</i>
+									            <i class="total">20</i>
+									        </div>
+									    </div>
+									    <div class="btns">
+									        <a href="javascript:;" class="cancel close1">关闭</a>
+									        <a href="KT-content2-1-3.html" class="sure active close2">开始考勤</a>
+									    </div>
+									</div>
+								</div>
+								<span class="layui-layer-setwin"></span>
+							</div>
+					    </div>
+					    <!--二维码签到*****************************************************************-->
+					    <div class="layui-tab-item">
+					    	<form class="layui-form" action="" style="margin-top: 30px;width: 240px;">
+								<div class="layui-form-item">
+								    <label class="layui-form-label">班级</label>
+								    <div class="layui-input-block">
+								      <select name="interest" lay-filter="aihao">
+								        <option value=""></option>
+								        <option value="0">默认班级</option>
+								        <option value="1" selected="">默认班级</option>
+								      </select>
+								    </div>
+								</div>
+							</form>
+							<form class="layui-form" action="" style="margin-top: 30px;width: 240px;">
+								<div class="layui-form-item">
+								    <label class="layui-form-label">有效时间</label>
+								    <div class="layui-input-block">
+								      <select name="interest" lay-filter="aihao">
+								        <option value=""></option>
+								        <option value="0">15秒</option>
+								        <option value="1" selected="">30秒</option>
+								        <option value="2">60秒</option>
+								        <option value="3">2分钟</option>
+								        <option value="4">3分钟</option>
+								        <option value="5">5分钟</option>
+								        <option value="6">10分钟</option>
+								      </select>
+								    </div>
+								</div>
+							</form>
+							<button id="startwo" class="layui-btn layui-btn-primary" style="margin-left: 111px;margin-top: 46px;background: #328eeb;color: #fff;">新建考勤</button>
+							
+							<div class="layui-layer-shade" id="layui-layer-shade5" times="9" style="display:none;z-index:19891016; background-color:#000; opacity:0.5; filter:alpha(opacity=50);"></div>
+							<div class="layui-layer  layui-layer-page " id="layui-layer6" type="page" times="3" showtime="0" contype="object" style="display:none;z-index: 19891017; height: 510px; top: 58px; left: 278.5px;">
+								<div class="layui-layer-content" style="height: 510px;">
+									<div class="del-pop layui-layer-wrap" id="number-attend" data-type="1" data-id="MDAwMDAwMDAwMLScz9yIubex" style="display: block;">
+									    <div class="pop-title">
+									        <h3>2019.02.18</h3>
+									        <a href="javascript:;" class="close"></a>
+									    </div>
+									    <div class="content">
+									        <div class="qd_gesture fl border_right marr30" style="display: block;">
+												<img style="width: 100%;position: relative;top: -2px;left: -24px;" src="https://mp.weixin.qq.com/cgi-bin/showqrcode?ticket=gQHa7zwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyOUJ5d0ltNTNidWUxdjhYUXhzMVMAAgTIbk1cAwQAjScA">	
+												<div class="rebuild">
+													<a style="position: relative;left: -20px;top: 0px;" href="javascript:;" shape="rect">
+														需登录扫一扫
+													</a>
+												</div>
+											</div>
+									        
+									        <div class="sign-count">
+									            <span>已签到：</span>
+									            <i class="ing">0</i>
+									            <i class="line">/</i>
+									            <i class="total">20</i>
+									        </div>
+									    </div>
+									    <div class="btns">
+									        <a href="javascript:;" class="cancel close1">关闭</a>
+									        <a href="KT-content2-1-4.html" class="sure active close2">开始考勤</a>
+									    </div>
+									</div>
+								</div>
+								<span class="layui-layer-setwin"></span>
+							</div>
+					    </div>
+					  </div>
+					</div>	
+				</div>
+				
+	    </div>
+	    
+        
+		<script src="../js/jquery.min1.9.1.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../js/jquery.easing.js"></script>
+        <script src="../lib/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../lib/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../js/KT-content-common.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../js/KT-content2/KT-content2-1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/KT-content2/jquery.gesture.password.js" type="text/javascript" charset="utf-8"></script>
+        
+        <div class="layui-layer-shade" id="layui-layer-shade9" times="9" style="display:none;z-index:19891022; background-color:#000; opacity:0.5; filter:alpha(opacity=50);"></div>
+        <div class="layui-layer layui-anim-01 layui-layer-page " id="layui-layer9" type="page" times="9" showtime="0" contype="string" style="display:none;z-index: 19891023; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgba(255, 255, 255, 0);">
+        	<div class="layui-layer-content" style="height: 237px;">
+	        	<div class="course_qcode" style="width:100%;">
+					<div class="left-innerbox">
+						<h2 class="classcode">加课码：WeChat</h2>
+						<img src="../images-tou/showqrcode.jpg">
+						<input class="codetips" value="微信扫码二维码">
+					</div>
+					<div class="right-innerbox">
+						<div class="title-tips">已加课人数</div>
+						<div class="student-num">20</div>
+					</div>
+				</div>
+        	</div>
+        	<span class="layui-layer-setwin">
+        		<a class="layui-layer-ico layui-layer-close layui-layer-close2" href="javascript:;"></a>
+        	</span>
+        </div>
+		
+    </body>
+</html>

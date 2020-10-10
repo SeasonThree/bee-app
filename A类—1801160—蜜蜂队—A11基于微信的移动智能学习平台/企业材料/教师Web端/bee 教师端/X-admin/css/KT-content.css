@@ -1,0 +1,571 @@
+.x-body{
+	background: -#f2f2f2;
+}
+/*顶部***************************************************************************************************/
+/*.topone{
+	width:100%;
+	height:150px;
+	background: #fff url(../gimages/13.jpg) 0 0 no-repeat;
+	background-size:100%;
+}*/
+.top{
+	width:100%;
+	height:60px;
+	border-bottom: 1px solid #e4e4e5;
+}
+.layui-nav {
+    position: relative;
+    padding: 0 89px;
+    background-color: #fff;
+    color: #333333;
+    border-radius: 2px;
+    font-size: 0;
+    /*box-sizing: border-box;*/
+    width:100%;
+    height: 60px;
+    background-size: 100%;
+}
+.layui-nav .layui-nav-item a{
+    color: #333333;
+    font-size:18px;
+    padding: 0 13px;
+    position: relative;
+    z-index: 100;	
+}
+.layui-nav .layui-nav-item {
+    float:right;
+}
+.layui-nav-bar {
+	visibility: hidden;
+	display: none;
+	background-color: #999999;
+}
+.layui-this{
+	display: none;
+}
+.layui-nav .layui-nav-item a:hover{
+	color: #ffffff;
+}
+#act2{
+	width:52px;
+	height:28px;
+	border-radius: 4px;
+	background: #999999;
+	position: absolute;
+	left: 6px;
+	top: 15px;
+	z-index: 1;	
+}
+#act{
+	color: #ffffff;
+}
+.choose{
+	color: #ffffff;
+}
+.choose2{
+	width:52px;
+	height:28px;
+	border-radius: 4px;
+	background: #999999;
+	position: absolute;
+	left: 6px;
+	top: 15px;
+	z-index: 1;	
+}
+/*内容***************************************************************************************************/
+.content{
+	padding: 20px 81px;
+	width: 100%;
+	height: 818px;
+}
+.left{
+	width: 640px;
+	border: 1px solid #d7d7d7;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding-bottom: 50px;
+	background: #fff;
+	box-shadow: 0px 1px 2px #bbb;
+}
+.right{
+	width: 485px;
+	/*height: 425px;*/
+	position:absolute;
+	right:81px;
+	top:81px;
+	background: #fff;
+}
+.lefttop{
+	width:640px;
+	height: 55px;
+	border-bottom: 1px solid #d7d7d7;;
+}
+span.one {
+    float: left;
+    line-height: 55px;
+    font-size: 20px;
+    color: #333;
+    margin-left: 20px;
+}
+#kc{
+	float:right;
+	line-height: 55px;
+	margin-right: 13px;
+}
+.layui-btn {
+    padding: 0 10px;
+    background-color: #009688;
+    box-shadow: 0px 1px 2px #bbb;
+}
+.layui-table td, .layui-table th {
+    position: relative;
+    padding: 9px 9px;
+    min-height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+}
+.layui-elem-field legend {
+    margin-left: 91px;
+}
+.layui-form-switch {
+	margin-top: 2px;
+	margin-left: -110px;
+}
+.layui-form-onswitch {
+    border-color: #999999;
+    background-color: #999999;
+}
+.layui-timeline {
+    margin-left: 75px;
+    margin-top: -46px;
+}
+.layui-timeline-item {
+    position: relative;
+    padding-bottom: 5px;
+}
+/*前面的1.1*/
+span.num{
+    float: left;
+    margin-left: -30px;
+    margin-top: 1px;
+    position: relative;
+    z-index: 2;
+}
+.layui-timeline-title {
+    position: relative;
+    z-index: 2;
+    width: 64px;
+    color: #0075cb;
+    font-size: 15px;
+	font-weight: 300;
+}
+.bg {
+    width: 608px;
+    height: 25px;
+    background: #efefef;
+    float: left;
+    margin-left: -61px;
+    margin-top: -34px;
+    position: relative;
+    z-index: 1;
+   	visibility:-hidden;
+   	display: none;
+}
+.bg2 {
+    width: 608px;
+    height: 28px;
+    background: #efefef;
+    margin-left: 19px;
+    margin-top: 22px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 69px;
+}
+.bj {
+    width: 34px;
+    height: 22px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 22px;
+    margin-left: 160px;
+    margin-top: 2px;
+    padding: 0 0px;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+legend{
+	font-size: 20px;
+	font-weight: 300;
+	position: relative;
+	left: -31px;
+}
+.layui-timeline-title i{
+	margin-left: 352px;
+	color: #099809;
+	font-size: 29px;
+	line-height: 22px;
+	position: absolute;
+}
+.layui-timeline-title .layui-progress {
+    position: absolute;
+    z-index: 20;
+    top: 2px;
+    width: 57px;
+    left: 464px;
+}
+/*左边***************************************************************************************************/
+.layui-progress-big, .layui-progress-big .layui-progress-bar {
+    height: 18px;
+	line-height: 18px;
+	width: 57%;
+	position: relative;
+	right: -48px;
+	top: -32px;
+}
+.layui-icon {
+    font-size: 26px;
+}
+
+/*右边*************************************************************************************************/
+.img{
+	width:100%;
+	height:70%;
+	background: #fff url(../images/tip_03.png) 0 0 no-repeat;
+	margin-top: 45px;
+}
+.right p{
+	font-size: 18px;
+	color: #999;
+	line-height: 2;
+	text-align: center;
+} 
+.layui-form-switch {
+    margin-top: 12px;
+    margin-left: -104px;
+}
+.layui-form-select .layui-input {
+    height: 30px;
+}
+.layadmin-homepage-list-imgtxt .media-body .min-font {
+    margin-bottom: 10px;
+    margin-top: -18px;
+}
+.right p {
+    font-size: 16px;
+    color: #999;
+    line-height: 2;
+    text-align: left;
+}
+.layadmin-homepage-list-imgtxt .media-body .pad-btm .fontColor a {
+    font-weight: 400;
+    color: #337ab7;
+}
+.message-text {
+    padding-top: 10px;
+    margin-left: 42px;
+}
+.layui-card {
+    margin-bottom: 4px;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+    padding-bottom: 31px;
+    padding-top: 20px;
+}
+.operation {
+    position: relative;
+    cursor: pointer;
+    margin-top: -65px;
+    margin-right: 10px;
+}
+.operation i {
+    display: block;
+    width: 28px;
+    height: 28px;
+    font-size: 21px;
+	text-align: center;
+	line-height: 34px;
+	position: absolute;
+	right: 6px;
+}
+.fr {
+    float: right;
+}
+.operation b {
+    position: absolute;
+    width: 100%;
+    height: 9px;
+    background: url(../images/jiao.jpg) no-repeat 12px;
+    top: 28px;
+    right: -25px;
+    z-index: 999;
+    display: none;
+}
+.operation ul {
+    width: 62px;
+    border: solid 1px #e1e1e1;
+    position: relative;
+	top: 36px;
+	right: -8px;
+    background: #fff;
+    border-radius: 3px;
+    display: none;
+    z-index: 100;
+}
+.operation ul li a {
+    display: block;
+    padding: 0 3px;
+    height: 25px;
+    line-height: 25px;
+    border-bottom: solid 1px #f4f4f4;
+    color: -#7a9e30;
+    text-align: center;
+    font-size: 12px;
+}
+.message-content .media-body {
+    margin-bottom: 60px;
+    height: 105px;
+}
+.tea{
+	position: absolute;
+	top: 22px;
+	left: 36px;
+}
+.card-body-dz{
+	position: relative;
+	top: 21px;
+	left: 39px;
+}
+.iz{
+	margin-left: 29px;
+}
+.i{
+	font-weight: 300;
+	font-size: 16px;
+	cursor: pointer;
+}
+#p{
+	color: #444444;
+	display: inline-block;
+	cursor: pointer;
+}
+/*二维码******************************************/
+.box-box {
+    width: 132px;
+    height: 35px;
+    position: relative;
+    margin: 14px auto 0;
+	/*background: #999999;*/
+	background: #109fb7;
+}
+.box-box .sele {
+    border: 1px solid #dcdcdc;
+    font-size: 14px;
+    color: #fff;
+    text-align: left;
+    width: 120px;
+    padding-left: 11px;
+    height: 33px;
+    line-height: 33px;
+    background: url(../images/ktp1_15.png) no-repeat;
+        background-position-x: 0%;
+        background-position-y: 0%;
+    background-position: 105px 10px;
+    cursor: pointer;
+}
+.sele .qrcode {
+    background: url(../images/qrcodehover.png);
+        background-position-x: 0%;
+        background-position-y: 0%;
+        background-repeat: repeat;
+    width: 22px;
+    height: 33px;
+    display: inline-block;
+    line-height: 33px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.fl {
+    float: left;
+}
+.sele .codetext {
+    display: inline-block;
+    line-height: 33px;
+    height: 33px;
+    margin-left: 5px;
+}
+.selecon ul {
+    padding: 0px;
+    margin: 0px;
+    background-color: rgba(0,0,0,0.5);
+}
+.selecon ul li {
+    cursor: pointer;
+    padding: 0px;
+    margin: 0px;
+    padding-left: 20px;
+    display: block;
+    width: 112px;
+    height: 44px;
+    line-height: 44px;
+    color: #2c2c2c;
+    font-size: 14px;
+    cursor: pointer;
+}
+.selecon ul li a {
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+    line-height: 44px;
+    color: #fff;
+    display: block;
+    width: 108px;
+    height: 44px;
+}
+/*.hide2 {
+    display: none !important;
+}*/
+
+/*遮罩层************************************************************************************************/
+.layui-layer-shade {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.layui-layer-shade, .layui-layer {
+    position: fixed;
+}
+.layui-layer {
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.layui-layer {
+    top: 150px;
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    -webkit-background-clip: content;
+    box-shadow: 1px 1px 50px rgba(0,0,0,.3);
+}
+.layui-layer-shade, .layui-layer {
+    position: fixed;
+}
+.layui-layer-page .layui-layer-content {
+    position: relative;
+    overflow: auto;
+}
+.layui-layer-content {
+    position: relative;
+}
+.course_qcode {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    display: table;
+    text-align: center;
+}
+.course_qcode .left-innerbox {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    width: 500px;
+}
+.course_qcode .left-innerbox .classcode {
+    color: #fff;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 50px;
+    display: inline-block;
+}
+.course_qcode .classcode {
+    color: #fff;
+    font-size: 28px;
+    padding-top: 20px;
+    font-weight: normal;
+}
+.course_qcode .left-innerbox img {
+    width: 95%;
+    max-width: 500px;
+    max-height: 500px;
+    display: inline-block;
+}
+img {
+    border: none;
+}
+.course_qcode .left-innerbox .codetips {
+    color: #fff;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 40px;
+    display: inline-block;
+    text-align: center;
+    width: 500px;
+}
+input, select, textarea {
+    outline: none;
+    border: none;
+    background: none;
+    cursor: text;
+}
+.course_qcode .right-innerbox {
+    display: inline-block;
+    margin-left: 5%;
+}
+.course_qcode .right-innerbox .title-tips {
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+}
+.course_qcode .right-innerbox .student-num {
+    font-size: 120px;
+    color: #fff;
+    font-weight: bold;
+}
+.layui-layer-setwin {
+    position: absolute;
+    right: 10px;
+    *right: 0;
+    top: 10px;
+    font-size: 0;
+    line-height: initial;
+}
+.layui-layer-setwin .layui-layer-close2 {
+    position: absolute;
+    right: -23px;
+    top: -23px;
+    width: 30px;
+    height: 30px;
+    margin-left: 0;
+    background-position: -60px -195px;
+}
+.layui-layer-setwin a {
+    position: relative;
+    width: 14px;
+    height: 14px;
+    margin-left: 10px;
+    font-size: 12px;
+    _overflow: hidden;
+}
+.layui-layer-dialog .layui-layer-ico, .layui-layer-setwin a, .layui-layer-btn a {
+    display: inline-block;
+    /**display: inline;
+    *zoom: 1;*/
+    vertical-align: top;
+}
+.layui-layer-ico {
+    background: url(../images/showqrcode.jpg) no-repeat;
+        background-position-x: 0%;
+        background-position-y: 0%;
+}

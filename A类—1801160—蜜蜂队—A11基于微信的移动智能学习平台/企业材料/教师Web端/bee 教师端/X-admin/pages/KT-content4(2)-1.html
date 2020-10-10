@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>我的课堂</title>
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="../css/font.css">
+        <link rel="stylesheet" type="text/css" href="../lib/layui/css/layui.css"/>
+        <link rel="stylesheet" type="text/css" href="../lib/layer/mobile/need/layer.css" />
+        <link rel="stylesheet" href="../css/xadmin.css">
+        <link rel="stylesheet" type="text/css" href="../css/KT-content-common.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/KT-content2/KT-content2-1.css"/>
+       	<link rel="stylesheet" type="text/css" href="../css/KT-content2/KT-content2-3.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/KT-content4.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/tiku.css"/>
+        <style type="text/css">.layui-table-cell {height: 39px;line-height: 50px;}</style>
+    </head>
+    <body style="text-align: left;background: #f9f9f9;">
+	    <div class="x-body" style="padding: 0px;">
+	    		<!--顶部--> 
+				<div class="top">
+					<ul class="layui-nav">
+						<li style="font-size: 24px;color: #333;float: left;line-height: 60px;">高等数学（一）</li>
+						<li style="float: left;">
+							<div class="box-box">
+				                <div class="sele" id="course-code-select" data-abc="WeChat">
+			                    	<div class="qrcode fl"></div>
+			                    	<div class="codetext">WeChat</div>
+				                </div>
+				                <div class="selecon cl" style="display: none;">
+				                    <ul>
+				                        <li><a id="stop-course-code" href="javascript:;">停用</a></li>
+				                        <li><a id="start-course-code" href="javascript:;">启用</a></li>
+				                    </ul>
+				                </div>
+				            </div>
+						</li>
+					  	<li class="layui-nav-item"><a href="KT-content10.html">直播</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content9.html">讨论</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content8.html">分组</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content7.html">考试</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content6.html">作业</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content5.html">通知</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a id="act" class="choose" href="KT-content4.html">资源</a><div id="act2" class="t choose2"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content3.html">统计</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content2.html">互动</a><div class="t"></div></li>
+					  	<li class="layui-nav-item"><a href="KT-content.html">首页</a><div class="t"></div></li>
+					</ul>
+				</div>
+				<div class="content">
+					<div class="layui-tab layui-tab-brief tab" lay-filter="docDemoTabBrief">
+					  	<ul class="layui-tab-title">
+					   	 	<li><a href="KT-content4.html">课程资源</a></li>
+					   	 	<li class="layui-this"><a href="KT-content4(2).html">题库</a></li>
+					   	 	<li><a href="KT-content4(3).html">作业库</a></li>
+					   	 	<li><a href="KT-content4(4).html">试卷库</a></li>
+					   	 	
+					  	</ul>
+					  	<div class="layui-tab-content">
+					  		<!--*课程资源***********************************************************-->
+						    <div class="layui-tab-item">
+						    
+						    </div>
+							<!--*题库***********************************************************-->
+						    <div class="layui-tab-item  layui-show">
+						    	<span class="layui-breadcrumb" style="position: relative;top: 20px;left: 40px;">
+									<a href="KT-content4(2).html">根目录</a>
+									<a><cite>高等数学题库一</cite></a>
+								</span>
+						    	<!--搜索组件-->
+	        					<div class="demoTable" style="margin-top: 60px;margin-left: 39px;">
+								  	<div class="layui-inline" style="width: 201px;">
+								    	<input class="layui-input" name="id" id="demoReload" autocomplete="off" value="请输入关键字" style="color: #b7b7b7;">
+								  	</div>
+								  	<button class="layui-btn" data-type="reload"><i class="layui-icon">&#xe615;</i></button>
+								  	
+								  	<a href="" style="width: 100px;display: inline-block;margin-left: 482px;"><button class="layui-btn" style="color: #fff;"><i class="layui-icon">&#xe654;</i>添加题目</button></a>
+								  	<a href="" style="width: 100px;display: inline-block;margin-left: 30px;"><button class="layui-btn" style="color: #fff;"><i class="layui-icon">&#xe654;</i>添加目录</button></a>
+									<a href="" style="width: 100px;display: inline-block;margin-left: 30px;"><button class="layui-btn" style="color: #fff;">导入</button></a>
+								</div>
+						    	
+	        					<div class="m-question question-item" id="question-1" dv="1">
+						            <div class="m-question-title">
+						                <span class="number">1<i></i></span>
+						                <div class="f-title">下列(    )属于灭火器配置场所严重危险级</div>
+						                <div style="margin-top: -35px;float:right;" class="layui-table-cell laytable-cell-9-0-5"> <a class="layui-btn layui-btn-normal layui-btn-xs" lay-event="edit"><i class="layui-icon">&#xe642;</i>编辑</a> <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del"><i class="layui-icon layui-icon-delete"></i>删除</a> </div>
+						            </div>
+						            <div class="m-question-list-html">
+						                <div class="m-choicebox" style="padding-left:55px;padding-right:10px;">
+						                    
+						                    A.&nbsp;建筑高度为l02m的写字楼<br>B.&nbsp;体育馆<br>C.&nbsp;建筑高度为30m的住宅楼<br>D.&nbsp;旅馆 <br>                                </div>
+						            </div>
+						            <div class="m-question-html">
+						                <div class="m-questionToolbar">
+	                                        <div class="m-checkBox single">
+                                                    <a class="question-option-list u-selected" href="javascript:void(0)" data-value="A">A</a>
+                            						<input type="radio" value="A" class="hide" name="item-65525" checked="checked">
+                                                    <a class="question-option-list" href="javascript:void(0)" data-value="B">B</a>
+                            						<input type="radio" value="B" class="hide" name="item-65525">
+                                                    <a class="question-option-list" href="javascript:void(0)" data-value="C">C</a>
+                            						<input type="radio" value="C" class="hide" name="item-65525">
+                                                    <a class="question-option-list" href="javascript:void(0)" data-value="D">D</a>
+                           							<input type="radio" value="D" class="hide" name="item-65525">
+	                                        </div>
+	                                    </div>
+						            </div>        
+						        </div>
+						        
+						        <div class="m-question question-item" id="question-2" dv="2">
+						            <div class="m-question-title">
+						                <span class="number">2<i></i></span>
+						                <div class="f-title"><p>关于地方性法规批准和备案的说法，正确的是( )</p></div>
+						                <div style="margin-top: -35px;float:right;" class="layui-table-cell laytable-cell-9-0-5"> <a class="layui-btn layui-btn-normal layui-btn-xs" lay-event="edit"><i class="layui-icon">&#xe642;</i>编辑</a> <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del"><i class="layui-icon layui-icon-delete"></i>删除</a> </div>
+						            </div>
+						            <div class="m-question-list-html">
+						                <div class="m-choicebox" style="padding-left:55px;padding-right:10px;">
+						                    <p>A. 设区的市的地方性法规应当报省级人大常委会备案 　　</p>
+											<p>B. 自治州的单行条例报送备案时，应当说明作出变通的情况 　　</p>
+											<p>C. 省级人大常委会的地方性法规应报全国人大常委会批准 　　</p>
+											<p>D. 自治县的单行条例由自治州人大常委会报送全国人大常委会和国务院备案</p>                
+						                </div>
+						            </div>
+						            <div class="m-question-html">
+						                <div class="m-questionToolbar">
+	                                        <div class="m-checkBox single">
+                                                <a class="question-option-list " href="javascript:void(0)" data-value="A">A</a>
+                        						<input type="radio" value="A" class="hide" name="item-67132">
+                                                <a class="question-option-list" href="javascript:void(0)" data-value="B">B</a>
+                        						<input type="radio" value="B" class="hide" name="item-67132">
+                                                <a class="question-option-list u-selected" href="javascript:void(0)" data-value="C">C</a>
+                        						<input type="radio" value="C" class="hide" name="item-67132">
+                                                <a class="question-option-list " href="javascript:void(0)" data-value="D">D</a>
+                        						<input type="radio" value="D" class="hide" name="item-67132">
+	                                        </div>
+	                                    </div>
+						            </div>        
+						        </div>
+						        
+						        <div class="m-question question-item" id="question-3" dv="3">
+						            <div class="m-question-title">
+						                <span class="number">3<i></i></span>
+						                <div class="f-title"><p>关于法人的说法中正确的是( )</p></div>
+						                <div style="margin-top: -35px;float:right;" class="layui-table-cell laytable-cell-9-0-5"> <a class="layui-btn layui-btn-normal layui-btn-xs" lay-event="edit"><i class="layui-icon">&#xe642;</i>编辑</a> <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del"><i class="layui-icon layui-icon-delete"></i>删除</a> </div>
+						            </div>
+						            <div class="m-question-list-html">
+						                <div class="m-choicebox" style="padding-left:55px;padding-right:10px;">
+						                    <p>A.法人分为企业法人和行政法人 　　</p>
+											<p>B.企业法人合并、分立的应当向登记机关办理登记并公告 　　</p>
+											<p>C.有独立经费的机关从批准之日取得法人资格 　　</p>
+											<p>D.具有法人条件的事业单位从成立之日取得法人资格</p>                
+						                </div>
+						            </div>
+						            <div class="m-question-html">
+						                <div class="m-questionToolbar">
+	                                        <div class="m-checkBox single">
+                                                <a class="question-option-list " href="javascript:void(0)" data-value="A">A</a>
+                        						<input type="radio" value="A" class="hide" name="item-67133">
+                                                <a class="question-option-list u-selected" href="javascript:void(0)" data-value="B">B</a>
+                        						<input type="radio" value="B" class="hide" name="item-67133">
+                                                <a class="question-option-list " href="javascript:void(0)" data-value="C">C</a>
+                        						<input type="radio" value="C" class="hide" name="item-67133">
+                                                <a class="question-option-list" href="javascript:void(0)" data-value="D">D</a>
+                        						<input type="radio" value="D" class="hide" name="item-67133">
+	                                        </div>
+	                                    </div>
+						            </div>        
+						        </div>
+						        
+						        <div class="m-question question-item" id="question-4" dv="4">
+						            <div class="m-question-title">
+						                <span class="number">4<i></i></span>
+						                <div class="f-title"><p>某施工企业的项目经理李某在工程施工过程中订立材料采购合同，承担该合同付款责任的是( )</p></div>
+						                <div style="margin-top: -35px;float:right;" class="layui-table-cell laytable-cell-9-0-5"> <a class="layui-btn layui-btn-normal layui-btn-xs" lay-event="edit"><i class="layui-icon">&#xe642;</i>编辑</a> <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del"><i class="layui-icon layui-icon-delete"></i>删除</a> </div>
+						            </div>
+						            <div class="m-question-list-html">
+						                <div class="m-choicebox" style="padding-left:55px;padding-right:10px;">
+						                    <p>A.李某 　　</p>
+											<p>B.施工企业 　　</p>
+											<p>C.李某所属施工企业项目经理部 　　</p>
+											<p>D.施工企业法定代表人</p>                
+						                </div>
+						            </div>
+						            <div class="m-question-html">
+						                <div class="m-questionToolbar">
+	                                        <div class="m-checkBox single">
+	                                            <a class="question-option-list u-selected" href="javascript:void(0)" data-value="A">A</a>
+	                    						<input type="radio" value="A" class="hide" name="item-67134">
+	                                            <a class="question-option-list " href="javascript:void(0)" data-value="B">B</a>
+	                    						<input type="radio" value="B" class="hide" name="item-67134">
+	                                            <a class="question-option-list " href="javascript:void(0)" data-value="C">C</a>
+	                    						<input type="radio" value="C" class="hide" name="item-67134">
+	                                            <a class="question-option-list " href="javascript:void(0)" data-value="D">D</a>
+	                    						<input type="radio" value="D" class="hide" name="item-67134">
+	                                        </div>
+	                                    </div>
+						            </div>        
+						        </div>
+						        
+						        <div class="m-question question-item" id="question-5" dv="5">
+						            <div class="m-question-title">
+						                <span class="number">5<i></i></span>
+						                <div class="f-title"><p>关于建设工程代理的说法，正确的是( )</p></div>
+						                <div style="margin-top: -35px;float:right;" class="layui-table-cell laytable-cell-9-0-5"> <a class="layui-btn layui-btn-normal layui-btn-xs" lay-event="edit"><i class="layui-icon">&#xe642;</i>编辑</a> <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del"><i class="layui-icon layui-icon-delete"></i>删除</a> </div>
+						            </div>
+						            <div class="m-question-list-html">
+						                <div class="m-choicebox" style="padding-left:55px;padding-right:10px;">
+						                    <p>A.招标活动应当委托代理 　　</p>
+											<p>B.代理人不可以自行辞去委托 　　</p>
+											<p>C.被代理人可以单方取消委托 　　</p>
+											<p>D.法定代表人与法人之间是法定代表关系</p>                
+						                </div>
+						            </div>
+						            <div class="m-question-html">
+						                <div class="m-questionToolbar">
+						                    <div class="m-checkBox single">
+												<a class="question-option-list " href="javascript:void(0)" data-value="A">A</a>
+												<input type="radio" value="A" class="hide" name="item-67135">
+												<a class="question-option-list u-selected" href="javascript:void(0)" data-value="B">B</a>
+												<input type="radio" value="B" class="hide" name="item-67135">
+												<a class="question-option-list " href="javascript:void(0)" data-value="C">C</a>
+												<input type="radio" value="C" class="hide" name="item-67135">
+												<a class="question-option-list " href="javascript:void(0)" data-value="D">D</a>
+												<input type="radio" value="D" class="hide" name="item-67135">
+						                    </div>
+						                </div>
+						            </div>        
+						        </div>
+						        
+						        <div id="demo0" style="text-align: center;margin-top: 20px;"></div>
+						        
+						    </div>
+						    <!--*作业库***********************************************************-->
+						    <div class="layui-tab-item">
+	        					
+						    </div>
+						    <!--*试卷库***********************************************************-->
+						    <div class="layui-tab-item">
+	        					
+						    </div>
+					    </div>
+					</div>
+					
+					
+				</div>
+				
+	    </div>
+	    
+        
+		<script src="../js/jquery.min1.9.1.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../js/jquery.easing.js"></script>
+        <script src="../lib/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../lib/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../js/KT-content-common.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../js/KT-content2.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			layui.use(['form','element','jquery','layer','laydate','table','laypage'], function(){
+			  	var $ = layui.$
+			  	,form = layui.form
+			  	,layer = parent.layer ==undefined?layui.layer:parent.layer
+			 	,layedit = layui.layedit
+			  	,laydate = layui.laydate
+			  	,table = layui.table
+			  	,laypage = layui.laypage
+			  	,element=layui.element;
+			  	
+			  	
+			  	//layui文件必须要的文件******************************************************************************
+			  	var _hmt = _hmt || [];
+				(function() {
+				  	var hm = document.createElement("script");
+				  	hm.src = "https://hm.baidu.com/hm.js?b393d153aeb26b46e9431fabaf0f6190";
+				  	var s = document.getElementsByTagName("script")[0]; 
+				  	s.parentNode.insertBefore(hm, s);
+				})();
+				
+				
+				
+			  	//表格******************************************************************************
+				//总页数低于页码总数
+				  laypage.render({
+				    elem: 'demo0'
+				    ,count: 50 //数据总数
+				  });
+								
+			  	
+			  	
+			});
+		</script>
+        
+        <div class="layui-layer-shade" id="layui-layer-shade9" times="9" style="display:none;z-index:19891022; background-color:#000; opacity:0.5; filter:alpha(opacity=50);"></div>
+        <div class="layui-layer layui-anim-01 layui-layer-page " id="layui-layer9" type="page" times="9" showtime="0" contype="string" style="display:none;z-index: 19891023; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgba(255, 255, 255, 0);">
+        	<div class="layui-layer-content" style="height: 237px;">
+	        	<div class="course_qcode" style="width:100%;">
+					<div class="left-innerbox">
+						<h2 class="classcode">加课码：WeChat</h2>
+						<img src="../images-tou/showqrcode.jpg">
+						<input class="codetips" value="微信扫码二维码">
+					</div>
+					<div class="right-innerbox">
+						<div class="title-tips">已加课人数</div>
+						<div class="student-num">20</div>
+					</div>
+				</div>
+        	</div>
+        	<span class="layui-layer-setwin">
+        		<a class="layui-layer-ico layui-layer-close layui-layer-close2" href="javascript:;"></a>
+        	</span>
+        </div>
+		
+    </body>
+</html>

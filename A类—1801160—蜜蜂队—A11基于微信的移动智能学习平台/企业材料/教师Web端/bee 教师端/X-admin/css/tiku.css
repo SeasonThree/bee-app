@@ -1,0 +1,267 @@
+/* CSS Document */
+.wp{ width: 1200px; /*margin: 0 auto;*/}
+.pt40{ padding-top:40px;}
+/*题库*/
+.pracl-dalist{ padding:0; border-bottom:none; margin-bottom:0;}
+.pracl-dalist li{padding: 15px 20px 15px 13px; border-bottom:1px solid #ededed; line-height:26px; *display:inline-block; position:relative; /*IE7*/}
+.pracl-dalist li{overflow:hidden; }
+.pracl-dalist li:hover{ background-color:#fafafa}
+
+.pracl-dalist li  h3 a{color:#333;font-size:15px; font-weight:normal} 
+.pracl-dalist li  h3 em{ padding:8px 8px 8px 10px; font-size:12px; color:#fff; background-position: -108px 5px;font:normal 12px/22px "\5b8b\4f53"!important; white-space:nowrap;}
+.pracl-dalist li  p{height:24px; line-height:24px; overflow:hidden;font:normal 12px/22px "\5b8b\4f53"!important;font-size:12px; color:#999;}
+.pracl-dalist li  p span{ margin-right:20px;}
+
+.examList-data{ min-height:340px;}
+.pracl-dalist li .dal-but{ height:34px;float:right; margin-top:6px;position:absolute; right:10px; top:19px}
+.pracl-dalist li .dal-but a, .mcra_tab td a{font-size:12px; color:#999; margin-left:15px;font:normal 12px/22px "\5b8b\4f53"!important;}
+.pracl-dalist li .dal-but a.downPage, .mcra_tab td a.downPage{ padding:3px 10px 0 24px; width:50px;  background:url(mn_bg.png) -23px -277px no-repeat; color:#999; }
+.pracl-dalist li .dal-but a.downPage:hover, .mcra_tab td a.downPage:hover{ color:#ee491f; background-position:-23px -304px}
+.pracl-dalist li  h3 a:hover,.pracl-dalist li .dal-but a:hover{ color:#e45c40;}
+.pracl-dalist li .dal-but a, .mcra_tab td a{padding:3px 10px; float:left;}
+.pracl-dalist li .dal-but .zt-go,.ui-table .zt,.ui-table .czct .this, .mcra_tab td .zt-go{ color:#333!important; padding:7px 15px; background:#f6f6f6; border:1px solid #e7e7e7; box-shadow:1px  2px 1px #eee; }
+.pracl-dalist li span .zt-go:hover,.ui-table .zt:hover, .mcra_tab .zt-go:hover{ background:#e45c40; color:#fff!important; box-shadow:none; border:1px solid #e45c40;}
+.pracl-dalist li .dal-but .zt-go, .mcra_tab td .zt-go{padding:5px 15px;}
+
+.btn-org{ background-color:#ed232f!important; border-color:#dc5800!important; color:#FFF!important}
+.btn-org:hover{background-color:#dc5800!important; border-color:#d15400!important;}
+.btn-green{ background-color:#0078B3!important; border-color:#0093D9!important; color:#FFF!important}
+.btn-green:hover{background-color:#0093D9!important; border-color:#0078B3!important;}
+.pracl-dalist li .dal-but a.btn-org ,.pracl-dalist li .dal-but a.btn-green, .mcra_tab td a.btn-green { color:#fff!important}
+
+.m-examHead .h1{width:100%; font-size:24px;font-family:"Microsoft Yahei"; border-bottom:#e5e5e5 dashed 1px; line-height:30px; text-align:center; padding-top:20px; padding-bottom:25px; margin:0 auto}
+.m-examHead .info{width:1178px; margin:0 auto; text-align:left; font-size:14px; line-height:25px; padding:15px 10px; color:#666;border-left: #e3e3e3 solid 1px;border-right: #e3e3e3 solid 1px;}
+
+/*做题部分*/
+.ui-progress .navBox{width:1193px;  background-color:#f9f9f9;border: #e3e3e3 solid 1px;border-top: none; padding:5px 0 15px 5px; height:40px;}
+.ui-progress .btn{ padding:0 15px; font-size:14px; display:block; float:left; line-height:30px; margin-left:10px; margin-top:10px;-moz-border-radius: 3px;  -webkit-border-radius: 3px;  border-radius:3px;}
+.ui-progress .btn:hover{background-color:#4e4e4e; color:#FFF}
+.ui-progress .ui-check{ background-color:#4e4e4e; color:#FFF}
+.ui-progress .navBox1{width:1193px;background-color:#f9f9f9;border: #e3e3e3 solid 1px;border-top: none; padding:5px 0 15px 5px; height:40px;position:fixed;top:0;display:none;z-index: 100;}
+.exam-report-cont-blk{width:920px; float: left;}
+
+
+/*clear float*/
+.sidebar-tool:after,.sidebar-tool a:after,.ui-progress .navBox:after,.m-question-title:after,.m-question:after,.m-choicebox ul:after,.m-choicebox li:after,.m-material .material:after,.answer:after,.m-vacancy:after,.answer-tool:after,.answer-bd .analyze:after,.m-choicebox:after,.daily-progress:after,.m-questionToolbar:after,.u-examScore:after,.answer-bd .analyze-hd:after,.analyze-video:after,.analyze-video-bd:after,.answer-review-w-hd:after,.reply-classify:after,.reply-classify-hd:after,.rightArea-tool .hd:after,.rightArea-tool .bd:after,.rightArea-tool .ft:after{ display:block;visibility:hidden;clear:both;height:0;content:'.';}
+
+.m-question img,.m-material img{ max-width:650px;overflow:hidden;}
+.m-secpart{ border:#e8e8e8 solid 1px; background-color:#ECF8FF; padding:15px 20px; margin-top:10px; }
+.m-question{ width:1083px; border:#e3e3e3 solid 1px; background-color:#fff; margin-top:20px; position:relative;word-break: break-all;margin-left: 38px;}
+.m-question-title{ width:100%; border-top:#FFF solid 1px; background-color:#f9f9f9; padding:15px 0}
+.m-question-title .number{ width:55px; display:block; color:#0180D3; text-align:center;font-family:"Microsoft Yahei";font-size:25px; line-height:25px; float:left; position:relative; margin-top:-3px}
+.m-question-title .f-title{width:840px; float:right; padding-right: 188px;}
+.m-question.hover {-webkit-box-shadow:#f06000 0 0px 5px; -moz-box-shadow:#f06000 0 0px 5px; box-shadow:#ff802c 0 0px 10px ;}
+.m-question.hover .del{ width:29px; height:30px; background:url(//img2.233.com/wx/tiku/v1/skin/exam/tk_exam.png) -109px -282px; position:absolute; right:5px; top:5px}
+.m-question.hover .del:hover{ background-position: -147px -282px}
+
+.m-choicebox{ padding-left:30px; padding-top:20px; padding-bottom:10px;}
+.m-choicebox img{ margin-left:20px}
+.m-choicebox ul{ width:858px; padding:0 10px}
+.m-choicebox li{ width:100%; padding:6px 0;-moz-border-radius: 3px;  -webkit-border-radius: 3px;  border-radius:3px;cursor: pointer; color: #000}
+.m-choicebox li:hover{ background-color:#ededed}
+.m-choicebox li span{ float:left; width:50px;color:#999; text-align:center;font-family:"Microsoft Yahei"; position:relative}
+.m-choicebox li .option-content{ color: #000}
+.m-choicebox li i{ width:32px; height:35px; display:none; position:absolute; left:50%;top:50%; margin-top:-17px;margin-left:-20px;background:url(/images/tk_exam.png) no-repeat -138px -331px;}
+.m-choicebox .u-selected i,.m-choicebox .u-selected-sys i{ display:block}
+.m-choicebox li p{ width:605px; float:right; color:#555}
+
+
+.m-vacancy{ width:100%; padding-bottom:30px}
+.m-vacancy textarea{width:610px;height:72px; line-height:24px; border-radius:6px;box-shadow: 0 2px 2px #dedede inset; overflow:auto; padding:4px 10px; background:#fff; font-size:14px; margin-top:20px; border:#d3d3d3 solid 1px; margin:30px auto 0 50px}
+.m-vacancy .btn-img{ width:60px; height:24px; float:left;margin-left:50px; line-height:24px; padding-left:35px;display:block; background:url(/images/tk_exam.png) -182px -24px no-repeat;  color:#666; margin-top:10px; display:inline}
+.m-vacancy .btn-img:hover{ color:#f06000}
+
+/*答题右侧操作*/
+.exam-rightArea{float:right; width:270px;margin-top:10px;min-height:470px;}
+.rightArea-tool{width:268px; border:#e3e3e3 solid 1px; background-color:#FFF}
+.rightArea-tool .hd{ background-color:#f9f9f9; border-bottom:#e8e8e8 solid 1px; line-height:45px; zoom:1}
+.rightArea-tool .hd .time i{ display:block; float:left;width:23px; height:23px; background:url(/images/tk_exam_new.png) -207px -82px;margin:10px 10px 0 10px;display:inline; }
+.rightArea-tool .hd strong{ color:#359029; padding-left:5px}
+.rightArea-tool .hd span{ float:left}
+.rightArea-tool .hd .time{font-size:14px;}
+.rightArea-tool .hd .zanting{ line-height:45px; border-left:#e8e8e8 solid 1px; float:right; padding-right:20px;}
+.rightArea-tool .hd .zanting:hover{ background-color:#fff}
+.rightArea-tool .hd .zanting i{ display:block; width:16px; height:16px; margin:16px 10px 0 15px;background:url(/images/tk_exam_new.png) -213px -117px; float:left}
+.rightArea-tool .hd .zanting span{ float:left}
+.rightArea-tool .bd{ padding-bottom:15px;zoom:1;min-height:85px}
+.rightArea-tool .bd .btn{ display:inline-block; float:left; border:#d3d3d3 solid 1px; background-color:#f4f4f4; color:#444; line-height:35px; width:110px;margin:15px 0 0 15px;box-shadow:1px 1px 1px #f3f3f3}
+.rightArea-tool .bd .btn i{ display:inline-block;width:18px; height:18px; float:left; background-image:url(/images/tk_exam_new.png); margin:11px 10px 0 10px; display:inline }
+.rightArea-tool .bd .btn span{ float:left;}
+.rightArea-tool .bd .look i{ background-position: 0 -146px;}
+.rightArea-tool .bd .change  i{ background-position: -28px -146px;}
+.rightArea-tool .bd .calculator i{ background-position: -56px -144px;}
+.rightArea-tool .bd .redo i{ background-position: -147px -146px;}
+.rightArea-tool .bd .bulletin i{ background-position: -171px -146px;}
+.rightArea-tool .bd .back i{ background-position: -80px -146px;}
+.rightArea-tool .bd .last i{ background-position: -107px -146px;}
+.rightArea-tool .bd .next i{ background-position: -122px -146px;}
+.rightArea-tool .bd .btn:hover{ background-color:#fff; }
+.rightArea-tool .ft{ background-color:#f9f9f9; border-top:#e3e3e3 solid 1px; line-height:30px; padding:7px 0}
+.rightArea-tool .ft .check{ display:inline-block; padding-right:20px;_padding-right:0px;}
+.rightArea-tool .ft .check input{ margin-right:10px; margin-left:15px;vertical-align:-2px;}
+
+.rightArea-answer{width:268px; border:#e8e8e8 solid 1px; background-color:#FFF; margin-top:10px}
+.rightArea-answer .hd{ background-color:#f9f9f9; border-bottom:#e8e8e8 solid 1px; line-height:45px}
+.rightArea-answer .hd .title{ font-size:16px; padding-left:15px}
+.rightArea-answer .bd{overflow: auto;}
+.rightArea-answer .panel-item{padding:18px 10px 0px 14px; display:inline-block /*margin-bottom: 40px;*/}
+.rightArea-answer dt { border-left: 2px solid #f06000; padding-left:5px; line-height: 10px;font-size: 100%;font-weight: 700; color:#666}
+.rightArea-answer .panel-order { margin-top:15px; overflow: hidden; }
+.rightArea-answer .panel-order a { float:left; cursor: pointer; margin: 0 2px 5px 0; width:22px; height:22px; line-height: 22px; outline: none; text-align: center; font-size: 12px; background:url(/images/tk_exam_new.png) 0 -168px;font-family: 'Arial'; }
+.rightArea-answer .panel-order a:hover { text-decoration: none; background:#0180D3; color: #fff; }
+.rightArea-answer .panel-order a.checked { background-position:-29px -168px;color: #fff; }
+.rightArea-answer .panel-order a.error { background-position:-93px -168px;color: #fff; }
+.rightArea-answer .panel-order a.right { background-position:-60px -168px;color: #fff; }
+.rightArea-answer .ft{padding: 20px 15px 10px 15px;}
+
+.exam-rightArea .btn-1,.exam-rightArea .btn-2 { height: 35px;line-height: 35px;display: block; width:99%;margin-bottom: 10px;-webkit-transition: none; text-align:center;border: none; outline: none; display: inline-block; cursor: pointer;  -webkit-transition: all .25s ease;}
+.exam-rightArea .btn-1 {border:#d3d3d3 solid 1px; background: #e9eaec; color:#333;  }
+.exam-rightArea .btn-1:hover { background-color:#FFF;}
+.exam-rightArea .btn-2 { border: 1px solid #0167AD; background: #0180D3; color: #fff; position: relative; margin-right:-1px;}
+.exam-rightArea .btn-2:hover{background: #0167AD; color: #fff; text-decoration: none;}
+
+
+/*做题弹窗*/
+.suspend{height:250px;width:400px;border:1px #eee solid;border-radius:5px 5px 5px 5px;margin:0 auto;-moz-border-radius:5px 5px 5px 5px;-webkit-border-radius:5px 5px 5px 5px;background:url(/images/pause.gif) #fff center center no-repeat; }
+.suspend_close_btn{margin:160px 0 0 136px}
+.suspend_close_btn a{height:38px;width:124px;border-radius:5px;display:block;background:#0180D3;color:#FFF;font-weight:bold;text-align:center;line-height:38px;font-size:16px}
+.suspend_close_btn a:hover{background:#0167AD;color:#FFF;font-weight:bold;}
+.blockUI.blockMsg{z-index:1011; position: fixed; padding: 0px; margin:0 auto; top: 40%;left:35%;text-align: left; color: rgb(0, 0, 0); border: none; cursor: default; border-radius: 5px; background-color: rgb(255, 255, 255);display:none;}
+.bombbg{position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; overflow: hidden; -webkit-user-select: none; opacity: 0.5; display: block;z-index:1001;background:rgb(0, 0, 0);display:none;}
+
+a.submit_btn,.warning_confirm a{float:left;background:#0180D3;border-radius:5px;width:94px;height:34px;display:block;color:#fff;line-height:34px;font-weight:bold;text-align:center}
+a.submit_btn:hover,.warning_confirm a:hover{background:#0167AD;color:#fff;}
+.confirm,.warning_box{width:340px;} /* height:180px; */
+.confirm .confirm_false{margin-left:104px;background:#EA6159;border-radius:5px;width:144px;height:34px; display:block;color:#fff;line-height:34px;font-weight:bold;text-align:center}
+.confirm .confirm_false:hover{background:#DA251D;}
+.confirm .confirm_msg,.warning_msg{font-size:14px;min-height:70px;font-weight:bold;line-height:20px; padding:25px;text-align:center;word-break:break-all;}
+.confirm #notSelectNum{ color:#F00}
+.confirm .confirm_btn{margin:0 0 0 50px;}
+.warning_confirm a{margin-left:120px;}
+.confirm { background:#fff;  height:180px;}
+
+/*提交试卷统计*/
+.sheetAnalysis{width:1200px;margin:15px auto;background:#F2F2F2;padding:15px 0px;}
+.sheetAnalysis table{ border:none}
+.sheetTable{margin:0 auto;}
+.sheetTable tr{height:32px;}
+.sheetTable tr td{width:30px;height:32px;text-align:center;}
+.sheetTable tr td a{font-size:11px;color:#fff;display:block;background:url(/images/full-view.png) no-repeat top right;height:32px;line-height:24px;width:24px;}
+.sheetTable .green a{background:url(/images/full-view.png) no-repeat top left;}
+.sheetTable .yellow a{ background:#F90}
+.sheetTabless{margin:0 auto;}
+.sheetTabless tr{height:24px;}
+.sheetTabless tr td{width:24px;height:24px;text-align:center;}
+.sheetTabless tr td a{font-size:12px;color:#fff;display:block;font-weight:bold;background:url(/images/AsheetRed.png) no-repeat 0 0;height:24px;line-height:24px;width:24px;}
+
+.le-pracright{ width:183px; float:left; overflow:hidden; border:1px solid #e5e5e5; background:#fff; border-bottom:none;}
+.le-pracrcon{ padding:0; border-bottom:none;}
+.le-pracrcon h3{ font-size:16px; font-weight:700; line-height:20px; border-left:5px solid #ee491f; padding-left:15px; margin:30px 0  0 -1px; zoom:1;_position:relative;}
+.tui-table{ margin-top:15px; clear:both; border-collapse:collapse; border-spacing:0;}
+.tui-table th,.tui-table td{ border:1px #e3e3e3 solid; padding:15px 5px; font:14px; text-align:center; color:#666;}
+.tui-table th{ background:#f8f8f8;}
+.tui-table .green{ color:#60b25e;}
+.tui-table .red{color:#ee491f;}
+.tui-table a{ color:#458FCE;}
+
+.test-mark ul{ width:560px; margin-top:25px; zoom:1;}
+.test-mark li a{ width:170px;height:45px; line-height:45px; padding:0 0;  font-size:16px; color:#fff!important; display:block; text-align:center; border-radius:3px;float:left; margin-right:20px; background-color:#8f8787;}
+.test-mark li a:hover{ background-color:#817878;}
+
+.panel-order-notice {padding:0 0 15px 0px; text-align:center}
+.panel-order-notice em { display: inline-block; height: 24px; line-height: 24px; }
+.panel-order-notice i { margin-left: 5px; margin-right: 20px; width: 15px; height: 15px;display: inline-block;vertical-align:-4px;#vertical-align:0px; }
+.panel-order-notice i.error { background: #0180D3; border: 1px solid #0180D3; }
+.panel-order-notice i.right { background: #83cb9b; border: 1px solid #72cb94; }
+.panel-order-notice i.normal { border: 1px solid #ddd; background: #E9E9E9; }
+
+/*解析*/
+.m-questionToolbar{width:700px; padding:0 10px;padding-bottom:20px;}
+.m-checkBox{ padding-left:40px; }
+.m-checkBox a{margin-top:10px; display:block;float:left; width:40px; height:37px;padding-left:50px;  line-height:37px; font-size:14px;  background-image:url(../images/tk_exam.png); background-repeat:no-repeat; margin-right:20px; display:inline;font-family:"Microsoft Yahei"; }
+.m-checkBox a:hover{ color:#FFF}
+.m-checkBox.single a{ background-position:0 -84px;}
+.m-checkBox.single a:hover{ background-position: -94px -84px}
+.m-checkBox.single .u-selected{background-position: -94px -84px!important;color: #FFF!important;}
+.m-checkBox.single .u-check{background-position: 0 -84px;}
+.m-checkBox.multiple a{background-position:0 -131px; margin-top:10px}
+.m-checkBox.multiple a:hover{background-position:-94px -131px;}
+
+.m-checkBox.multiple .u-selected{background-position: -94px -131px!important; color:#FFF!important}
+.m-checkBox.multiple .u-check{background-position:0 -131px;}
+.m-choicebox li.right span{color:#5e976b}
+.m-choicebox li.right p{ color:#5e976b}
+
+
+.answer{ width:918px; border-top:#d8d8d8 dashed 1px; margin-top:10px}
+.answer-tool{ background-color:#FFF; font-size:14px; line-height:30px; padding:15px 0px 0px 0px; font-family:"Microsoft Yahei"; height:45px;background-color:#f9f9f9; }
+.answer-tool .txt{ color:#999; float:left; padding-left:30px}
+.answer-tool .option{ display:block; line-height:30px; padding:0 15px 0px 15px; float:left;border-radius:3px;}
+.answer-tool .right{color:#F06000}
+.answer-tool .wrong{ color:#0180D3}
+.answer-tool .empty{ color:#333}
+.answer-tool .collect,.answer-tool .corrections{ background:url(/images/tk_exam.png) -192px -52px no-repeat; padding-left:23px;display:block;margin-right:30px;float:right; line-height:21px; margin-top:5px;}
+.answer-tool .collect.ui-check{ background-position: -192px -450px}
+.answer-tool .corrections{ background-position:-196px -77px;  }
+.answer-tool .btn-analysis{ width:90px; height:34px; padding-left:10px; display:block; float:right;background:url(/images/tk_exam.png) 0px -237px no-repeat; display:inline; margin-right:20px; border-radius:3px; cursor:pointer}
+.answer-tool .btn-analysis:hover{color:#f06000}
+.answer-tool .dn{background:url(/images/tk_exam.png) -103px -237px no-repeat;}
+.answer-bd{position:relative; border-top:#e5e5e5 dashed 1px; padding-top:15px; margin-bottom:20px}
+.answer-bd .analyze{padding:0px 20px 0px 20px; width:850px; margin-left:10px; margin:0 auto; margin-top:10px; position:relative}
+.answer-bd .analyze .title{width:103px; display:block; line-height:25px;text-align:left;font-size:14px; font-family:"\5FAE\8F6F\96C5\9ED1"; font-size:14px; color:#999}
+.answer-bd .analyze .txt{ color:#666;margin-left:110px}
+.answer-bd .analyze .txt.temporary-open{ margin-left:25px}
+.answer-bd .analyze .txt img{ max-width:550px;_width:expression(document.body.clientWidth>550?"550px":"auto");overflow:hidden;}
+.answer-bd .analyze .not_analyze{ background:url(//img2.233.com/wx/tiku/v1/skin/exam/not_analyze.png)  center center no-repeat; height:45px; margin-top:20px}
+.answer-bd .analyze-hd{ width:100%; }
+.answer-bd .analyze-hd .title{ float:left; width:auto;position:absolute; left:20px; top:0px; background-image: url(/images/tk_exam_new.png); background-repeat:no-repeat; padding-left:27px}
+.answer-bd .analyze-hd .difficulty{ background-position:-283px -23px}
+.answer-bd .analyze-hd .statistics{ background-position:-283px -48px}
+.answer-bd .analyze-hd .relevance{ background-position:-283px -72px}
+.answer-bd .analyze-hd .resolve{ background-position:-283px -96px}
+.answer-bd .analyze-hd .VideoParsing-btn{ width:130px; height:23px; padding-left:40px; background:url(//img2.233.com/wx/tiku/v1/skin/exam/tk_exam.png) 0 -557px no-repeat;  color:#FFF; float:left; margin-top:13px; line-height:22px; font-size:14px;font-family:"\5FAE\8F6F\96C5\9ED1";}
+.answer-bd .analyze-hd .VideoParsing-btn:hover{ background-position:0 -588px; color:#ffb584}
+.answer-bd .analyze-hd .open{background-position:0 -618px}
+.answer-bd .analyze-hd .open:hover{background-position:0 -649px}
+.answer-bd .analyze-hd em{ float:left; }
+.answer-bd .analyze-hd i{ font-style:normal; font-size:12px; color:#ffb584; float:right; padding-right:10px; line-height:23px}
+
+.f-answer .m-question-title { background-color:#fff; padding:30px 0 0 0;}
+.f-answer .m-choicebox{ padding-top:15px}
+.f-answer .m-choicebox li:hover{background:none; cursor:inherit}
+.f-answer .bgbmInput td:hover{background:#FFF;cursor:inherit}
+.f-answer .bgbmInput td.bm{background:#f06000;cursor:inherit}
+.f-answer .u-selected{ background:none!important}
+.f-answer .u-selected{ background:#F6F6F6}
+
+
+
+
+
+/*foot*/
+#footer{ width:100%; height:220px; background:#1f2021;margin-top: 40px;padding: 28px 0 14px;}
+#footer .bd{width: 1200px; margin:0 auto; height:180px;}
+#footer .bd dl {float: left;margin-right: 10px;width: 13%; color:#FFF}
+#footer .bd dt {margin-bottom: 10px;line-height: 20px;font-size: 18px;font-weight: normal; color:#FFF}
+#footer .bd dd {line-height:28px;}
+#footer  a {color: #9fa3a7;}
+#footer  a:hover {color: #009aff;}
+#footer .tel {float: right;margin-top: -10px;min-width: 240px;}
+#footer .tel span {margin: 0 5px;}
+#footer .number {color: #FFFFFF;line-height: 50px;font-size: 26px;}
+#footer .time {color: #AAAAAA;font-size: 16px;line-height: 28px;}
+#footer .sns {position: relative;margin-top: 8px;}
+#footer .sns img {position: absolute;left: 0px;top: -150px;width: 140px;height: 140px;}
+#footer .sns a {float: left;display: inline-block;margin-right: 20px;width: 40px;height: 40px;text-indent: -9999px;overflow: hidden;background: url(../images/icons40x40.png) no-repeat;}
+#footer .sns .qq {background-position: 0px -40px;}
+#footer .sns .wx {background-position: 0px -80px;}
+#footer .sns .wb {margin-right: 0;background-position: 0px 0px;}
+.hide {display: none;}
+
+.copy{ width:100%;}
+.footer-info {padding-top: 14px;height: 30px;overflow: hidden;color:#fff; border-top: 1px solid #2a2b2c;}
+.footer-info p{ color:#9fa3a7}
+.cert { color:#555;}
+.cert a{ padding:0 5px;}
+
+

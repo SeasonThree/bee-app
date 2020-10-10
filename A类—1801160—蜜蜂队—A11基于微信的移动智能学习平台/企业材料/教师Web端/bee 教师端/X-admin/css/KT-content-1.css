@@ -1,0 +1,77 @@
+.layui-layedit-tool {
+    padding: 3px 5px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    font-size: 0;
+    height: 100px;
+}
+.c-nav-item a :hover{
+	color: #fff;
+}
+.layui-nav-tree .layui-nav-item a:hover {
+    background-color: #a7a7a7;
+}
+#bjhover{
+	background-color: #a7a7a7;
+}
+#bjhover p{
+	color: #fff;
+}
+.layui-nav-itemed{
+	background: #5fb878;
+}
+.layui-nav-itemed dl a{
+	background: #fff;
+}
+
+.bt1{
+	position: relative;
+	top: -42px;
+	left: 270px;
+	height: 27px;
+	width: 27px;
+	line-height: 27px;
+	display: none;
+}
+.bt2{
+	position: relative;
+	top: -42px;
+	left: 274px;
+	height: 27px;
+	width: 27px;
+	line-height: 31px;
+	display: none;
+}
+.ans-attach-mp4{
+	background: url(../images/ans-command-insertvideo.png) no-repeat left center;
+}
+.ans-attach a{
+    color: #666666;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+.ans-attach-title {
+    margin-left: 30px;
+}
+.ans-attach-size {
+    font-size: 12px;
+    color: #999;
+    margin-left: 5px;
+}
+.ans-delete {
+    cursor: pointer;
+    display: block;
+    height: 12px;
+    position: absolute;
+    right: 11px;
+    top: 10px;
+    width: 12px;
+    background: url(../images/close-hover.png) no-repeat center;
+}
+.layui-layedit {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px;
+    height: 1000px;
+}

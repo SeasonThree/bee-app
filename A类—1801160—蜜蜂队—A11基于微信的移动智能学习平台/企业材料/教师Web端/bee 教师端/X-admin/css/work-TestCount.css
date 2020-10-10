@@ -1,0 +1,186 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0px; padding:0px;}
+body{font:12px/1.5 Microsoft YaHei,SimSun, Arial, Helvetica, sans-serif; color:#333; background:#FFF;}
+img{border:0px;}
+ul,ol{list-style-type:none;}
+h1,h2,h3,h4,h5,h6{ font-weight:normal;}
+table {border-collapse: collapse;border-spacing: 0;}
+input,select,textarea{vertical-align:middle; outline:none; resize:none; font-family:Microsoft YaHei;}
+a{color:#333; text-decoration:none;}
+a:hover{color:#389aff;}
+.clearfix{zoom:1; overflow:hidden;}
+.clear{ clear:both; font-size:0; height:0; line-height:0;}
+.fl{float:left;}
+.fr{float:right;}
+.icons{ font-size:0px; text-indent:-9999999px; overflow:hidden; display:block;}
+/************以上初始化**************/
+.wrap1100{ width:1100px; margin:0 auto;}
+.color_blue{ color:#389aff;}
+.color_gray33{ color:#333;}
+.color_gray66{ color:#666;}
+.color_gray99{ color:#999;}
+.location{height:74px; line-height:74px; font-size:18px; border-bottom:solid #e4e4e5 1px;}
+.locat_text{ padding-left:12px;}
+.locat_text span{ margin:0 12px;}
+.locat_return{ background: url(/images/return.png) no-repeat left center; padding:0 60px 0 20px; font-size:14px;}
+.search_form{ height:36px; margin-top:20px;}
+.search_cell{ height:36px; line-height:36px; font-size:14px; margin-right:20px;}
+.search_title{ display:block;}
+.search_fidtext{ width:176px; height:20px; line-height:20px; padding:7px; border:solid #dedede 1px; background-color:#FFF; border-radius:3px;}
+.search_select{ width:190px; height:36px; border:solid #dedede 1px; background-color:#FFF; border-radius:3px;}
+.search_input{ width:386px; height:20px; line-height:20px; padding:7px; margin-left:12px; border:solid #dedede 1px; background-color:#FFF; border-radius:3px 0 0 3px;}
+.bnt_search{ width:100px; height:36px; font-size:16px; color:#FFF; background:#389aff; border-radius:0 3px 3px 0; border:0 none; cursor:pointer;}
+.daochulist{ font-size:14px; margin-top:15px; color:#389aff; text-decoration:underline;}
+.listDate{ background:#FFF; margin-top:24px; padding:30px;}
+
+.listDate_table .flowHide {
+    height: 455px;
+    overflow: hidden;
+    overflow-y: auto;
+    display: block;
+}
+.listDate_table th,.bingtu_table th{ height:54px; line-height:18px; font-size:16px; border:solid #FFF 1px; background-color:#d6e2ef;}
+.listDate_table td,.bingtu_table td{ padding:15px 10px; font-size:14px; border:solid #dedede 1px; text-align:center;}
+.listDate_table .alignLeft{ text-align:left;}
+.listDate_table .fz14{ font-size:14px;}
+/*分页*/
+.pagination{text-align:right; margin-top:30px;}
+.pagination a,.pagination b{display:inline-block; font-size:14px; vertical-align:top; height:28px; line-height:28px; border:solid #ccc 1px; color:#333; margin:0 2px; padding:0px 8px;}
+.pagination a:hover,.pagination .cur{ background-color:#009aff; border-color:#009aff; color:#fff;}
+.pagination .pag_text{ line-height:30px; vertical-align:top; margin-left:10px;}
+.pagination .pag_fidinput{ width:40px; height:28px; line-height:28px; text-align:center; border:solid #ccc 1px; margin-left:4px;}
+.pagination .bnt_queding{ width:40px; height:30px; line-height:30px; background:#FFF; text-align:center; border:solid #ccc 1px; margin-left:4px;}
+
+
+/***********统计************/
+.homeworkBox{ color:#555;}
+.create,.release{ margin-top: 30px;width:540px; height:230px; background-color:#fff; border-radius:8px; -webkit-box-shadow:rgba(0,0,0,0.2) 0 0 10px 0;-moz-box-shadow:rgba(0,0,0,0.2) 0 0 10px 0;-ms-box-shadow:rgba(0,0,0,0.2) 0 0 10px 0;-o-box-shadow:rgba(0,0,0,0.2) 0 0 10px 0;box-shadow:rgba(0,0,0,0.2) 0 0 10px 0;}
+.work_title{ height:44px; line-height:44px; padding:30px 25px 0; overflow:hidden;}
+.work_title dt{ font-size:24px;}
+.create .icons{ width:24px; height:30px; background: url(/images/create_ico.png) no-repeat; float:left; margin:7px 7px 0 0;}
+.release .icons{ width:32px; height:32px; background: url(/images/release.png) no-repeat; float:left; margin:6px 7px 0 0;}
+.work_title dd{ font-size:16px;}
+.work_title .fen_num{ font-style:normal; font-size:36px;}
+.work_title .ci_num{ font-style:normal; font-size:24px;}
+.homewor_cont{ padding:10px 25px 0;}
+.homewor_cont dt{ width:243px; height:118px; background:#f7f7f8; display:table;}
+.homewor_cont dt>div{ width:100%; display:table-cell; vertical-align:middle; text-align:center;}
+.homewor_num{ font-size:30px;}
+.homewor_text{ font-size:16px;}
+.homewor_cont dd{ width:243px; height:58px; line-height: 58px; font-size:16px; text-align:center; background-color:#f7f7f8; margin-bottom:2px;}
+.homewor_cont dd .homewor_wenzi{ vertical-align:top; display:inline-block; width:110px; text-align:right;}
+.homewor_cont dd .homewor_num{ vertical-align:top; display:inline-block; width:110px; text-align:left; padding-left:20px;}
+
+/*图表*/
+.statistBox{position: absolute;top: 443px;}
+.statist_title{ height:30px; padding:20px 0 15px;}
+.statist_title h2{ font-size:20px; font-weight:bold; padding:0 40px 0 12px;}
+.statist_tab{ font-size:14px; color:#666;}
+.statist_tab li{ height:28px; line-height:28px; padding:0 20px; margin-right:5px; border-radius:4px; border:solid #b4b4b4 1px; background:#FFF; float:left; cursor:pointer;}
+.statist_tab li.current{ background-color:#389aff; border-color:#389aff; color:#FFF;}
+.statist_chart{ width:68px; position:absolute; right: 10px; top:-42px;}
+.statist_chart li{ width:32px; height:28px; float:left; background-color:#f7f7f8; border:solid #b4b4b4 1px; cursor:pointer;}
+.statist_chart .zhutu{ background:url(/images/zhutu.png) no-repeat center; border-radius:2px 0 0 2px;}
+.statist_chart .biaotu{ background:url(/images/biaotu.png) no-repeat center; border-radius:0 2px 2px 0;}
+.statist_chart .zhutu.current{ background:#6E6E6E url(/images/zhutu_cur.png) no-repeat center; border:solid #6e6e6e 1px;}
+.statist_chart .biaotu.current{ background:#6E6E6E url(/images/biaotu_cur.png) no-repeat center; border:solid #6e6e6e 1px;}
+.statist_more{ line-height:30px; font-size:14px; text-decoration:underline; color:#389AFF; position:absolute; right: 10px; top:-42px;}
+
+.download_ul {
+    font-size: 14px;
+    color: #666666;
+}
+
+.download_ul a {
+    height: 28px;
+    line-height: 28px;
+    padding: 0 20px;
+    margin-right: 5px;
+    border-radius: 4px;
+    border: solid 1px;
+    float: left;
+    cursor: pointer;
+    background-color: #389AFF;
+    border-color: #389AFF;
+    color: #FFFFFF;
+    margin-top: -5px;
+    text-decoration: none;
+}
+
+
+.statist_cont{ background:#FFF;}
+
+.statist_Pic {
+    width: 100%;
+    position: relative;
+}
+
+.statist_com {
+    weight: 1100px;
+    height: 550px;
+    padding: 30px 20px;
+}
+.statist_echarts{ width:1060px; height:550px;}
+.bingtu_pic{ width:600px; height:550px;}
+.bingtu_table{ width:428px;}
+
+.color_width_01,.color_width_02,.color_width_03,.color_width_04,.color_width_05{ width: 14px; height:14px; display:inline-block; margin:3px 0 0 20px;}
+.color_width_01{ background-color:#389aff;}
+.color_width_02{ background-color:#77baff;}
+.color_width_03{ background-color:#8bd6e4;}
+.color_width_04{ background-color:#f5a3a3;}
+
+.color_width_05 {
+    background-color: #AECEA6;
+}
+
+.download {
+    line-height: 30px;
+    font-size: 14px;
+    text-decoration: underline;
+    color: #389AFF;
+    position: absolute;
+    right: 80px;
+    top: 20px;
+    z-index: 99;
+}
+
+.download {
+    line-height: 30px;
+    font-size: 14px;
+    text-decoration: underline;
+    color: #389AFF;
+    position: absolute;
+    right: 80px;
+    top: 20px;
+    z-index: 99;
+}
+
+.yuanchengji {
+    line-height: 30px;
+    font-size: 14px;
+    text-decoration: underline;
+    color: #389AFF;
+    position: absolute;
+    right: 210px;
+    top: 15px;
+    z-index: 99;
+}
+
+.fanhui {
+    line-height: 30px;
+    font-size: 14px;
+    text-decoration: underline;
+    color: #389AFF;
+    position: absolute;
+    right: 210px;
+    top: 15px;
+    z-index: 99;
+}
+
+.roductBox{ width:33px; height:40px; position:absolute; top:10px; right:20px; z-index:99;}
+.roductTitle{ display:block; background:url(/images/jianjie.png) no-repeat; width:33px; height:33px;}
+.roductCont{ width:400px; line-height:22px; color:#666; padding:6px 10px; font-size:14px; background:#FFF; border:solid #ccc 1px; box-shadow:rgba(0,0,0,0.3) 0 0 6px 0; position:absolute; top:39px; right:0; display:none;}
+.roductBox:hover .roductCont{ display:block;}
+.roductCont p{ padding:5px 0}

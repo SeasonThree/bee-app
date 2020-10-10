@@ -1,0 +1,59 @@
+/**闁氨鐓℃＃鏍��**/
+.greenBtn{height:30px;line-height:30px;background:#7b9e31;display:inline-block;padding:0 20px;font-size:14px;color:#FFF;border-radius:3px;margin:0 3px;}
+.add0311{display:block;}
+.add0311 span{width:75px;height:75px;margin:0 auto;background:url(../images/addImg.png) no-repeat left 0;display:block; -webkit-transition: background-position 0.5s;-moz-transition: background-position 0.5s;-ms-transition: background-position 0.5s;transition: background-position 0.5s;}
+.add0311:hover span{background-position:left -81px}
+.pages0311{padding:11px 25px;text-align:center}
+.pages0311 a{display:inline-block;width:25px;height:25px;line-height:25px;border:solid 1px #ccc;background:#F7f7f7;border-radius:3px;font-size:14px;color:#777}
+.pages0311 a.cur{color:#fff;background:#99b36a}
+.pages0311 a.up0311{width:41px;height:24px;border:solid 1px #7b9e31;border-radius:5px;-moz-transform:rotate(180deg);-webkit-transform:rotate(180deg); -o-transform:rotate(180deg); transform:rotate(180deg);filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);background:url(../images/group_03.png) no-repeat center #f7f7f7}
+.newTopic0311{height:28px;line-height:28px;border:solid 1px #7b9e31;background:#FFF;border-radius:3px;padding:0 10px;display:block;width:838px;font-family:Microsoft YaHei;color:#a9a9a9;}
+
+.noticeTitle{height:33px;line-height:33px;border-bottom:solid 2px #bbb;padding:10px 0px 10px 10px;font-size:18px;color:#777;}
+.noticeMid{margin-top:13px;}
+.noticeMid ul{position:relative;width:1000px}
+.noticeMid ul li{float:left;width:305px;border:solid 1px #CCC;background:#FFF;position:relative;margin-top:20px;margin-right:18px}
+.wfb{background:url(../images/weifab.png) no-repeat top right}
+.yd{background:url(../images/yd.png) no-repeat top right}
+.noticeTop{padding:10px 15px}
+.noticeTop h3{font-size:16px;padding:1px 0;height:24px;}
+.noticeTop h3 a{color:#333;font-weight:bold;}
+.noticeTop p{font-size:12px;color:#424242;padding:5px 0}
+.f_w{font-weight:bold;}
+.red{color:#ed1c24}
+.noticeBottom{height:39px;border-top:solid 1px #CCC;padding:0 15px;background:#e8eeda;}
+.fuzhi{width:15px;height:15px;background:url(../images/notice.png) no-repeat left top;margin:10px 5px 0 0}
+.editor{width:18px;height:18px;background:url(../images/editor.png) no-repeat left top;margin:10px 5px 0 0}
+.shanchu{width:15px;height:16px;background:url(../images/notice.png) no-repeat right top;margin:10px 5px 0 5px}
+
+/**妫ｆ牠銆夊楦款嚦瀵懓鍤仦锟�*/
+.alert0330{/* position:absolute; */width:330px;border:solid 1px #ccc;/* min-height:250px; *//* box-shadow:0 0 5px #CCC; */background:#FFF;border-radius:3px}
+.alert0330 h3{height:49px;background:#f0f0f0;padding:0 15px;line-height:49px;font-size:16px;font-weight:bold;border-bottom:1px solid #e0e0e0;}
+.closed0330{width:13px;height:13px;background:url(/space/new/moocIndex/images/closePng.png) left center no-repeat;margin-top:18px}
+.alertCon0330{padding:10px 20px;height: 300px;overflow: auto;}
+.alertCon0330 label{font-size:14px}
+.alertCon0330 p{color:#777;padding:5px 0;padding-left:20px;}
+.marTop20{margin-top:20px;margin-bottom:20px}
+.btnDiv{text-align:right;padding-right:28px;}
+.greenBtn{height:28px;line-height:28px;background:#7b9e31;display:inline-block;padding:0 10px;font-size:14px;color:#FFF;border-radius:3px;margin:2px 3px 0;}
+.graynBtn{height:28px;line-height:28px;background:#dcdedf;display:inline-block;padding:0 10px;font-size:14px;color:#FFF;border-radius:3px;margin:0 3px;border:solid 1px #cdcdcd;color:#333}
+.table0330 tr td{padding:2px 5px;font-size:14px}
+.textInp{width:169px;height:22px;border:solid 1px #c7c7c7}
+.search0330{width:200px;height:22px;border:solid 1px #c7c7c7;margin:5px 10px}
+.inp0330{width:150px;height:22px;line-height:20px;border:none;background:none;color:#777;font-family:Microsoft YaHei;padding:0 5px;}
+.sub0330{border:none;background:url(../images/search_03.jpg) no-repeat center;width:30px;height:22px;cursor:pointer}
+.bg0330{position:absolute;width:100%;height:100%;top:40px;left:0;background:url(../images/bg_03.png) repeat;text-align:center}
+.bg0330 img{display:block;margin:0 auto;margin-top:50px}
+.bg0330 p{font-size:16px;margin-top:20px}
+
+.inp0331{width:258px;height:24px;border:solid 1px #CCC;border-radius:3px;padding:0 4px;}
+
+/**讨论添加附件*/
+.noticeAttachment{max-height:120px;overflow:auto;}
+.oneAttachment{height:25px;line-height:25px;padding-left:15px;margin-top:5px;}
+.attachmentHref{color:blue;font-size:16px;text-align:center;height:25px;margin-left:10px}
+.fileA{border:1px solid #CCC;border-radius: 4px;font-size: 12px;display: inline-block;height:26px;line-height:26px;width:88px;text-align:center;color: #4c4b4b}
+.fileInput{font-size:17px;width:84px;height:28px;line-height:32px;cursor:pointer;opacity: 0;margin-left:-87px}
+.attachmentDelete{color:#7b9e31;float:right;margin-right: 80px}
+
+.swfupload{float:left;margin-left:42px;margin-top:5px;}

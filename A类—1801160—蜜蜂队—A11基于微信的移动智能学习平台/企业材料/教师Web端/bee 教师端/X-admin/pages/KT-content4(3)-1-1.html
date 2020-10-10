@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>我的课堂</title>
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="../css/font.css">
+        <link rel="stylesheet" type="text/css" href="../lib/layui/css/layui.css"/>
+        <link rel="stylesheet" type="text/css" href="../lib/layer/mobile/need/layer.css" />
+        <link rel="stylesheet" href="../css/xadmin.css">
+        <link rel="stylesheet" type="text/css" href="../css/KT-content-common.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/KT-content2/KT-content2-1.css"/>
+       	<link rel="stylesheet" type="text/css" href="../css/KT-content2/KT-content2-3.css"/>
+       	<link rel="stylesheet" type="text/css" href="../css/KT-content-1.css"/>
+       	<link rel="stylesheet" href="../css/KT-content4(3)-1-1.css" />
+       	
+    </head>
+    <body style="text-align: left;background: #f9f9f9;">
+	    <div class="x-body" style="padding: 0px;">
+	    		<!--顶部--> 
+				<div class="top">
+					<ul class="layui-nav">
+						<li style="font-size: 24px;color: #333;float: left;line-height: 60px;">高等数学（一）</li>
+						<li style="float: left;">
+							<div class="box-box">
+				                <div class="sele" id="course-code-select" data-abc="WeChat">
+			                    	<div class="qrcode fl"></div>
+			                    	<div class="codetext">WeChat</div>
+				                </div>
+				                <div class="selecon cl" style="display: none;">
+				                    <ul>
+				                        <li><a id="stop-course-code" href="javascript:;">停用</a></li>
+				                        <li><a id="start-course-code" href="javascript:;">启用</a></li>
+				                    </ul>
+				                </div>
+				            </div>
+						</li>
+					  	<li class="layui-nav-item cnav"><a href="KT-content10.html">直播</a><div class="t"></div></li>
+					  	<li class="layui-nav-item cnav"><a href="KT-content9.html">讨论</a><div class="t"></div></li>
+					  	<li class="layui-nav-item cnav"><a href="KT-content8.html">分组</a><div class="t"></div></li>
+					  	<li class="layui-nav-item cnav"><a href="KT-content7.html">考试</a><div class="t"></div></li>
+					  	<li class="layui-nav-item cnav"><a href="KT-content6.html">作业</a><div class="t"></div></li>
+					  	<li class="layui-nav-item cnav"><a href="KT-content5.html">通知</a><div class="t"></div></li>
+					  	<li class="layui-nav-item cnav"><a href="KT-content4.html">资源</a><div class="t"></div></li>
+					  	<li class="layui-nav-item cnav"><a href="KT-content3.html">统计</a><div class="t"></div></li>
+					  	<li class="layui-nav-item cnav"><a id="act" class="choose" href="KT-content2.html">互动</a><div id="act2" class="t choose2"></div></li>
+					  	<li class="layui-nav-item cnav"><a href="KT-content.html">首页</a><div class="t"></div></li>
+					</ul>
+				</div>
+				<div class="content">
+					<span class="layui-breadcrumb">
+						<a href="KT-content4.html">课堂资源</a>
+						<a href="KT-content4(3).html">作业库</a>
+						<a><cite>第一单元(课时一作业)</cite></a>
+					</span>
+					<div style="width: 64%;position: relative;right: 0px;" class="layui-tab layui-tab-brief tab" lay-filter="docDemoTabBrief">
+					  	<ul class="layui-tab-title">
+					   	 	<li class="layui-this">新建作业</li>
+					  	</ul>
+					  	<div class="layui-tab-content">
+					  	<!--*面板一***********************************************************-->
+						    <div class="layui-tab-item layui-show">
+						    	<div style="margin-top: 10px;">
+						    		<button class="tm layui-btn layui-btn-normal"><i class="layui-icon">&#xe654;</i>单选题</button>
+						    		<button class="tm layui-btn layui-btn-primary"><i class="layui-icon">&#xe654;</i>多选题</button>
+						    		<button class="tm layui-btn layui-btn-primary"><i class="layui-icon">&#xe654;</i>填空题</button>
+						    		<button class="tm layui-btn layui-btn-primary"><i class="layui-icon">&#xe654;</i>判断题</button>
+						    		<button class="tm layui-btn layui-btn-primary"><i class="layui-icon">&#xe654;</i>简答题</button>
+						    		<button style="float: right;" class="tm layui-btn layui-btn-primary"><i class="layui-icon">&#xe654;</i>题库选题</button>
+						    	</div>
+						    	<blockquote style="margin-top: 20px;" class="layui-elem-quote">题干</blockquote>
+						    	
+						    	<div class="cr" style="cursor:pointer;position: absolute;top: 244px;left: 20px;line-height: 24px;text-align: center;display: inline-block;width: 48px;height: 58px;border-radius: 3px;">
+						    		<img style="margin-top: 5px;" src="../images/ans-command-insertimage.png" alt="" /><p style="font-size: 12px;">图片</p>
+						    	</div>
+						    	<div class="cr" style="cursor:pointer;position: absolute;top: 244px;left: 80px;line-height: 24px;text-align: center;display: inline-block;width: 48px;height: 58px;border-radius: 3px;">
+						    		<img style="margin-top: 5px;" src="../images/ans-command-insertdoc.png" alt="" /><p style="font-size: 12px;">文档</p>
+						    	</div>
+						    	<div class="cr" style="cursor:pointer;position: absolute;top: 244px;left: 140px;line-height: 24px;text-align: center;display: inline-block;width: 48px;height: 58px;border-radius: 3px;">
+						    		<img style="margin-top: 5px;" src="../images/ans-command-insertaudio.png" alt="" /><p style="font-size: 12px;">音频</p>
+						    	</div>
+						    	<div class="cr" style="cursor:pointer;position: absolute;top: 244px;left: 200px;line-height: 30px;text-align: center;display: inline-block;width: 48px;height: 58px;border-radius: 3px;">
+						    		<img style="margin-top: 5px;" src="../images/ans-command-insertvideo.png" alt="" /><p style="font-size: 12px;">视频</p>
+						    	</div>
+						    	
+						    	<textarea class="layui-textarea" id="LAY_demo1" style="display: none">  
+								  	进行课干编辑
+								</textarea>
+								
+								<blockquote style="margin-top: 20px;" class="layui-elem-quote">选项 ：<p style="display: inline-block;font-size: 12px;color: #A7A7A7;">在当前页面选中的答案为本题正确答案</p></blockquote>
+								<!--*选项***********************************************************-->
+								
+								<form class="layui-form" action="" style="width: 72px;position: absolute;top: 532px;left: 23px;">
+									<div class="layui-form-item">
+									    <div class="layui-input-block" style="margin-left: 0px;">
+									      <input type="radio" name="sex" value="A" title="A" checked="" style="">
+									      <input type="radio" name="sex" value="B" title="B">
+									      <input type="radio" name="sex" value="C" title="C">
+									      <input type="radio" name="sex" value="D" title="D">
+									    </div>
+									</div>
+								</form>
+								<!--*A  ***********************************************************-->
+								<div style="margin-left: 74px; width: 90%;">
+								  <textarea class="layui-textarea" id="LAY_demo2" style="display: none"></textarea>
+								</div>  
+								
+								<div class="cr" style="cursor:pointer;position: absolute;top: 584px;left: 94px;line-height: 24px;text-align: center;display: inline-block;width: 48px;height: 58px;border-radius: 3px;">
+						    		<img style="margin-top: 5px;" src="../images/ans-command-insertimage.png" alt="" /><p style="font-size: 12px;">图片</p>
+						    	</div>
+						    	<div class="cr" style="cursor:pointer;position: absolute;top: 584px;left: 154px;line-height: 24px;text-align: center;display: inline-block;width: 48px;height: 58px;border-radius: 3px;">
+						    		<img style="margin-top: 5px;" src="../images/ans-command-insertdoc.png" alt="" /><p style="font-size: 12px;">文档</p>
+						    	</div>
+						    	<div class="cr" style="cursor:pointer;position: absolute;top: 584px;left: 214px;line-height: 24px;text-align: center;display: inline-block;width: 48px;height: 58px;border-radius: 3px;">
+						    		<img style="margin-top: 5px;" src="../images/ans-command-insertaudio.png" alt="" /><p style="font-size: 12px;">音频</p>
+						    	</div>
+						    	<div class="cr" style="cursor:pointer;position: absolute;top: 584px;left: 274px;line-height: 30px;text-align: center;display: inline-block;width: 48px;height: 58px;border-radius: 3px;">
+						    		<img style="margin-top: 5px;" src="../images/ans-command-insertvideo.png" alt="" /><p style="font-size: 12px;">视频</p>
+						    	</div>
+								
+								<!--*B   ***********************************************************-->
+								<div style="margin-left: 74px; width: 90%;">
+								  <textarea class="layui-textarea" id="LAY_demo3" style="display: none"></textarea>
+								</div>  
+								
+								<div class="cr" style="cursor:pointer;position: absolute;top: 850px;left: 94px;line-height: 24px;text-align: center;display: inline-block;width: 48px;height: 58px;border-radius: 3px;">
+						    		<img style="margin-top: 5px;" src="../images/ans-command-insertimage.png" alt="" /><p style="font-size: 12px;">图片</p>
+						    	</div>
+						    	<div class="cr" style="cursor:pointer;position: absolute;top: 850px;left: 154px;line-height: 24px;text-align: center;display: inline-block;width: 48px;height: 58px;border-radius: 3px;">
+						    		<img style="margin-top: 5px;" src="../images/ans-command-insertdoc.png" alt="" /><p style="font-size: 12px;">文档</p>
+						    	</div>
+						    	<div class="cr" style="cursor:pointer;position: absolute;top: 850px;left: 214px;line-height: 24px;text-align: center;display: inline-block;width: 48px;height: 58px;border-radius: 3px;">
+						    		<img style="margin-top: 5px;" src="../images/ans-command-insertaudio.png" alt="" /><p style="font-size: 12px;">音频</p>
+						    	</div>
+						    	<div class="cr" style="cursor:pointer;position: absolute;top: 850px;left: 274px;line-height: 30px;text-align: center;display: inline-block;width: 48px;height: 58px;border-radius: 3px;">
+						    		<img style="margin-top: 5px;" src="../images/ans-command-insertvideo.png" alt="" /><p style="font-size: 12px;">视频</p>
+						    	</div>
+						    	
+						    	<!--*C   ***********************************************************-->
+								<div style="margin-left: 74px; width: 90%;">
+								  <textarea class="layui-textarea" id="LAY_demo4" style="display: none"></textarea>
+								</div>  
+								
+								<div class="cr" style="cursor:pointer;position: absolute;top: 1117px;left: 94px;line-height: 24px;text-align: center;display: inline-block;width: 48px;height: 58px;border-radius: 3px;">
+						    		<img style="margin-top: 5px;" src="../images/ans-command-insertimage.png" alt="" /><p style="font-size: 12px;">图片</p>
+						    	</div>
+						    	<div class="cr" style="cursor:pointer;position: absolute;top: 1117px;left: 154px;line-height: 24px;text-align: center;display: inline-block;width: 48px;height: 58px;border-radius: 3px;">
+						    		<img style="margin-top: 5px;" src="../images/ans-command-insertdoc.png" alt="" /><p style="font-size: 12px;">文档</p>
+						    	</div>
+						    	<div class="cr" style="cursor:pointer;position: absolute;top: 1117px;left: 214px;line-height: 24px;text-align: center;display: inline-block;width: 48px;height: 58px;border-radius: 3px;">
+						    		<img style="margin-top: 5px;" src="../images/ans-command-insertaudio.png" alt="" /><p style="font-size: 12px;">音频</p>
+						    	</div>
+						    	<div class="cr" style="cursor:pointer;position: absolute;top: 1117px;left: 274px;line-height: 30px;text-align: center;display: inline-block;width: 48px;height: 58px;border-radius: 3px;">
+						    		<img style="margin-top: 5px;" src="../images/ans-command-insertvideo.png" alt="" /><p style="font-size: 12px;">视频</p>
+						    	</div>
+								
+								<!--*D   ***********************************************************-->
+								<div style="margin-left: 74px; width: 90%;">
+								  <textarea class="layui-textarea" id="LAY_demo5" style="display: none"></textarea>
+								</div>  
+								
+								<div class="cr" style="cursor:pointer;position: absolute;top: 1385px;left: 94px;line-height: 24px;text-align: center;display: inline-block;width: 48px;height: 58px;border-radius: 3px;">
+						    		<img style="margin-top: 5px;" src="../images/ans-command-insertimage.png" alt="" /><p style="font-size: 12px;">图片</p>
+						    	</div>
+						    	<div class="cr" style="cursor:pointer;position: absolute;top: 1385px;left: 154px;line-height: 24px;text-align: center;display: inline-block;width: 48px;height: 58px;border-radius: 3px;">
+						    		<img style="margin-top: 5px;" src="../images/ans-command-insertdoc.png" alt="" /><p style="font-size: 12px;">文档</p>
+						    	</div>
+						    	<div class="cr" style="cursor:pointer;position: absolute;top: 1385px;left: 214px;line-height: 24px;text-align: center;display: inline-block;width: 48px;height: 58px;border-radius: 3px;">
+						    		<img style="margin-top: 5px;" src="../images/ans-command-insertaudio.png" alt="" /><p style="font-size: 12px;">音频</p>
+						    	</div>
+						    	<div class="cr" style="cursor:pointer;position: absolute;top: 1385px;left: 274px;line-height: 30px;text-align: center;display: inline-block;width: 48px;height: 58px;border-radius: 3px;">
+						    		<img style="margin-top: 5px;" src="../images/ans-command-insertvideo.png" alt="" /><p style="font-size: 12px;">视频</p>
+						    	</div>
+								<!--*答案  ***********************************************************-->
+						    	<blockquote style="margin-top: 20px;" class="layui-elem-quote">答案</blockquote>
+						    	
+						    	<div class="cr" style="cursor:pointer;position: absolute;top: 1724px;left: 20px;line-height: 24px;text-align: center;display: inline-block;width: 48px;height: 58px;border-radius: 3px;">
+						    		<img style="margin-top: 5px;" src="../images/ans-command-insertimage.png" alt="" /><p style="font-size: 12px;">图片</p>
+						    	</div>
+						    	<div class="cr" style="cursor:pointer;position: absolute;top: 1724px;left: 80px;line-height: 24px;text-align: center;display: inline-block;width: 48px;height: 58px;border-radius: 3px;">
+						    		<img style="margin-top: 5px;" src="../images/ans-command-insertdoc.png" alt="" /><p style="font-size: 12px;">文档</p>
+						    	</div>
+						    	<div class="cr" style="cursor:pointer;position: absolute;top: 1724px;left: 140px;line-height: 24px;text-align: center;display: inline-block;width: 48px;height: 58px;border-radius: 3px;">
+						    		<img style="margin-top: 5px;" src="../images/ans-command-insertaudio.png" alt="" /><p style="font-size: 12px;">音频</p>
+						    	</div>
+						    	<div class="cr" style="cursor:pointer;position: absolute;top: 1724px;left: 200px;line-height: 30px;text-align: center;display: inline-block;width: 48px;height: 58px;border-radius: 3px;">
+						    		<img style="margin-top: 5px;" src="../images/ans-command-insertvideo.png" alt="" /><p style="font-size: 12px;">视频</p>
+						    	</div>
+						    	
+						    	<textarea class="layui-textarea" id="LAY_demo6" style="display: none">  
+								  	进行答案编辑
+								</textarea>
+								
+								<!--<div class="site-demo-button" style="margin-top: 20px;">
+								  <button class="layui-btn site-demo-layedit" data-type="content">获取编辑器内容</button>
+								  <button class="layui-btn site-demo-layedit" data-type="text">获取编辑器纯文本内容</button>
+								  <button class="layui-btn site-demo-layedit" data-type="selection">获取编辑器选中内容</button>
+								</div>-->
+								<a href="javascript:;"><button id="bc" class="layui-btn" style="margin-left: 98px;margin-top: 20px;">保存</button></a>
+								<a href="KT-content.html"><button class="layui-btn layui-btn-primary" style="margin-top: 20px;margin-left: 30px;">取消</button></a>
+						    	
+						    </div>
+					    </div>
+					</div>
+					
+					<!--*题目***********************************************************-->
+					<div style="width: 29%;position: absolute;right: 81px;top: 100px;" class="layui-tab layui-tab-brief tab" lay-filter="docDemoTabBrief">
+					  	<ul class="layui-tab-title">
+					   	 	<li class="layui-this">题目 <p style="display: inline-block;position: absolute;left: 275px;">总分：100</p></li>
+					  	</ul>
+					  	<div class="layui-tab-content">
+					  	<!--*面板一***********************************************************-->
+						    <div class="layui-tab-item layui-show">
+						    	
+								<ul class="c-nav layui-nav layui-nav-tree layui-inline" lay-filter="demo" style="height: auto;color: #fff;background-color: #d8d8d8;padding: 0;margin-right: 10px;">
+								  <li class="c-nav-item layui-nav-item layui-nav-itemed" style="">
+								    <a href="javascript:;" style="color: #686767;font-size: 14px;padding:0px 0px;text-align: center;"><p>一、单选题</p></a>
+								    <dl class="c-nav-child layui-nav-child">
+								      <dd>
+								      	<a href="javascript:;" style="color: #686767;font-size: 14px;padding:0px 0px;"><p style="margin-left: 30px;">第一题</p>
+								      		<button class="layui-btn bt1" style="padding: 0 0px;"><i class="layui-icon" style="font-size: 20px;">&#xe642;</i></button>
+								      		<button class="layui-btn bt2" style="padding: 0 0px;"><i class="layui-icon" style="margin-left: 3px;font-size: 20px;">&#x1006;</i></button>
+								      	</a>
+								      </dd>
+								      <dd>
+								      	<a href="javascript:;" style="color: #686767;font-size: 14px;padding:0px 0px;"><p style="margin-left: 30px;">第二题</p>
+								      		<button class="layui-btn bt1" style="padding: 0 0px;"><i class="layui-icon" style="font-size: 20px;">&#xe642;</i></button>
+								      		<button class="layui-btn bt2" style="padding: 0 0px;"><i class="layui-icon" style="margin-left: 3px;font-size: 20px;">&#x1006;</i></button>
+								      	</a>
+								      </dd>
+								      <dd>
+								      	<a href="javascript:;" style="color: #686767;font-size: 14px;padding:0px 0px;"><p style="margin-left: 30px;">第三题</p>
+								      		<button class="layui-btn bt1" style="padding: 0 0px;"><i class="layui-icon" style="font-size: 20px;">&#xe642;</i></button>
+								      		<button class="layui-btn bt2" style="padding: 0 0px;"><i class="layui-icon" style="margin-left: 3px;font-size: 20px;">&#x1006;</i></button>
+								      	</a>
+								      </dd>
+								      <dd>
+								      	<a href="javascript:;" style="color: #686767;font-size: 14px;padding:0px 0px;"><p style="margin-left: 30px;">第四题</p>
+								      		<button class="layui-btn bt1" style="padding: 0 0px;"><i class="layui-icon" style="font-size: 20px;">&#xe642;</i></button>
+								      		<button class="layui-btn bt2" style="padding: 0 0px;"><i class="layui-icon" style="margin-left: 3px;font-size: 20px;">&#x1006;</i></button>
+								      	</a>
+								      </dd>
+								      <dd>
+								      	<a href="javascript:;" style="color: #686767;font-size: 14px;padding:0px 0px;"><p style="margin-left: 30px;">第五题</p>
+								      		<button class="layui-btn bt1" style="padding: 0 0px;"><i class="layui-icon" style="font-size: 20px;">&#xe642;</i></button>
+								      		<button class="layui-btn bt2" style="padding: 0 0px;"><i class="layui-icon" style="margin-left: 3px;font-size: 20px;">&#x1006;</i></button>
+								      	</a>
+								      </dd>
+								      <dd>
+								      	<a href="javascript:;" style="color: #686767;font-size: 14px;padding:0px 0px;"><p style="margin-left: 30px;">第六题</p>
+								      		<button class="layui-btn bt1" style="padding: 0 0px;"><i class="layui-icon" style="font-size: 20px;">&#xe642;</i></button>
+								      		<button class="layui-btn bt2" style="padding: 0 0px;"><i class="layui-icon" style="margin-left: 3px;font-size: 20px;">&#x1006;</i></button>
+								      	</a>
+								      </dd>
+								    </dl>
+								  </li>
+								  <li class="c-nav-item layui-nav-item">
+								    <a href="javascript:;" style="color: #686767;font-size: 14px;padding:0px 0px;text-align: center;"><p>二、多选题</p></a>
+								    <dl class="c-nav-child layui-nav-child">
+								      <dd>
+								      	<a href="" style="color: #686767;font-size: 14px;padding:0px 0px;"><p style="margin-left: 30px;">第一题</p>
+								      		<button class="layui-btn bt1" style="padding: 0 0px;"><i class="layui-icon" style="font-size: 20px;">&#xe642;</i></button>
+								      		<button class="layui-btn bt2" style="padding: 0 0px;"><i class="layui-icon" style="margin-left: 3px;font-size: 20px;">&#x1006;</i></button>
+								      	</a>
+								      </dd>
+								      <dd>
+								      	<a href="" style="color: #686767;font-size: 14px;padding:0px 0px;"><p style="margin-left: 30px;">第二题</p>
+								      		<button class="layui-btn bt1" style="padding: 0 0px;"><i class="layui-icon" style="font-size: 20px;">&#xe642;</i></button>
+								      		<button class="layui-btn bt2" style="padding: 0 0px;"><i class="layui-icon" style="margin-left: 3px;font-size: 20px;">&#x1006;</i></button>
+								      	</a>
+								      </dd>
+								      <dd>
+								      	<a href="" style="color: #686767;font-size: 14px;padding:0px 0px;"><p style="margin-left: 30px;">第三题</p>
+								      		<button class="layui-btn bt1" style="padding: 0 0px;"><i class="layui-icon" style="font-size: 20px;">&#xe642;</i></button>
+								      		<button class="layui-btn bt2" style="padding: 0 0px;"><i class="layui-icon" style="margin-left: 3px;font-size: 20px;">&#x1006;</i></button>
+								      	</a>
+								      </dd>
+								    </dl>
+								  </li>
+								  <li class="c-nav-item layui-nav-item">
+								  	<a href="" style="color: #686767;font-size: 14px;padding:0px 0px;text-align: center;"><p>三、填空题</p></a>
+								  	<dl class="c-nav-child layui-nav-child">
+								  		
+								    </dl>
+								  </li>
+								  <li class="c-nav-item layui-nav-item">
+								  	<a href="" style="color: #686767;font-size: 14px;padding:0px 0px;text-align: center;"><p>四、判断题</p></a>
+								  	<dl class="c-nav-child layui-nav-child">
+								    </dl>
+								  </li>
+								  <li class="c-nav-item layui-nav-item">
+								  	<a href="" style="color: #686767;font-size: 14px;padding:0px 0px;text-align: center;"><p>五、简答题</p></a>
+								  	<dl class="c-nav-child layui-nav-child">
+								    </dl>
+								  </li>
+								</ul>
+								<div style="cursor:pointer;width: 106px;height: 28px;position: absolute;bottom: 9px;left: 48px;border: #14bd02 1px solid;border-radius: 3px;">
+									<i class="icon iconfont" style="font-size: 24px;position: relative;bottom: 0px;left: 4px;color: #03b732;"></i>
+									<p style="font-size: 16px;color: #03b732;position: relative;bottom: 25px;left: 34px;">同级目录</p>
+								</div>
+								<div style="cursor:pointer;width: 93px;height: 28px;position: absolute;bottom: 9px;left: 213px;border: #14bd02 1px solid;border-radius: 3px;">
+									<i class="icon iconfont" style="font-size: 24px;position: relative;bottom: 0px;left: 4px;color: #03b732;"></i>
+									<p style="font-size: 16px;color: #03b732;position: relative;bottom: 25px;left: 34px;">子目录</p>
+								</div>
+						    </div>
+					    </div>
+					</div>
+					
+					
+
+				</div>
+				
+	    </div>
+	    
+        
+		<script src="../js/jquery.min1.9.1.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../js/jquery.easing.js"></script>
+        <script src="../lib/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../lib/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../js/KT-content-common-1.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../js/KT-content2.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			layui.use(['form','element','jquery','layer','laydate','layedit'], function(){
+			  	var $ = layui.$
+			  	,form = layui.form
+			  	,layer = parent.layer ==undefined?layui.layer:parent.layer
+			 	,layedit = layui.layedit
+			  	,laydate = layui.laydate
+			  	,layedit = layui.layedit
+			  	,element=layui.element;
+			  	
+			  	
+			  	//layui文件必须要的文件******************************************************************************
+			  	var _hmt = _hmt || [];
+				(function() {
+				  	var hm = document.createElement("script");
+				  	hm.src = "https://hm.baidu.com/hm.js?b393d153aeb26b46e9431fabaf0f6190";
+				  	var s = document.getElementsByTagName("script")[0]; 
+				  	s.parentNode.insertBefore(hm, s);
+				})();
+								
+			  	$(".timu").on("mouseover",function () {
+			  		$(this).children().eq(1).css("display","block");
+			  	});
+			  	$(".timu").on("mouseout",function () {
+			  		$(this).children().eq(1).css("display","none");
+			  	});
+			  	
+			  	
+			  	/*编辑器******************************************************************************/
+			  	//构建一个默认的编辑器
+				var index = layedit.build('LAY_demo1');
+				var index = layedit.build('LAY_demo2');
+				var index = layedit.build('LAY_demo3'); 
+				var index = layedit.build('LAY_demo4'); 
+				var index = layedit.build('LAY_demo5'); 
+				var index = layedit.build('LAY_demo6'); 
+				
+				//编辑器外部操作
+				var active = {
+				    content: function(){
+				      alert(layedit.getContent(index)); //获取编辑器内容
+				    }
+				    ,text: function(){
+				      alert(layedit.getText(index)); //获取编辑器纯文本内容
+				    }
+				    ,selection: function(){
+				      alert(layedit.getSelection(index));
+				    }
+				};
+				  
+				$('.site-demo-layedit').on('click', function(){
+				    var type = $(this).data('type');
+				    active[type] ? active[type].call(this) : '';
+				});
+				
+				$(".layedit-tool-image").css("display","none");
+				
+				$(".cr").on("mousemove",function () {
+					$(this).css("background","#d5e1f2");
+				});
+				$(".cr").on("mouseout",function () {
+					$(this).css("background","#fff");
+				});
+				
+				
+				//选中哪个课时编辑、按钮出现
+				for(var i=0;i<=20;i++){
+					$(".c-nav-child").children().eq(i).on("mouseover",function () {
+						for(var j=1;j<=2;j++){
+							$(this).children().children().eq(j).css("display","inline-block");
+						}
+					});
+				}
+				for(var i=0;i<=20;i++){
+					$(".c-nav-child").children().eq(i).on("mouseout",function () {
+						for(var j=1;j<=2;j++){
+							$(this).children().children().eq(j).css("display","none");
+						}
+					});
+				}
+				
+				$("#bc").on("click",function () {
+					var t1=window.setTimeout(function () {
+			  			layer.msg("已保存",{time:1000});
+					}, 500);
+					var t1=window.setTimeout(function () {
+			  			window.location.href = "KT-content4(3)-1.html";
+					}, 1600);
+				});
+				
+			});
+		</script>
+        
+        <div class="layui-layer-shade" id="layui-layer-shade9" times="9" style="display:none;z-index:19891022; background-color:#000; opacity:0.5; filter:alpha(opacity=50);"></div>
+        <div class="layui-layer layui-anim-01 layui-layer-page " id="layui-layer9" type="page" times="9" showtime="0" contype="string" style="display:none;z-index: 19891023; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgba(255, 255, 255, 0);">
+        	<div class="layui-layer-content" style="height: 237px;">
+	        	<div class="course_qcode" style="width:100%;">
+					<div class="left-innerbox">
+						<h2 class="classcode">加课码：WeChat</h2>
+						<img src="../images-tou/showqrcode.jpg">
+						<input class="codetips" value="微信扫码二维码">
+					</div>
+					<div class="right-innerbox">
+						<div class="title-tips">已加课人数</div>
+						<div class="student-num">20</div>
+					</div>
+				</div>
+        	</div>
+        	<span class="layui-layer-setwin">
+        		<a class="layui-layer-ico layui-layer-close layui-layer-close2" href="javascript:;"></a>
+        	</span>
+        </div>
+		
+    </body>
+</html>

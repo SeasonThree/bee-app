@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>我的课堂</title>
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="../css/font.css">
+        <link rel="stylesheet" type="text/css" href="../lib/layui/css/layui.css"/>
+        <link rel="stylesheet" href="../css/xadmin.css">
+        <link rel="stylesheet" type="text/css" href="../css/KT-create1.css"/>
+        
+        
+    </head>
+    <body>
+	    <div class="x-body" style="padding:0px;">
+	    		<!--顶部--> 
+				<div class="parent1">
+					<div class="parent2">
+						<div class="parent3">
+							<div class="parent4">
+								<div class="son">
+									<p style="font-size:24px;color:#ffffff;text-align: center;line-height: 73px;">新建</p>
+								</div>
+								<div class="cont" style="width:468px;height:350px;float:left;margin-left: 300px;margin-top:105px;">
+									<form class="layui-form" action="" lay-filter="example">
+									  <div class="layui-form-item">
+									    <label class="layui-form-label">课程名称：</label>
+									    <div class="layui-input-block">
+									      <input type="text" name="username" lay-verify="title" autocomplete="off" placeholder="请输入课程名称" class="layui-input">
+									    </div>
+									  </div>
+									  <div class="layui-form-item">
+									    <label class="layui-form-label">教师：</label>
+									    <div class="layui-input-block">
+									      <input type="text" name="username" lay-verify="title" autocomplete="off" placeholder="请输入教师名称" class="layui-input">
+									    </div>
+									  </div>
+									  
+									  <div class="layui-form-item layui-form-text">
+									    <label class="layui-form-label">课程说明：</label>
+									    <div class="layui-input-block">
+									      <textarea placeholder="请输入课程内容说明" class="layui-textarea" name="desc"></textarea>
+									    </div>
+									  </div>
+									 
+									  <div class="layui-form-item" style="margin-top: 70px;">
+									    <div class="layui-input-block">
+									      <button id="btn1" style="color: #FFFFFF;" class="layui-btn" lay-submit="" lay-filter="demo1"><a style="color: #FFFFFF;" href="KT-create2.html">下一步</a></button>
+									      <button id="btn2" type="reset" class="layui-btn layui-btn-primary">返回</button>
+									    </div>
+									  </div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+				
+			
+	    </div>
+	    
+        
+		<script src="../js/jquery.min1.9.1.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../js/jquery.easing.js"></script>
+        <script src="../lib/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../lib/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../js/KT-create.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript">
+        	layui.use(['form','element','jquery','layer','laydate'], function(){
+			  	var $ = layui.$
+			  	,form = layui.form
+			  	,layer = parent.layer ==undefined?layui.layer:parent.layer
+			 	,layedit = layui.layedit
+			  	,laydate = layui.laydate
+			  	,element=layui.element;
+			  	
+			  	
+			  	//layui文件必须要的文件******************************************************************************
+			  	var _hmt = _hmt || [];
+				(function() {
+				  	var hm = document.createElement("script");
+				  	hm.src = "https://hm.baidu.com/hm.js?b393d153aeb26b46e9431fabaf0f6190";
+				  	var s = document.getElementsByTagName("script")[0]; 
+				  	s.parentNode.insertBefore(hm, s);
+				})();
+			  	
+        	  	//按钮****************************************************************************************
+			    $("#btn1").on("mousedown",function () {	
+			    	//alert("1");
+			    	$(location).attr("href","KT-create2.html");
+			    });
+			    
+			    	//关闭父页面的框架！
+//			    var userAgent = navigator.userAgent;
+//			    $("#btn2").on("mousedown",function () {	
+//				    if (userAgent.indexOf("Firefox") != -1 || userAgent.indexOf("Chrome") !=-1) {
+//				        window.location.href="about:blank";
+//				        window.parent.close();
+//				    } else {
+//				        window.opener = null;
+//				        window.open("", "_self");
+//				        window.parent.close();
+//				    }
+//			    });
+			    	//关闭子页面的框架
+			    var userAgent = navigator.userAgent;
+			    $("#btn2").on("mousedown",function () {	
+				    if (userAgent.indexOf("Firefox") != -1 || userAgent.indexOf("Chrome") !=-1) {
+				        window.location.href="about:blank";
+				        window.close();
+				    } else {
+				        window.opener = null;
+				        window.open("", "_self");
+				        window.close();
+				    }
+			    });
+			});
+        </script>
+    </body>
+</html>
